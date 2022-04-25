@@ -1,8 +1,8 @@
 
 public class Guest {
-	private int guest_id;
-	private String guest_name;
-	private int phone_number;
+	private int guestID;
+	private String guestName;
+	private int phoneNumber;
 	private String email;
 
 	public Guest() {
