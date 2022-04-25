@@ -6,5 +6,5 @@ public class Room {
 	//Bed Type (Single- Double- Triple)
 	private String bed_type;
 	//Price
-	
+
 }
