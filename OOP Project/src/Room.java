@@ -4,9 +4,34 @@ public class Room {
 	//Room Type (AC / Non-AC)
 	private String roomType;
 	//Bed Type (Single- Double- Triple)
-	private String bedsType;
-	//Price
-	private int roomPrice;
+	private String bedType;
 	
-	public Room(int roomNo, String roomType,int roomPrice)
+	  public Room(int roomNo)
+	    {
+	        this.roomNo = roomNo;
+	    }
+
+	public String getBedType() {
+		return bedType;
+	}
+
+	public void setBedType(String bedType) {
+		this.bedType = bedType;
+	}
+
+	public String getRoomType() {
+		return roomType;
+	}
+
+	public void setRoomType(String roomType) {
+		this.roomType = roomType;
+	}
+
+	public int getRoomNo() {
+		return roomNo;
+	}
+
+	public void setRoomNo(int roomNo) {
+		this.roomNo = roomNo;
+	}
 }
