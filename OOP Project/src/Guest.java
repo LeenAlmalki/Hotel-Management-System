@@ -1,6 +1,9 @@
 
 public class Guest extends Person{
 	private int guestID;
+	//here
+	private boolean checkedIn;
+	private Room room;
 
 	public Guest() {
 		super();
@@ -19,4 +22,40 @@ public class Guest extends Person{
 	public void setGuestID(int guestID) {
 		this.guestID = guestID;
 	}
+	
+	//here 
+	public boolean getStatus() {
+	    return checkedIn;
+	  }
+
+	  public Room getRoom() {
+	    return room;
+	  }
+
+	  public void setRoom(Room room) {
+	    this.room = room;
+	  }
+
+	  public void setCheckedIn(boolean checkedIn) {
+	    this.checkedIn = checkedIn;
+	  }
+	  
+	//checkIN
+	public void checkIn(Room room) {
+	    if (this.getStatus() == false) {
+	      this.setCheckedIn(true);
+	      this.setRoom(room);
+	    }
+	  }
+	
+	//checkOUT
+	public void checkOut() {
+	    if (this.getStatus() == true) {
+	      this.setCheckedIn(false);
+	      this.setRoom(null);
+	    }
+	  }
+	
+	//payBill
+	//the total price is called from the receptionist class
 }
