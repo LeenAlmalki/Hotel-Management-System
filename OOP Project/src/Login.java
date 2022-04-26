@@ -7,7 +7,6 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JTextField;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
-
 import java.awt.Font;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
@@ -18,6 +17,7 @@ public class Login extends JFrame {
 	private JPanel contentPane;
 	private JTextField textField_1;
 	private JTextField textField;
+	private JLabel lblNewLabel;
 
 	/**
 	 * Launch the application.
@@ -47,23 +47,23 @@ public class Login extends JFrame {
 		setContentPane(contentPane);
 		
 		textField_1 = new JTextField();
-		textField_1.setBounds(45, 78, 212, 40);
+		textField_1.setBounds(45, 112, 212, 40);
 		contentPane.add(textField_1);
 		textField_1.setColumns(10);
 		
 		textField = new JTextField();
 		textField.setColumns(10);
-		textField.setBounds(45, 173, 212, 40);
+		textField.setBounds(45, 199, 212, 40);
 		contentPane.add(textField);
 		
 		JLabel user = new JLabel("User id");
 		user.setFont(new Font("Tahoma", Font.PLAIN, 17));
-		user.setBounds(45, 55, 94, 13);
+		user.setBounds(45, 89, 94, 13);
 		contentPane.add(user);
 		
 		JLabel pass = new JLabel("Password");
 		pass.setFont(new Font("Tahoma", Font.PLAIN, 17));
-		pass.setBounds(45, 150, 94, 13);
+		pass.setBounds(45, 176, 94, 13);
 		contentPane.add(pass);
 		
 		JButton btnNewButton = new JButton("Login");
@@ -86,7 +86,12 @@ public class Login extends JFrame {
 			}
 		});
 		btnNewButton.setFont(new Font("Tahoma", Font.PLAIN, 17));
-		btnNewButton.setBounds(158, 265, 110, 29);
+		btnNewButton.setBounds(158, 282, 110, 29);
 		contentPane.add(btnNewButton);
+		
+		lblNewLabel = new JLabel("Welcome Back");
+		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 17));
+		lblNewLabel.setBounds(146, 30, 203, 29);
+		contentPane.add(lblNewLabel);
 	}
 }
