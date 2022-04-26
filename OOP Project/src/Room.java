@@ -10,8 +10,24 @@ public class Room {
 	    {
 	        this.roomNo = roomNo;
 	    }
+	  
+	  public int getRoomNo() {
+			return roomNo;
+		}
 
-	public String getBedType() {
+		public void setRoomNo(int roomNo) {
+			this.roomNo = roomNo;
+		}
+	
+		public String getRoomType() {
+			return roomType;
+		}
+
+		public void setRoomType(String roomType) {
+			this.roomType = roomType;
+		}
+		
+		public String getBedType() {
 		return bedType;
 	}
 
@@ -19,19 +35,7 @@ public class Room {
 		this.bedType = bedType;
 	}
 
-	public String getRoomType() {
-		return roomType;
-	}
+	
 
-	public void setRoomType(String roomType) {
-		this.roomType = roomType;
-	}
-
-	public int getRoomNo() {
-		return roomNo;
-	}
-
-	public void setRoomNo(int roomNo) {
-		this.roomNo = roomNo;
-	}
+	
 }
