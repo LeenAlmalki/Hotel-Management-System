@@ -1,10 +1,10 @@
 public class Room {
 // Room number 
-	private int room_num;	
+	private int roomNo;	
 	//Room Type (AC / Non-AC)
-	private String room_type;
+	private String roomType;
 	//Bed Type (Single- Double- Triple)
-	private String bed_type;
+	private String bedType;
 	//Price
-
+	private int roomPrice;
 }
