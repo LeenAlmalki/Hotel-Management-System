@@ -8,5 +8,5 @@ public class Room {
 	//Price
 	private int roomPrice;
 	
-	public Room(int roomNo, String roomType,)
+	public Room(int roomNo, String roomType,int roomPrice)
 }
