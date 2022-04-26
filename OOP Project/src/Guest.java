@@ -1,17 +1,15 @@
 
-public class Guest {
+public class Guest extends Person{
 	private int guestID;
-	private String guestName;
-	private String phoneNumber;
-	private String email;
 
 	public Guest() {
+		super();
 		guestID = 0;
-		guestName = null;
-		phoneNumber = null;
-		email = null;
-		
-		
+	}
+	
+	public Guest(String name, String phoneNumber, String email, int guestID) {
+		super(name, phoneNumber, email);
+		this.guestID = guestID;
 	}
 
 	public int getGuestID() {
@@ -20,29 +18,5 @@ public class Guest {
 
 	public void setGuestID(int guestID) {
 		this.guestID = guestID;
-	}
-
-	public String getGuestName() {
-		return guestName;
-	}
-
-	public void setGuestName(String guestName) {
-		this.guestName = guestName;
-	}
-
-	public String getPhoneNumber() {
-		return phoneNumber;
-	}
-
-	public void setPhoneNumber(String phoneNumber) {
-		this.phoneNumber = phoneNumber;
-	}
-
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
 	}
 }
