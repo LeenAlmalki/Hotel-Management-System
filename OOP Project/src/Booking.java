@@ -41,9 +41,9 @@ public class Booking {
 		        this.bookingType = bookingType;
 		    }
 		   
-		    public void addRoom(String roomNo)
+		    public void addRoom(int roomNo)
 		    {
-		        rooms.add(new Room(roomNo));
+		        Room.add(new Room(roomNo));
 		        
 		    }
 
