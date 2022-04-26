@@ -1,71 +1,97 @@
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import javax.swing.JButton;
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+import java.sql.*;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.JPasswordField;
+import javax.swing.border.EmptyBorder;
 import javax.swing.JTextField;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import java.awt.Font;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
-public class Login implements ActionListener {
+public class Login extends JFrame {
 
+	private JPanel contentPane;
+	private JTextField textField_1;
+	private JTextField textField;
+	private JLabel lblNewLabel;
+
+	/**
+	 * Launch the application.
+	 */
 	public static void main(String[] args) {
-		
-		JPanel panel = new JPanel();
-		JFrame frame = new JFrame();
-		frame.setSize(100,100);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.setVisible(true);
-		frame.add(panel);
-		
-		panel.setLayout(null);
-		
-		// welcome phrase 
-		JLabel welcome = new JLabel("Welcome Back ");
-		welcome.setBounds(10, 0, 100, 25);
-		panel.add(welcome);
-		
-		// user label
-		JLabel label = new JLabel("User");
-		label.setBounds(10, 20, 80, 25);
-		panel.add(label);
-		
-		// user text field 
-		JTextField userText = new JTextField(20);
-		userText.setBounds(100, 20, 165, 25);
-		panel.add(userText);
-		
-		// password label
-		JLabel passwordLabel = new JLabel ("Password");
-		passwordLabel.setBounds(10, 50, 80, 25);
-		panel.add(passwordLabel);
-		
-		// password text field 
-		JPasswordField passwordText = new JPasswordField();
-		passwordText.setBounds(100, 50, 165, 25);
-		panel.add(passwordText);
-		
-		// login button
-		JButton button = new JButton("Login");
-		button.setBounds(10, 80, 80, 25);
-		button.addActionListener(new Login());
-		panel.add(button);
-		
-		// success message 
-		JLabel success =  new JLabel ("");
-		success.setBounds(10, 110, 300, 25);
-		panel.add(success);
-
-		frame.setVisible(true);
-	
-		
-	}
-	
-
-	@Override
-	public void actionPerformed(ActionEvent e) {
-		
-		
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Login frame = new Login();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
 	}
 
+	/**
+	 * Create the frame.
+	 */
+	public Login() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 439, 373);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		contentPane.setLayout(null);
+		setContentPane(contentPane);
+		
+		textField_1 = new JTextField();
+		textField_1.setBounds(45, 112, 212, 40);
+		contentPane.add(textField_1);
+		textField_1.setColumns(10);
+		
+		textField = new JTextField();
+		textField.setColumns(10);
+		textField.setBounds(45, 199, 212, 40);
+		contentPane.add(textField);
+		
+		JLabel user = new JLabel("User id");
+		user.setFont(new Font("Tahoma", Font.PLAIN, 17));
+		user.setBounds(45, 89, 94, 13);
+		contentPane.add(user);
+		
+		JLabel pass = new JLabel("Password");
+		pass.setFont(new Font("Tahoma", Font.PLAIN, 17));
+		pass.setBounds(45, 176, 94, 13);
+		contentPane.add(pass);
+		
+		JButton btnNewButton = new JButton("Login");
+		btnNewButton.addActionListener(new ActionListener() {	
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Class.forName("com.mysql.jdbc.Driver");
+					Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/hotelmanagement","root","");
+					Statement stmt = conn.createStatement();
+					String sql = "Select * from login where userID = '"+user.getText()+"' and  Password = '"+pass.getText()+"' ";
+					ResultSet result = stmt.executeQuery(sql) ;
+					if(result.next())
+						JOptionPane.showMessageDialog(null, "Successfull Login");
+					else
+						JOptionPane.showMessageDialog(null, "Incorrect user ID or password");
+					conn.close();
+				} catch(Exception e1) {
+					System.out.println(e1);
+				}
+			}
+		});
+		btnNewButton.setFont(new Font("Tahoma", Font.PLAIN, 17));
+		btnNewButton.setBounds(158, 282, 110, 29);
+		contentPane.add(btnNewButton);
+		
+		lblNewLabel = new JLabel("Welcome Back");
+		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 17));
+		lblNewLabel.setBounds(146, 30, 203, 29);
+		contentPane.add(lblNewLabel);
+	}
 }
