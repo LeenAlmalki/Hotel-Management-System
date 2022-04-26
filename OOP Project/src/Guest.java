@@ -2,11 +2,16 @@
 public class Guest {
 	private int guestID;
 	private String guestName;
-	private int phoneNumber;
+	private String phoneNumber;
 	private String email;
 
 	public Guest() {
-		// TODO Auto-generated constructor stub
+		guestID = 0;
+		guestName = null;
+		phoneNumber = null;
+		email = null;
+		
+		
 	}
 
 	public int getGuestID() {
@@ -25,11 +30,11 @@ public class Guest {
 		this.guestName = guestName;
 	}
 
-	public int getPhoneNumber() {
+	public String getPhoneNumber() {
 		return phoneNumber;
 	}
 
-	public void setPhoneNumber(int phoneNumber) {
+	public void setPhoneNumber(String phoneNumber) {
 		this.phoneNumber = phoneNumber;
 	}
 
