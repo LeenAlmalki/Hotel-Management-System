@@ -14,6 +14,7 @@ import javax.swing.border.CompoundBorder;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.JTextField;
 import javax.swing.JComboBox;
+import javax.swing.DefaultComboBoxModel;
 
 public class manageRoom extends JFrame {
 
@@ -95,6 +96,7 @@ public class manageRoom extends JFrame {
 		contentPane.add(lblNewLabel_2);
 		
 		JComboBox comboBox = new JComboBox();
+		comboBox.setModel(new DefaultComboBoxModel(new String[] {"AC ", "Non-AC"}));
 		comboBox.setBounds(712, 280, 220, 25);
 		contentPane.add(comboBox);
 		
@@ -104,6 +106,7 @@ public class manageRoom extends JFrame {
 		contentPane.add(lblNewLabel_3);
 		
 		JComboBox comboBox_1 = new JComboBox();
+		comboBox_1.setModel(new DefaultComboBoxModel(new String[] {"Single ", "Double ", "Triple"}));
 		comboBox_1.setBounds(712, 405, 220, 25);
 		contentPane.add(comboBox_1);
 		
