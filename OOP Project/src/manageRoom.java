@@ -68,20 +68,15 @@ public class manageRoom extends JFrame {
 		table.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		table.setModel(new DefaultTableModel(
 			new Object[][] {
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
+				{"Room Number", "Room Type ", "Bed", "Price ", "Status"},
+				{null, null, null, null, null},
 			},
 			new String[] {
-				"New column", "New column", "New column", "New column", "New column", "New column", "New column"
+				"New column", "New column", "New column", "New column", "New column"
 			}
 		));
 		table.setBorder(new CompoundBorder());
-		table.setBounds(55, 104, 537, 309);
+		table.setBounds(55, 104, 543, 309);
 		contentPane.add(table);
 		
 		JLabel lblNewLabel_1 = new JLabel("Room Number");
