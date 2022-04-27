@@ -58,6 +58,7 @@ public class manageRoom extends JFrame {
 		JButton btnNewButton = new JButton("close");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				setVisible(false);
 			}
 		});
 		btnNewButton.setBounds(974, 70, 105, 25);
@@ -80,7 +81,7 @@ public class manageRoom extends JFrame {
 			}
 		));
 		table.setBorder(new CompoundBorder());
-		table.setBounds(55, 104, 537, 112);
+		table.setBounds(55, 104, 537, 309);
 		contentPane.add(table);
 		
 		JLabel lblNewLabel_1 = new JLabel("Room Number");
@@ -120,5 +121,9 @@ public class manageRoom extends JFrame {
 		textField_1.setBounds(712, 505, 220, 23);
 		contentPane.add(textField_1);
 		textField_1.setColumns(10);
+		
+		JButton btnNewButton_1 = new JButton("Add Room");
+		btnNewButton_1.setBounds(774, 590, 105, 25);
+		contentPane.add(btnNewButton_1);
 	}
 }
