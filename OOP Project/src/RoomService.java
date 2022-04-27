@@ -1,5 +1,9 @@
+import javax.swing.JFrame;
 
-public class RoomService {
+public class RoomService extends JFrame{
+	public RoomService() {
+		getContentPane().setLayout(null);
+	}
 	
 	private String foodItem;
     private int price;
