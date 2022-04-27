@@ -16,6 +16,9 @@ import javax.swing.JTextField;
 import javax.swing.JComboBox;
 import javax.swing.DefaultComboBoxModel;
 
+import project.*;
+import java.sql.*;
+
 public class manageRoom extends JFrame {
 
 	private JPanel contentPane;
@@ -121,6 +124,16 @@ public class manageRoom extends JFrame {
 		textField_1.setColumns(10);
 		
 		JButton btnNewButton_1 = new JButton("Add Room");
+		btnNewButton_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				 String roomNo=jTextField1.getText ();
+				 String roomType= (String)jComboBox1.getSelectedItem();
+				 String bed= (String)jComboBox2.getSelectedItem();
+				 String price=jTextField2.getText ();
+				 
+				 String Query="insert into room values ('"+roomNo+"', '"+roomType+"', '"+bed+", '"+price+"', 'Not Booked')";
+			}
+		});
 		btnNewButton_1.setBounds(774, 590, 105, 25);
 		contentPane.add(btnNewButton_1);
 	}
