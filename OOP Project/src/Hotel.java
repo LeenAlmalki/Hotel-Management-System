@@ -14,7 +14,7 @@ class Hotel
     static void CustDetails(int i,int rn)
     {
         String name, contact, email, id;
-        String name2 = null, contact2 = null , email2 = null , id2 = null; 
+        String name2 = null, contact2 = null , email2 = null , id2 = null;
    
         System.out.print("\nEnter customer name: ");
         name = sc.next();
@@ -212,7 +212,7 @@ class Hotel
     static void bill(int rn,int rtype)
     {
         double amount=0;
-        String list[]={"Sandwich","Pasta","Noodles","Coke"};
+        String list[]={"Sandwich","Pasta","Kabsa","Coke"};
         System.out.println("\n*******");
         System.out.println(" Bill:-");
         System.out.println("*******");
@@ -367,7 +367,8 @@ class Hotel
         int i,q;
         char wish;
          try{
-             System.out.println("\n==========\n   Menu:  \n==========\n\n1.Sandwich\tRs.50\n2.Pasta\t\tRs.60\n3.Noodles\tRs.70\n4.Coke\t\tRs.30\n");
+        	 //comment
+             System.out.println("\n==========\n   Menu:  \n==========\n\n1.Sandwich\tRs.50\n2.Pasta\t\tRs.60\n3.Kabsa\tRs.70\n4.Coke\t\tRs.30\n");
         do
         {
             i = sc.nextInt();

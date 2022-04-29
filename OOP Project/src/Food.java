@@ -1,4 +1,3 @@
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -23,9 +22,9 @@ public class Food implements Serializable{
                 break;
             case 2:price=quantity*60;
                 break;
-            case 3:price=quantity*70;
+            case 3:price=quantity*30;
                 break;
-            case 4:price=quantity*30;
+            case 4:price=quantity*10;
                 break;
         }
     }
