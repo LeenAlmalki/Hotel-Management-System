@@ -24,6 +24,7 @@ public class Singleroom implements Serializable{
 	        this.name=name;
 	        this.contact=contact;
 	        this.email=email;
+	        this.id = id ;
 	    } 
 
 }
