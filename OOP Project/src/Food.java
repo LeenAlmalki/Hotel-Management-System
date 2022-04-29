@@ -1,11 +1,4 @@
 
-public class Food {
-
-	public Food() {
-		// TODO Auto-generated constructor stub
-	}
-
-}
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
