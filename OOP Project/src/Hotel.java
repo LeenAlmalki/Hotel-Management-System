@@ -13,33 +13,39 @@ class Hotel
     static Scanner sc = new Scanner(System.in);
     static void CustDetails(int i,int rn)
     {
-        String name, contact, gender;
-        String name2 = null, contact2 = null; 
-        String gender2="";
+        String name, contact, email, id;
+        String name2 = null, contact2 = null , email2 = null , id2 = null; 
+   
         System.out.print("\nEnter customer name: ");
         name = sc.next();
         System.out.print("Enter contact number: ");
         contact=sc.next();
-        System.out.print("Enter gender: ");
-        gender = sc.next();
+        System.out.print("Enter customer email: ");
+        email = sc.next();
+        System.out.print("Enter customer national ID: ");
+        id = sc.next();
+        
+        
         if(i<3)
         {
         System.out.print("Enter second customer name: ");
         name2 = sc.next();
         System.out.print("Enter contact number: ");
         contact2=sc.next();
-        System.out.print("Enter gender: ");
-        gender2 = sc.next();
+        System.out.print("Enter email: ");
+        email2 = sc.next();
+        System.out.print("Enter national ID: ");
+        id2 = sc.next();
         }      
         
           switch (i) {
-            case 1:hotel_ob.luxury_doublerrom[rn]=new Doubleroom(name,contact,gender,name2,contact2,gender2);
+            case 1:hotel_ob.luxury_doublerrom[rn]=new Doubleroom(name,contact,email,id,name2,contact2,email2,id2);
                 break;
-            case 2:hotel_ob.deluxe_doublerrom[rn]=new Doubleroom(name,contact,gender,name2,contact2,gender2);
+            case 2:hotel_ob.deluxe_doublerrom[rn]=new Doubleroom(name,contact,email,id,name2,contact2,email2,id2);
                 break;
-            case 3:hotel_ob.luxury_singleerrom[rn]=new Singleroom(name,contact,gender);
+            case 3:hotel_ob.luxury_singleerrom[rn]=new Singleroom(name,contact,email,id);
                 break;
-            case 4:hotel_ob.deluxe_singleerrom[rn]=new Singleroom(name,contact,gender);
+            case 4:hotel_ob.deluxe_singleerrom[rn]=new Singleroom(name,contact,email,id);
                 break;
             default:System.out.println("Wrong option");
                 break;

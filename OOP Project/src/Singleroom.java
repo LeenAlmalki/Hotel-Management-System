@@ -10,7 +10,8 @@ public class Singleroom implements Serializable{
 
 		String name;
 	    String contact;
-	    String gender;   
+	    String email; 
+	    String id;
 	    ArrayList<Food> food =new ArrayList<>();
 
 	   
@@ -18,11 +19,11 @@ public class Singleroom implements Serializable{
 	    {
 	        this.name="";
 	    }
-	    Singleroom(String name,String contact,String gender)
+	    Singleroom(String name,String contact,String email , String id)
 	    {
 	        this.name=name;
 	        this.contact=contact;
-	        this.gender=gender;
+	        this.email=email;
 	    } 
 
 }
