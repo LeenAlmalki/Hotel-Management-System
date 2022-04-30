@@ -257,12 +257,6 @@ public class CheckIn extends JFrame {
 		Calendar cal = Calendar.getInstance();
 		textField_4.setText(myFormat.format(cal.getTime()));
 		
-		
-		
-		
-		
-	
-		
 	}
 	
 	String bed;
