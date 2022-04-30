@@ -91,7 +91,7 @@ public class ManageRoom extends JFrame {
 		
 		JScrollPane scrollPane = new JScrollPane();
 		scrollPane.setFont(new Font("Tahoma", Font.PLAIN, 10));
-		scrollPane.setBounds(45, 52, 505, 594);
+		scrollPane.setBounds(45, 51, 505, 594);
 		contentPane.add(scrollPane);
 		
 		table = new JTable();
