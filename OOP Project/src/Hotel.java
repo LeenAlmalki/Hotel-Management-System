@@ -368,7 +368,7 @@ class Hotel
         char wish;
          try{
         	 //comment
-             System.out.println("\n==========\n   Menu:  \n==========\n\n1.Sandwich\tRs.50\n2.Pasta\t\tRs.60\n3.Kabsa\tRs.70\n4.Coke\t\tRs.30\n");
+             System.out.println("\n----------------\n   Menu:  \n----------------\n\n1.Sandwich\tRs.50\n2.Pasta\t\tRs.60\n3.Kabsa\t\tRs.70\n4.Coke\t\tRs.30\n");
         do
         {
             i = sc.nextInt();
