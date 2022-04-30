@@ -210,7 +210,42 @@ public class CheckIn extends JFrame {
 		JButton btnNewButton_1 = new JButton("Find Room");
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-			}
+				int id = 1 ;
+				String name = textField.getText();
+				String phoneNo = textField_1.getText();
+				String Nid = textField_2.getText();
+				String email = textField_3.getText();
+				String checkIN = textField_4.getText()	;
+				String bed = (String)comboBox.getSelectedItem();
+				String roomType = (String)comboBox_1.getSelectedItem();
+				String roomNo = (String)comboBox_2.getSelectedItem();
+				String price = textField_5.getText()	;
+				
+				String Query = "select max(id) from customer";
+				try {
+					
+					ResultSet rs = Select.getData(Query);
+					while(rs.next()) {
+						id = rs.getInt(1);
+						id = id + 1;
+						
+						if (!price.equals("")) {
+							
+							Query = "update room set status = 'Booked' where roomNo = '"+roomNo+"'";
+							InsertDeleteUpdate.setData(Query,"");
+							Query = "insert into customer (id,Nid,name,phoneNo,email,checkIn,roomNo,bed,roomType,pricePerDAY) values ("+id+","+Nid+",'"+name+"', '"+phoneNo+"','"+email+"', '"+checkIN+"', '"+roomNo+"', '"+bed+"', '"+roomType+"',"+price+")";
+							InsertDeleteUpdate.setData(Query, "Customer Check In Successful");
+							setVisible(false);
+							new CheckIn().setVisible(true);
+						}
+					}
+					
+				} catch (Exception e2) {
+					JOptionPane.showMessageDialog(null, e2);
+				}
+				
+				
+				}
 		});
 		btnNewButton_1.setFont(new Font("Tahoma", Font.BOLD, 18));
 		btnNewButton_1.setBounds(870, 566, 138, 49);
