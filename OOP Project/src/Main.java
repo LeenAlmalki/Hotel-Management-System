@@ -25,23 +25,23 @@ public class Main {
         x:
         do{
 
-        System.out.println("\nEnter your choice :\n1.Display room details\n2.Display room availability \n3.Book\n4.Order food\n5.Checkout\n6.Exit\n");
+        System.out.println("\nEnter your choice :\n\n1.Display room details\n2.Display room availability \n3.Book\n4.Order food\n5.Checkout\n6.Exit\n");
         ch = sc.nextInt();
         switch(ch){
-            case 1: System.out.println("\nChoose room type :\n1.Luxury Double Room \n2.Deluxe Double Room \n3.Luxury Single Room \n4.Deluxe Single Room\n");
+            case 1: System.out.println("\nChoose room type :\n\n1.Luxury Double Room \n2.Standard Double Room \n3.Luxury Single Room \n4.Standard Single Room\n");
                     ch2 = sc.nextInt();
                     Hotel.features(ch2);
                 break;
-            case 2:System.out.println("\nChoose room type :\n1.Luxury Double Room \n2.Deluxe Double Room \n3.Luxury Single Room\n4.Deluxe Single Room\n");
+            case 2:System.out.println("\nChoose room type :\n\n1.Luxury Double Room \n2.Standard Double Room \n3.Luxury Single Room\n4.Standard Single Room\n");
                      ch2 = sc.nextInt();
                      Hotel.availability(ch2);
                 break;
-            case 3:System.out.println("\nChoose room type :\n1.Luxury Double Room \n2.Deluxe Double Room \n3.Luxury Single Room\n4.Deluxe Single Room\n");
+            case 3:System.out.println("\nChoose room type :\n\n1.Luxury Double Room \n2.Standard Double Room \n3.Luxury Single Room\n4.Standard Single Room\n");
                      ch2 = sc.nextInt();
                      Hotel.bookroom(ch2);                     
                 break;
             case 4:
-                 System.out.print("Room Number -");
+                 System.out.print("Room Number : ");
                      ch2 = sc.nextInt();
                      if(ch2>60)
                          System.out.println("Room doesn't exist");
@@ -57,7 +57,7 @@ public class Main {
                          System.out.println("Room doesn't exist");
                      break;
             case 5:                 
-                System.out.print("Room Number -");
+                System.out.print("Room Number : ");
                      ch2 = sc.nextInt();
                      if(ch2>60)
                          System.out.println("Room doesn't exist");
