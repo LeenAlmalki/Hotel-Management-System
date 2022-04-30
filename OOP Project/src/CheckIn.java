@@ -28,6 +28,10 @@ public class CheckIn extends JFrame {
 	private JTextField textField_3;
 	private JTextField textField_4;
 	private JTextField textField_5;
+	JComboBox comboBox ;
+	JComboBox comboBox_1 ;
+	JComboBox comboBox_2 ; 
+	
 	
 	/**
 	 * Launch the application.
@@ -51,6 +55,7 @@ public class CheckIn extends JFrame {
 	
 
 	public CheckIn() {
+	
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 1145, 753);
@@ -135,7 +140,17 @@ public class CheckIn extends JFrame {
 		lblNewLabel_1_2_1.setBounds(659, 259, 134, 35);
 		contentPane.add(lblNewLabel_1_2_1);
 		
-		JComboBox comboBox = new JComboBox();
+		comboBox = new JComboBox();
+		comboBox.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				// type
+				roomDetails();
+				
+				
+				
+			}
+		});
 		comboBox.setFont(new Font("Tahoma", Font.PLAIN, 19));
 		comboBox.setModel(new DefaultComboBoxModel(new String[] {"Select", "Single", "Double", "Triple"}));
 		comboBox.setBounds(801, 166, 270, 35);
@@ -146,13 +161,39 @@ public class CheckIn extends JFrame {
 		lblNewLabel_1_2_1_1.setBounds(659, 359, 134, 35);
 		contentPane.add(lblNewLabel_1_2_1_1);
 		
-		JComboBox comboBox_1 = new JComboBox();
+		comboBox_1 = new JComboBox();
+		comboBox_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				roomDetails();
+				
+				
+			}
+		});
 		comboBox_1.setFont(new Font("Tahoma", Font.PLAIN, 19));
 		comboBox_1.setModel(new DefaultComboBoxModel(new String[] {"Select", "Standard", "Luxury", "Suite", "Presidential Suite"}));
 		comboBox_1.setBounds(801, 259, 270, 35);
 		contentPane.add(comboBox_1);
 		
-		JComboBox comboBox_2 = new JComboBox();
+		comboBox_2 = new JComboBox();
+		comboBox_2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				String roomNo = (String) comboBox_2.getSelectedItem();
+				try {
+					
+					ResultSet rs = Select.getData("select * from room where roomNo = '"+roomNo+"'");
+				
+					while(rs.next())
+					{
+						textField_5.setText(rs.getString(4));
+					}
+					
+				} catch (Exception e2) {
+					JOptionPane.showMessageDialog(null, e2);
+				}
+			}
+		});
 		comboBox_2.setBounds(801, 359, 270, 35);
 		contentPane.add(comboBox_2);
 		
@@ -182,14 +223,55 @@ public class CheckIn extends JFrame {
 		textField_4.setText(myFormat.format(cal.getTime()));
 		
 		
-		comboBox_1.removeAllItems();
-		textField_5.setText("");
-		String bed = (String)comboBox.getSelectedItem();
-		String room = (String)comboBox_1.getSelectedItem();
+		
+		
 		
 	
 		
 	}
+	
+	String bed;
+	String roomType;
+	String roomNo;
+	String price;
+	
+	
+	
+	public void roomDetails() {
+		
+		
+		//roomNumber
+		comboBox_2.removeAllItems();
+		//price
+		textField_5.setText("");
+		
+		bed = (String)comboBox.getSelectedItem();
+		roomType = (String)comboBox_1.getSelectedItem();
+		
+		try {
+			
+			ResultSet rs = Select.getData("select * from room where bed = '"+bed+"' and roomType = '"+roomType+"' and status='Not Booked'") ;
+			
+			while(rs.next())
+			{
+				comboBox_2.addItem(rs.getString(1));
+			}
+			
+		} catch (Exception e1) {
+			
+			JOptionPane.showMessageDialog(null, e1);
+		}
+		
+		
+		
+		
+		
+		
+	}
+	
+	
+	
+	
 	
 	
 	
