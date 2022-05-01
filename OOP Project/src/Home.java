@@ -70,7 +70,7 @@ public class Home extends JFrame {
 		JButton btnNewButton_1_1 = new JButton("Customer Checkout");
 		btnNewButton_1_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				new CheckIn().setVisible(true);
+				new CheckOut().setVisible(true);
 			}
 		});
 		btnNewButton_1_1.setFont(new Font("Tahoma", Font.PLAIN, 24));

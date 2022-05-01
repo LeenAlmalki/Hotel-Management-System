@@ -1,10 +1,16 @@
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
+import java.sql.*;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+
 import java.awt.Font;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
@@ -15,6 +21,8 @@ import javax.swing.border.LineBorder;
 import java.awt.Color;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.JScrollPane;
+import java.awt.event.ComponentAdapter;
+import java.awt.event.ComponentEvent;
 
 public class CheckOut extends JFrame {
 
@@ -64,6 +72,24 @@ public class CheckOut extends JFrame {
 	 * Create the frame.
 	 */
 	public CheckOut() {
+		addComponentListener(new ComponentAdapter() {
+			@Override
+			public void componentShown(ComponentEvent e) {
+				ResultSet rs = Select.getData("select * from customer where checkOut is NULL");
+				DefaultTableModel model = (DefaultTableModel)table.getModel();
+				try {
+					
+					while (rs.next())
+					{
+						model.addRow(new Object[] {rs.getString(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5), rs.getString(6), rs.getString(7), rs.getString(8), rs.getString(9), rs.getString(10)});
+					}
+					rs.close();
+					
+				} catch (Exception e2) {
+					JOptionPane.showMessageDialog(null, e2);
+				}
+			}
+		});
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 1145, 753);
 		contentPane = new JPanel();
@@ -104,6 +130,62 @@ public class CheckOut extends JFrame {
 		contentPane.add(btnNewButton);
 		
 		btnNewButton_1 = new JButton("Search\r\n");
+		btnNewButton_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				String roomNo = textField.getText();
+				try {
+					
+					ResultSet rs = Select.getData("select * from customer where roomNo = '"+roomNo+"' and checkOut is NULL");
+					
+					if (rs.next())
+					{
+						textField.setEditable(false);
+						id = rs.getInt(1);
+						textField_1.setText(rs.getString(3));
+						textField_4.setText(rs.getString(5));
+						textField_5.setText(rs.getString(4));
+						textField_2.setText(rs.getString(6));
+						
+						SimpleDateFormat myFormat = new SimpleDateFormat("yyyy/MM/dd");
+						Calendar cal = Calendar.getInstance();
+						textField_3.setText(myFormat.format(cal.getTime()));
+						String  dateBeforeString = rs.getString(6);
+						Date dateBefore = myFormat.parse(dateBeforeString);
+						
+						String dateAfterString = myFormat.format(cal.getTime());
+						java.util.Date dateAfter = myFormat.parse(dateAfterString);
+						
+						long difference =  dateAfter.getTime() - dateBefore.getTime();
+						
+						int dayStay = (int) (difference/(1000*60*60*24));
+						
+						if(dayStay == 0)
+							dayStay = 1;
+						
+						 textField_6.setText(String.valueOf(dayStay));
+						 
+						 float price = Float.parseFloat(textField_7.getText());
+						 
+						 
+						 textField_8.setText(String.valueOf(dayStay * price));
+						 
+						 textField_4.setText(rs.getString(5));
+						 
+						 roomType = rs.getString(9);
+						 bed = rs.getString(8);	
+						
+					}
+					
+					else {
+						JOptionPane.showMessageDialog(null, "Room number does not exist or booked");
+					}
+					
+				} catch (Exception e2) {
+					JOptionPane.showMessageDialog(null, e2);
+				}
+			}
+		});
 		btnNewButton_1.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		btnNewButton_1.setBounds(642, 126, 112, 31);
 		contentPane.add(btnNewButton_1);
@@ -148,7 +230,7 @@ public class CheckOut extends JFrame {
 		textField_3.setBounds(520, 270, 186, 34);
 		contentPane.add(textField_3);
 		
-		lblNewLabel_5 = new JLabel("Customer Name\r\n");
+		lblNewLabel_5 = new JLabel("Customer Email");
 		lblNewLabel_5.setFont(new Font("Tahoma", Font.PLAIN, 17));
 		lblNewLabel_5.setBounds(380, 195, 120, 31);
 		contentPane.add(lblNewLabel_5);
@@ -178,7 +260,7 @@ public class CheckOut extends JFrame {
 		textField_6.setBounds(935, 270, 186, 34);
 		contentPane.add(textField_6);
 		
-		lblNewLabel_8 = new JLabel("Total Amount");
+		lblNewLabel_8 = new JLabel("Price Per Day");
 		lblNewLabel_8.setFont(new Font("Tahoma", Font.PLAIN, 17));
 		lblNewLabel_8.setBounds(32, 342, 120, 31);
 		contentPane.add(lblNewLabel_8);
@@ -188,7 +270,7 @@ public class CheckOut extends JFrame {
 		textField_7.setBounds(162, 339, 186, 34);
 		contentPane.add(textField_7);
 		
-		lblNewLabel_9 = new JLabel("Customer Email");
+		lblNewLabel_9 = new JLabel("Total Amount");
 		lblNewLabel_9.setFont(new Font("Tahoma", Font.PLAIN, 17));
 		lblNewLabel_9.setBounds(380, 342, 120, 31);
 		contentPane.add(lblNewLabel_9);
@@ -202,5 +284,22 @@ public class CheckOut extends JFrame {
 		btnNewButton_2.setFont(new Font("Tahoma", Font.PLAIN, 19));
 		btnNewButton_2.setBounds(466, 412, 131, 31);
 		contentPane.add(btnNewButton_2);
+		
+		
+		textField_1.setEditable(false);
+		textField_2.setEditable(false);
+		textField_3.setEditable(false);
+		textField_4.setEditable(false);
+		textField_5.setEditable(false);
+		textField_6.setEditable(false);
+		textField_7.setEditable(false);
+		textField_8.setEditable(false);
+		
 	}
+	
+	int id = 0;
+	String Query;
+	String roomType;
+	String bed;
+	String roomNo;
 }
