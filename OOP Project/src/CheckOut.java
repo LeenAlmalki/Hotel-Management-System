@@ -310,7 +310,7 @@ public class CheckOut extends JFrame {
 				String amount = textField_8.getText();
 				roomNo = textField.getText();
 				
-				Query = "update customer set numberOfDayStay ='"+stayDay+"' , totalAmount = '"+amount+"'  checkOut = '"+checkOut+"' where id='"+id+"'";
+				Query = "update customer set numberOfDayStay ='"+stayDay+"' , totalAmount = '"+amount+"' , checkOut = '"+checkOut+"' where id='"+id+"'";
 				
 				InsertDeleteUpdate.setData(Query, "");
 				
@@ -318,7 +318,8 @@ public class CheckOut extends JFrame {
 				
 				InsertDeleteUpdate.setData(Query, "");
 				
-				String path = "Desktop:\\";
+				//here
+				String path = "E:\\";
 				com.itextpdf.text.Document doc = new com.itextpdf.text.Document();
 				
 				try {
@@ -368,16 +369,18 @@ public class CheckOut extends JFrame {
 				if(a==0)
 				{
 					try {
-						
-						if ((new File("Desktop:\\"+id+".pdf")).exists());
+						//here
+						if ((new File("\"C:\\Users\\leena\\OneDrive\\Desktop\\oop\""+id+".pdf")).exists());
 						{
 							Process p = Runtime
 									.getRuntime()
-									.exec("rund1132 url.dll, FileProtocolHandler Desktop:\\"+id+".pdf");
+									
+									.exec("rund1132 url.dll, FileProtocolHandler C:\\"+id+".pdf");//here
 							
 						}
 						
 						// else statment wont work gives me error
+						//else
 						{
 							System.out.println("File does not exist");
 						}
