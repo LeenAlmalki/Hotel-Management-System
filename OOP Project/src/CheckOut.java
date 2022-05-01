@@ -22,6 +22,8 @@ import javax.swing.JTextField;
 import javax.swing.JTable;
 import javax.swing.border.LineBorder;
 import java.awt.Color;
+import java.awt.Desktop;
+
 import javax.swing.table.DefaultTableModel;
 
 import com.itextpdf.text.pdf.PdfWriter;
@@ -319,7 +321,7 @@ public class CheckOut extends JFrame {
 				InsertDeleteUpdate.setData(Query, "");
 				
 				//here
-				String path = "E:\\";
+				String path = "C:/Users/leena/Downloads";
 				com.itextpdf.text.Document doc = new com.itextpdf.text.Document();
 				
 				try {
@@ -331,7 +333,7 @@ public class CheckOut extends JFrame {
 					Paragraph paragraph1 = new Paragraph("                                                                       Effat Hotel\n");
 					doc.add(paragraph1);
 					
-					Paragraph paragraph2 = new Paragraph("*************************************************************************************************************************************************************");
+					Paragraph paragraph2 = new Paragraph("****************************************************************************************************************");
 					doc.add(paragraph2);
 					
 					Paragraph paragraph3 = new Paragraph("\tBill ID:  "+id+" \nCustomer Details:\nName: "+name+" \nPhone Number: "+phone+" \nEmail: "+email+" \n");
@@ -369,31 +371,28 @@ public class CheckOut extends JFrame {
 				if(a==0)
 				{
 					try {
-						//here
-						if ((new File("\"C:\\Users\\leena\\OneDrive\\Desktop\\oop\""+id+".pdf")).exists());
-						{
-							Process p = Runtime
-									.getRuntime()
-									
-									.exec("rund1132 url.dll, FileProtocolHandler C:\\"+id+".pdf");//here
-							
-						}
+						Desktop.getDesktop().open(new File(path+""+id+".pdf"));
+						 setVisible(false);
+							new CheckOut() . setVisible(true);
 						
-						// else statment wont work gives me error
-						//else
-						{
-							System.out.println("File does not exist");
-						}
 						
 					} catch (Exception e2) {
 						JOptionPane.showMessageDialog(null, e2);
 				}
-				}
+					
+					
+					 if (a==1) {
+						 setVisible(false);
+							new CheckOut() . setVisible(true);
+						
+					} {
+						
+						
+					}
 				
-				setVisible(false);
-				new CheckOut() . setVisible(true);
+				
 			}
-		});
+		}});
 		btnNewButton_3.setFont(new Font("Tahoma", Font.PLAIN, 19));
 		btnNewButton_3.setBounds(466, 411, 131, 31);
 		contentPane.add(btnNewButton_3);
