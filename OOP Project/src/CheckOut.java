@@ -5,6 +5,9 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
+import com.itextpdf.text.Paragraph;
+import com.itextpdf.text.pdf.PdfPTable;
+import com.itextpdf.text.pdf.PdfWriter;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
@@ -20,9 +23,14 @@ import javax.swing.JTable;
 import javax.swing.border.LineBorder;
 import java.awt.Color;
 import javax.swing.table.DefaultTableModel;
+
+import com.itextpdf.text.pdf.PdfWriter;
+
 import javax.swing.JScrollPane;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
+import java.io.File;
+import java.io.FileOutputStream;
 
 public class CheckOut extends JFrame {
 
@@ -49,7 +57,6 @@ public class CheckOut extends JFrame {
 	private JTextField textField_7;
 	private JLabel lblNewLabel_9;
 	private JTextField textField_8;
-	private JButton btnNewButton_2;
 	private JScrollPane scrollPane;
 
 	/**
@@ -146,6 +153,7 @@ public class CheckOut extends JFrame {
 						textField_4.setText(rs.getString(5));
 						textField_5.setText(rs.getString(4));
 						textField_2.setText(rs.getString(6));
+						textField_7.setText(rs.getString(10));
 						
 						SimpleDateFormat myFormat = new SimpleDateFormat("yyyy/MM/dd");
 						Calendar cal = Calendar.getInstance();
@@ -280,11 +288,6 @@ public class CheckOut extends JFrame {
 		textField_8.setBounds(520, 339, 186, 34);
 		contentPane.add(textField_8);
 		
-		btnNewButton_2 = new JButton("Check Out");
-		btnNewButton_2.setFont(new Font("Tahoma", Font.PLAIN, 19));
-		btnNewButton_2.setBounds(466, 412, 131, 31);
-		contentPane.add(btnNewButton_2);
-		
 		
 		textField_1.setEditable(false);
 		textField_2.setEditable(false);
@@ -295,6 +298,103 @@ public class CheckOut extends JFrame {
 		textField_7.setEditable(false);
 		textField_8.setEditable(false);
 		
+		btnNewButton_3 = new JButton("Check Out");
+		btnNewButton_3.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				String name = textField_1.getText();
+				String phone = textField_5.getText();
+				String email = textField_4.getText();
+				String checkOut = textField_3.getText();
+				String stayDay = textField_6.getText();
+				String amount = textField_8.getText();
+				roomNo = textField.getText();
+				
+				Query = "update customer set numberOfDayStay ='"+stayDay+"' , totalAmount = '"+amount+"'  checkOut = '"+checkOut+"' where id='"+id+"'";
+				
+				InsertDeleteUpdate.setData(Query, "");
+				
+				Query = "update room set status = 'Not Booked' where roomNo = '"+roomNo+"' ";
+				
+				InsertDeleteUpdate.setData(Query, "");
+				
+				String path = "Desktop:\\";
+				com.itextpdf.text.Document doc = new com.itextpdf.text.Document();
+				
+				try {
+					
+					PdfWriter.getInstance(doc, new FileOutputStream(path+""+id+".pdf"));
+				
+					doc.open ();
+					
+					Paragraph paragraph1 = new Paragraph("                                                                       Effat Hotel\n");
+					doc.add(paragraph1);
+					
+					Paragraph paragraph2 = new Paragraph("*************************************************************************************************************************************************************");
+					doc.add(paragraph2);
+					
+					Paragraph paragraph3 = new Paragraph("\tBill ID:  "+id+" \nCustomer Details:\nName: "+name+" \nPhone Number: "+phone+" \nEmail: "+email+" \n");
+					doc.add(paragraph3);
+					
+					doc.add(paragraph2);
+					
+					Paragraph paragraph4 = new Paragraph("\tRoom Details:  \nNumber: "+textField.getText()+" \nType: "+roomType+" \nBed: "+bed+" \nPrice Per Day: " +textField_7.getText()+"");
+					doc.add(paragraph4);
+					
+					doc.add(paragraph2);
+					
+					PdfPTable table = new PdfPTable(4);
+					table.addCell("Check IN Date" + textField_2.getText());
+					table.addCell("Check OUT Date" + checkOut);
+					table.addCell("Number of Days Stayed " + stayDay);
+					table.addCell("Total Amount" + amount);
+					
+					doc.add(table);
+					
+					doc.add(paragraph2);
+					
+					Paragraph paragraph5 = new Paragraph("                                                                       THANK YOU FOR CHOOSING EFFAT HOTEL");
+					doc.add(paragraph5);
+	
+					
+				} catch (Exception e2) {
+					JOptionPane.showMessageDialog(null, e2);
+				}
+				
+				doc.close();
+				
+				int a = JOptionPane.showConfirmDialog(null, "Do you want to print the bill?" , "Select", JOptionPane.YES_NO_OPTION);
+				
+				if(a==0)
+				{
+					try {
+						
+						if ((new File("Desktop:\\"+id+".pdf")).exists());
+						{
+							Process p = Runtime
+									.getRuntime()
+									.exec("rund1132 url.dll, FileProtocolHandler Desktop:\\"+id+".pdf");
+							
+						}
+						
+						// else statment wont work gives me error
+						{
+							System.out.println("File does not exist");
+						}
+						
+					} catch (Exception e2) {
+						JOptionPane.showMessageDialog(null, e2);
+				}
+				}
+				
+				setVisible(false);
+				new CheckOut() . setVisible(true);
+			}
+		});
+		btnNewButton_3.setFont(new Font("Tahoma", Font.PLAIN, 19));
+		btnNewButton_3.setBounds(466, 411, 131, 31);
+		contentPane.add(btnNewButton_3);
+		
 	}
 	
 	int id = 0;
@@ -302,4 +402,5 @@ public class CheckOut extends JFrame {
 	String roomType;
 	String bed;
 	String roomNo;
+	private JButton btnNewButton_3;
 }
