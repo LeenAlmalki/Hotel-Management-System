@@ -39,10 +39,12 @@ public class CustomerDetailsBill extends JFrame {
 		});
 	}
 
+	
 	/**
 	 * Create the frame.
 	 */
 	public CustomerDetailsBill() {
+		
 		setLocation(new Point(50, 118));
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 1145, 753);
@@ -60,6 +62,7 @@ public class CustomerDetailsBill extends JFrame {
 		JButton btnNewButton = new JButton("Back");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				setVisible(false);
 			}
 		});
 		btnNewButton.setBounds(1012, 14, 105, 25);
@@ -79,7 +82,7 @@ public class CustomerDetailsBill extends JFrame {
 		contentPane.add(btnNewButton_1);
 		
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(45, 158, 1055, 462);
+		scrollPane.setBounds(45, 147, 1055, 473);
 		contentPane.add(scrollPane);
 		
 		table = new JTable();
@@ -95,6 +98,11 @@ public class CustomerDetailsBill extends JFrame {
 			}
 		));
 		scrollPane.setColumnHeaderView(table);
+		
+		JLabel lblNewLabel_2 = new JLabel(" * Click on table row to open bill");
+		lblNewLabel_2.setFont(new Font("Tahoma", Font.BOLD, 17));
+		lblNewLabel_2.setBounds(452, 649, 283, 25);
+		contentPane.add(lblNewLabel_2);
 	}
 
 }
