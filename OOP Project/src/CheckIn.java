@@ -253,7 +253,7 @@ public class CheckIn extends JFrame {
 		
 		textField_4.setEditable(false);
 		textField_5.setEditable(false);
-		SimpleDateFormat myFormat = new SimpleDateFormat("yyyy/MM/dd");
+		SimpleDateFormat myFormat = new SimpleDateFormat("dd/MM/yyyy");
 		Calendar cal = Calendar.getInstance();
 		textField_4.setText(myFormat.format(cal.getTime()));
 		

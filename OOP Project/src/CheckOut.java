@@ -157,7 +157,7 @@ public class CheckOut extends JFrame {
 						textField_2.setText(rs.getString(6));
 						textField_7.setText(rs.getString(10));
 						
-						SimpleDateFormat myFormat = new SimpleDateFormat("yyyy/MM/dd");
+						SimpleDateFormat myFormat = new SimpleDateFormat("dd/MM/yyyy");
 						Calendar cal = Calendar.getInstance();
 						textField_3.setText(myFormat.format(cal.getTime()));
 						String  dateBeforeString = rs.getString(6);
