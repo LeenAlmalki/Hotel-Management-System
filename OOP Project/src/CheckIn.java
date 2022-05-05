@@ -291,19 +291,7 @@ public class CheckIn extends JFrame {
 			JOptionPane.showMessageDialog(null, e1);
 		}
 		
-		
-		
-		
-		
-		
 	}
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	

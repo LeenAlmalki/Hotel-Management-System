@@ -154,38 +154,7 @@ public class CustomerBill extends JFrame {
 		
 		JScrollPane scrollPane = new JScrollPane();
 		scrollPane.addMouseListener(new MouseAdapter() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				
-				int index = table.getSelectedRow();
-				TableModel model = table.getModel();
-				
-				String id = model.getValueAt(index, 0).toString();
-				String path = "C:/Users/leena/Downloads";
 			
-				
-				try {
-					
-					File file = new File("C:/Users/leena/Downloads" + id + ".pdf");
-					
-					if(file.exists())
-					{
-						if (Desktop.isDesktopSupported()) {
-							Desktop.getDesktop().open(file);
-						}else {
-							
-						}
-					}else {
-						JOptionPane.showMessageDialog(null, "This file does not exist");
-					}
-					
-					
-					
-				} catch (Exception e2) {
-					
-					JOptionPane.showMessageDialog(null, e);
-				}
-			}
 		});
 		scrollPane.setBounds(110, 200, 926, 341);
 		contentPane.add(scrollPane);
