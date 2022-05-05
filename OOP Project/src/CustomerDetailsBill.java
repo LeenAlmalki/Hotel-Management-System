@@ -63,6 +63,7 @@ public class CustomerDetailsBill extends JFrame {
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				setVisible(false);
+				new Home() .setVisible(true);
 			}
 		});
 		btnNewButton.setBounds(1012, 14, 105, 25);
