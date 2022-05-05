@@ -321,7 +321,7 @@ public class CheckOut extends JFrame {
 				InsertDeleteUpdate.setData(Query, "");
 				
 				//here
-				String path = "C:/Users/leena/Downloads";
+				String path = "C:/Users/leena/Desktop";
 				com.itextpdf.text.Document doc = new com.itextpdf.text.Document();
 				
 				try {
