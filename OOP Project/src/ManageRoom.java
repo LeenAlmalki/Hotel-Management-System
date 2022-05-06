@@ -133,7 +133,7 @@ public class ManageRoom extends JFrame {
 		
 		JComboBox comboBox = new JComboBox();
 		comboBox.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		comboBox.setModel(new DefaultComboBoxModel(new String[] {"Select", "Standard", "Luxury", "Suite", "Presidential Suit"}));
+		comboBox.setModel(new DefaultComboBoxModel(new String[] {"Select", "Standard", "Luxury", "Presidential Suite"}));
 		comboBox.setBounds(846, 251, 164, 33);
 		contentPane.add(comboBox);
 		

@@ -171,7 +171,7 @@ public class CheckIn extends JFrame {
 			}
 		});
 		comboBox_1.setFont(new Font("Tahoma", Font.PLAIN, 19));
-		comboBox_1.setModel(new DefaultComboBoxModel(new String[] {"Select", "Standard", "Luxury", "Suite", "Presidential Suite"}));
+		comboBox_1.setModel(new DefaultComboBoxModel(new String[] {"Select", "Standard", "Luxury", "Presidential Suite"}));
 		comboBox_1.setBounds(801, 259, 270, 35);
 		contentPane.add(comboBox_1);
 		
@@ -207,7 +207,7 @@ public class CheckIn extends JFrame {
 		textField_5.setBounds(801, 444, 270, 49);
 		contentPane.add(textField_5);
 		
-		JButton btnNewButton_1 = new JButton("Find Room");
+		JButton btnNewButton_1 = new JButton("Book Room");
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				int id = 1 ;

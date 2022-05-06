@@ -1,0 +1,1806 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_RR7NsMzgEey7pNfjuVEwZw" name="OOP_Project">
+    <eAnnotations xmi:id="_RfER0MzgEey7pNfjuVEwZw" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_RfER0czgEey7pNfjuVEwZw" source="codegen">
+        <details xmi:id="_RfE44MzgEey7pNfjuVEwZw" key="codegenDirectory" value="/OOP Project/src"/>
+        <details xmi:id="_SQnqkMzgEey7pNfjuVEwZw" key="AssociatedSourceCode" value="/OOP Project/src/CheckIn.java;1165655065/1;/OOP Project/src/CheckOut.java;650788870/1;/OOP Project/src/CustomerBill.java;62545200/1;/OOP Project/src/Home.java;4176949414/1;/OOP Project/src/InsertDeleteUpdate.java;3418934881/1;/OOP Project/src/Login.java;2062679246/1;/OOP Project/src/ManageRoom.java;1735946233/1;/OOP Project/src/Select.java;1294274568/1;/OOP Project/src/connection.java;196210301/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_R80k0MzgEey7pNfjuVEwZw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_R81L4MzgEey7pNfjuVEwZw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_R81L4czgEey7pNfjuVEwZw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_R81L4szgEey7pNfjuVEwZw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_R81L48zgEey7pNfjuVEwZw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_R81L5MzgEey7pNfjuVEwZw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_R81L5czgEey7pNfjuVEwZw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_R81L5szgEey7pNfjuVEwZw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_R81y8MzgEey7pNfjuVEwZw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_R770AMzgEey7pNfjuVEwZw" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_R78bEMzgEey7pNfjuVEwZw" name="awt">
+        <packagedElement xmi:type="uml:Package" xmi:id="_R7-3UMzgEey7pNfjuVEwZw" name="event">
+          <packagedElement xmi:type="uml:Interface" xmi:id="_SF9SsMzgEey7pNfjuVEwZw" name="ActionListener"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_SGCLMMzgEey7pNfjuVEwZw" name="ActionEvent"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_SGVGIczgEey7pNfjuVEwZw" name="ComponentAdapter"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_SGVtMczgEey7pNfjuVEwZw" name="ComponentEvent"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_SGmL4czgEey7pNfjuVEwZw" name="MouseAdapter"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_SGnaAMzgEey7pNfjuVEwZw" name="MouseEvent"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_SFy6oMzgEey7pNfjuVEwZw" name="BorderLayout"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_SF0v0MzgEey7pNfjuVEwZw" name="EventQueue"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_SF6PYczgEey7pNfjuVEwZw" name="Font"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_SGSC0MzgEey7pNfjuVEwZw" name="Color"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_SGSp4czgEey7pNfjuVEwZw" name="Desktop"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_SGhTYMzgEey7pNfjuVEwZw" name="Point"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_SGuuwMzgEey7pNfjuVEwZw" name="Rectangle"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_SGv84MzgEey7pNfjuVEwZw" name="FlowLayout"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_SGwj8czgEey7pNfjuVEwZw" name="GridLayout"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_SG0OUMzgEey7pNfjuVEwZw" name="Component"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_R79CIMzgEey7pNfjuVEwZw" name="sql">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_SGxLAczgEey7pNfjuVEwZw" name="Connection"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_SGxyEczgEey7pNfjuVEwZw" name="DriverManager"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_SGyZIczgEey7pNfjuVEwZw" name="ResultSet"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_SGzAMczgEey7pNfjuVEwZw" name="Statement"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_R7_eYMzgEey7pNfjuVEwZw" name="text">
+        <packagedElement xmi:type="uml:Class" xmi:id="_SF-g0czgEey7pNfjuVEwZw" name="SimpleDateFormat"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_R7_eYczgEey7pNfjuVEwZw" name="util">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_SF_u8czgEey7pNfjuVEwZw" name="Calendar"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_SGMjQMzgEey7pNfjuVEwZw" name="Date"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_R8P9EMzgEey7pNfjuVEwZw" name="io">
+        <packagedElement xmi:type="uml:Class" xmi:id="_SGWUQczgEey7pNfjuVEwZw" name="File"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_SGW7UczgEey7pNfjuVEwZw" name="FileOutputStream"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_R79pMMzgEey7pNfjuVEwZw" name="javax">
+      <packagedElement xmi:type="uml:Package" xmi:id="_R79pMczgEey7pNfjuVEwZw" name="swing">
+        <packagedElement xmi:type="uml:Package" xmi:id="_R7-QQMzgEey7pNfjuVEwZw" name="border">
+          <packagedElement xmi:type="uml:Class" xmi:id="_SF3zIczgEey7pNfjuVEwZw" name="EmptyBorder"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_SGQ0sczgEey7pNfjuVEwZw" name="LineBorder"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_SGlk0MzgEey7pNfjuVEwZw" name="TitledBorder"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_R8PWAMzgEey7pNfjuVEwZw" name="table">
+          <packagedElement xmi:type="uml:Class" xmi:id="_SGTQ8czgEey7pNfjuVEwZw" name="DefaultTableModel"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_SGjIkMzgEey7pNfjuVEwZw" name="TableModel"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_SF198MzgEey7pNfjuVEwZw" name="JFrame"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_SF2lAczgEey7pNfjuVEwZw" name="JPanel"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_SF5BQczgEey7pNfjuVEwZw" name="JLabel"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_SF5oUczgEey7pNfjuVEwZw" name="JOptionPane"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_SF7dgMzgEey7pNfjuVEwZw" name="SwingConstants"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_SF8EkczgEey7pNfjuVEwZw" name="JButton"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_SGDZUMzgEey7pNfjuVEwZw" name="JTextField"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_SGEAYczgEey7pNfjuVEwZw" name="JComboBox"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_SGFOgczgEey7pNfjuVEwZw" name="DefaultComboBoxModel"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_SGQNoMzgEey7pNfjuVEwZw" name="JTable"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_SGUfEMzgEey7pNfjuVEwZw" name="JScrollPane"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_SGjvoczgEey7pNfjuVEwZw" name="JSplitPane"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_SGkWsczgEey7pNfjuVEwZw" name="JTabbedPane"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_SGrrcMzgEey7pNfjuVEwZw" name="JPasswordField"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_R8Ng0MzgEey7pNfjuVEwZw" name="com">
+      <packagedElement xmi:type="uml:Package" xmi:id="_R8Ng0czgEey7pNfjuVEwZw" name="itextpdf">
+        <packagedElement xmi:type="uml:Package" xmi:id="_R8OH4MzgEey7pNfjuVEwZw" name="text">
+          <packagedElement xmi:type="uml:Package" xmi:id="_R8OH4czgEey7pNfjuVEwZw" name="pdf">
+            <packagedElement xmi:type="uml:Class" xmi:id="_SGOYcczgEey7pNfjuVEwZw" name="PdfPTable"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_SGO_gczgEey7pNfjuVEwZw" name="PdfWriter"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_SGNxYczgEey7pNfjuVEwZw" name="Paragraph"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_R8vFQMzgEey7pNfjuVEwZw" name="CheckIn">
+      <generalization xmi:id="_SG-mYMzgEey7pNfjuVEwZw" general="_SF198MzgEey7pNfjuVEwZw"/>
+      <ownedAttribute xmi:id="_SHSIYMzgEey7pNfjuVEwZw" name="contentPane" visibility="private" type="_SF2lAczgEey7pNfjuVEwZw" association="_SIWfYMzgEey7pNfjuVEwZw"/>
+      <ownedAttribute xmi:id="_SHTWgMzgEey7pNfjuVEwZw" name="textField" visibility="private" type="_SGDZUMzgEey7pNfjuVEwZw" association="_SIXtgMzgEey7pNfjuVEwZw"/>
+      <ownedAttribute xmi:id="_SHVywczgEey7pNfjuVEwZw" name="textField_1" visibility="private" type="_SGDZUMzgEey7pNfjuVEwZw" association="_SIYUkczgEey7pNfjuVEwZw"/>
+      <ownedAttribute xmi:id="_SHWZ0czgEey7pNfjuVEwZw" name="textField_2" visibility="private" type="_SGDZUMzgEey7pNfjuVEwZw" association="_SIY7oczgEey7pNfjuVEwZw"/>
+      <ownedAttribute xmi:id="_SHXA4czgEey7pNfjuVEwZw" name="textField_3" visibility="private" type="_SGDZUMzgEey7pNfjuVEwZw" association="_SIZisczgEey7pNfjuVEwZw"/>
+      <ownedAttribute xmi:id="_SHXn8MzgEey7pNfjuVEwZw" name="textField_4" visibility="private" type="_SGDZUMzgEey7pNfjuVEwZw" association="_SIaJwczgEey7pNfjuVEwZw"/>
+      <ownedAttribute xmi:id="_SHYPAMzgEey7pNfjuVEwZw" name="textField_5" visibility="private" type="_SGDZUMzgEey7pNfjuVEwZw" association="_SIaw0czgEey7pNfjuVEwZw"/>
+      <ownedAttribute xmi:id="_SHYPAszgEey7pNfjuVEwZw" name="comboBox" visibility="package" type="_SGEAYczgEey7pNfjuVEwZw" association="_SIbX4czgEey7pNfjuVEwZw"/>
+      <ownedAttribute xmi:id="_SHY2EczgEey7pNfjuVEwZw" name="comboBox_1" visibility="package" type="_SGEAYczgEey7pNfjuVEwZw" association="_SIb-8czgEey7pNfjuVEwZw"/>
+      <ownedAttribute xmi:id="_SHZdIczgEey7pNfjuVEwZw" name="comboBox_2" visibility="package" type="_SGEAYczgEey7pNfjuVEwZw" association="_SIcmAczgEey7pNfjuVEwZw"/>
+      <ownedAttribute xmi:id="_SHaEMMzgEey7pNfjuVEwZw" name="bed" visibility="package">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_SHarQMzgEey7pNfjuVEwZw" name="roomType" visibility="package">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_SHbSUMzgEey7pNfjuVEwZw" name="roomNo" visibility="package">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_SHbSUszgEey7pNfjuVEwZw" name="price" visibility="package">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_SH9d0MzgEey7pNfjuVEwZw" name="main" specification="_R83BEMzgEey7pNfjuVEwZw">
+        <ownedParameter xmi:id="_SH9d0czgEey7pNfjuVEwZw" name="args">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SH9d0szgEey7pNfjuVEwZw" value="*"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>EventQueue.invokeLater(new Runnable() {&#xD;
+			public void run() {&#xD;
+				try {&#xD;
+					CheckIn frame = new CheckIn();&#xD;
+					frame.setVisible(true);&#xD;
+				} catch (Exception e) {&#xD;
+					e.printStackTrace();&#xD;
+				}&#xD;
+			}&#xD;
+		});&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_SIC9YMzgEey7pNfjuVEwZw" name="CheckIn" specification="_R86EYMzgEey7pNfjuVEwZw">
+        <ownedParameter xmi:id="_SIC9YczgEey7pNfjuVEwZw" type="_R8vFQMzgEey7pNfjuVEwZw" direction="return">
+          <name xsi:nil="true"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);&#xD;
+		setBounds(100, 100, 1145, 753);&#xD;
+		contentPane = new JPanel();&#xD;
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));&#xD;
+		setContentPane(contentPane);&#xD;
+		contentPane.setLayout(null);&#xD;
+		&#xD;
+		JLabel lblNewLabel = new JLabel(&quot;Customer Check IN&quot;);&#xD;
+		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);&#xD;
+		lblNewLabel.setFont(new Font(&quot;Tahoma&quot;, Font.BOLD, 24));&#xD;
+		lblNewLabel.setBounds(45, 35, 270, 49);&#xD;
+		contentPane.add(lblNewLabel);&#xD;
+		&#xD;
+		JButton btnNewButton = new JButton(&quot;back&quot;);&#xD;
+		btnNewButton.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+				setVisible(false);&#xD;
+				new Home() .setVisible(true);&#xD;
+			}&#xD;
+		});&#xD;
+		btnNewButton.setBounds(1005, 24, 85, 21);&#xD;
+		contentPane.add(btnNewButton);&#xD;
+		&#xD;
+		JLabel lblNewLabel_1 = new JLabel(&quot;Name&quot;);&#xD;
+		lblNewLabel_1.setFont(new Font(&quot;Tahoma&quot;, Font.PLAIN, 20));&#xD;
+		lblNewLabel_1.setBounds(45, 166, 100, 35);&#xD;
+		contentPane.add(lblNewLabel_1);&#xD;
+		&#xD;
+		textField = new JTextField();&#xD;
+		textField.setBounds(206, 163, 270, 49);&#xD;
+		contentPane.add(textField);&#xD;
+		textField.setColumns(10);&#xD;
+		&#xD;
+		JLabel lblNewLabel_1_1 = new JLabel(&quot;Phone Number &quot;);&#xD;
+		lblNewLabel_1_1.setFont(new Font(&quot;Tahoma&quot;, Font.PLAIN, 20));&#xD;
+		lblNewLabel_1_1.setBounds(45, 259, 138, 35);&#xD;
+		contentPane.add(lblNewLabel_1_1);&#xD;
+		&#xD;
+		textField_1 = new JTextField();&#xD;
+		textField_1.setColumns(10);&#xD;
+		textField_1.setBounds(206, 256, 270, 49);&#xD;
+		contentPane.add(textField_1);&#xD;
+		&#xD;
+		JLabel lblNewLabel_1_1_1 = new JLabel(&quot;National ID&quot;);&#xD;
+		lblNewLabel_1_1_1.setFont(new Font(&quot;Tahoma&quot;, Font.PLAIN, 20));&#xD;
+		lblNewLabel_1_1_1.setBounds(45, 359, 138, 35);&#xD;
+		contentPane.add(lblNewLabel_1_1_1);&#xD;
+		&#xD;
+		textField_2 = new JTextField();&#xD;
+		textField_2.setColumns(10);&#xD;
+		textField_2.setBounds(206, 356, 270, 49);&#xD;
+		contentPane.add(textField_2);&#xD;
+		&#xD;
+		JLabel lblNewLabel_1_1_1_1 = new JLabel(&quot;Email&quot;);&#xD;
+		lblNewLabel_1_1_1_1.setFont(new Font(&quot;Tahoma&quot;, Font.PLAIN, 20));&#xD;
+		lblNewLabel_1_1_1_1.setBounds(45, 458, 138, 35);&#xD;
+		contentPane.add(lblNewLabel_1_1_1_1);&#xD;
+		&#xD;
+		textField_3 = new JTextField();&#xD;
+		textField_3.setColumns(10);&#xD;
+		textField_3.setBounds(206, 455, 270, 49);&#xD;
+		contentPane.add(textField_3);&#xD;
+		&#xD;
+		JLabel lblNewLabel_1_1_1_1_1 = new JLabel(&quot;Check in Date\r\n&quot;);&#xD;
+		lblNewLabel_1_1_1_1_1.setFont(new Font(&quot;Tahoma&quot;, Font.PLAIN, 20));&#xD;
+		lblNewLabel_1_1_1_1_1.setBounds(45, 555, 138, 35);&#xD;
+		contentPane.add(lblNewLabel_1_1_1_1_1);&#xD;
+		&#xD;
+		textField_4 = new JTextField();&#xD;
+		textField_4.setColumns(10);&#xD;
+		textField_4.setBounds(206, 541, 270, 49);&#xD;
+		contentPane.add(textField_4);&#xD;
+		&#xD;
+		JLabel lblNewLabel_1_2 = new JLabel(&quot;Bed&quot;);&#xD;
+		lblNewLabel_1_2.setFont(new Font(&quot;Tahoma&quot;, Font.PLAIN, 20));&#xD;
+		lblNewLabel_1_2.setBounds(659, 166, 100, 35);&#xD;
+		contentPane.add(lblNewLabel_1_2);&#xD;
+		&#xD;
+		JLabel lblNewLabel_1_2_1 = new JLabel(&quot;Room Type&quot;);&#xD;
+		lblNewLabel_1_2_1.setFont(new Font(&quot;Tahoma&quot;, Font.PLAIN, 20));&#xD;
+		lblNewLabel_1_2_1.setBounds(659, 259, 134, 35);&#xD;
+		contentPane.add(lblNewLabel_1_2_1);&#xD;
+		&#xD;
+		comboBox = new JComboBox();&#xD;
+		comboBox.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+				&#xD;
+				// type&#xD;
+				roomDetails();&#xD;
+				&#xD;
+				&#xD;
+				&#xD;
+			}&#xD;
+		});&#xD;
+		comboBox.setFont(new Font(&quot;Tahoma&quot;, Font.PLAIN, 19));&#xD;
+		comboBox.setModel(new DefaultComboBoxModel(new String[] {&quot;Select&quot;, &quot;Single&quot;, &quot;Double&quot;, &quot;Triple&quot;}));&#xD;
+		comboBox.setBounds(801, 166, 270, 35);&#xD;
+		contentPane.add(comboBox);&#xD;
+		&#xD;
+		JLabel lblNewLabel_1_2_1_1 = new JLabel(&quot;Room Number&quot;);&#xD;
+		lblNewLabel_1_2_1_1.setFont(new Font(&quot;Tahoma&quot;, Font.PLAIN, 20));&#xD;
+		lblNewLabel_1_2_1_1.setBounds(659, 359, 134, 35);&#xD;
+		contentPane.add(lblNewLabel_1_2_1_1);&#xD;
+		&#xD;
+		comboBox_1 = new JComboBox();&#xD;
+		comboBox_1.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+				&#xD;
+				roomDetails();&#xD;
+				&#xD;
+				&#xD;
+			}&#xD;
+		});&#xD;
+		comboBox_1.setFont(new Font(&quot;Tahoma&quot;, Font.PLAIN, 19));&#xD;
+		comboBox_1.setModel(new DefaultComboBoxModel(new String[] {&quot;Select&quot;, &quot;Standard&quot;, &quot;Luxury&quot;, &quot;Presidential Suite&quot;}));&#xD;
+		comboBox_1.setBounds(801, 259, 270, 35);&#xD;
+		contentPane.add(comboBox_1);&#xD;
+		&#xD;
+		comboBox_2 = new JComboBox();&#xD;
+		comboBox_2.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+				&#xD;
+				String roomNo = (String) comboBox_2.getSelectedItem();&#xD;
+				try {&#xD;
+					&#xD;
+					ResultSet rs = Select.getData(&quot;select * from room where roomNo = '&quot;+roomNo+&quot;'&quot;);&#xD;
+				&#xD;
+					while(rs.next())&#xD;
+					{&#xD;
+						textField_5.setText(rs.getString(4));&#xD;
+					}&#xD;
+					&#xD;
+				} catch (Exception e2) {&#xD;
+					JOptionPane.showMessageDialog(null, e2);&#xD;
+				}&#xD;
+			}&#xD;
+		});&#xD;
+		comboBox_2.setBounds(801, 359, 270, 35);&#xD;
+		contentPane.add(comboBox_2);&#xD;
+		&#xD;
+		JLabel lblNewLabel_1_2_1_1_1 = new JLabel(&quot;Price\r\n&quot;);&#xD;
+		lblNewLabel_1_2_1_1_1.setFont(new Font(&quot;Tahoma&quot;, Font.PLAIN, 20));&#xD;
+		lblNewLabel_1_2_1_1_1.setBounds(659, 455, 134, 35);&#xD;
+		contentPane.add(lblNewLabel_1_2_1_1_1);&#xD;
+		&#xD;
+		textField_5 = new JTextField();&#xD;
+		textField_5.setColumns(10);&#xD;
+		textField_5.setBounds(801, 444, 270, 49);&#xD;
+		contentPane.add(textField_5);&#xD;
+		&#xD;
+		JButton btnNewButton_1 = new JButton(&quot;Book Room&quot;);&#xD;
+		btnNewButton_1.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+				int id = 1 ;&#xD;
+				String name = textField.getText();&#xD;
+				String phoneNo = textField_1.getText();&#xD;
+				String Nid = textField_2.getText();&#xD;
+				String email = textField_3.getText();&#xD;
+				String checkIN = textField_4.getText()	;&#xD;
+				String bed = (String)comboBox.getSelectedItem();&#xD;
+				String roomType = (String)comboBox_1.getSelectedItem();&#xD;
+				String roomNo = (String)comboBox_2.getSelectedItem();&#xD;
+				String price = textField_5.getText()	;&#xD;
+				&#xD;
+				String Query = &quot;select max(id) from customer&quot;;&#xD;
+				try {&#xD;
+					&#xD;
+					ResultSet rs = Select.getData(Query);&#xD;
+					while(rs.next()) {&#xD;
+						id = rs.getInt(1);&#xD;
+						id = id + 1;&#xD;
+						&#xD;
+						if (!price.equals(&quot;&quot;)) {&#xD;
+							&#xD;
+							Query = &quot;update room set status = 'Booked' where roomNo = '&quot;+roomNo+&quot;'&quot;;&#xD;
+							InsertDeleteUpdate.setData(Query,&quot;&quot;);&#xD;
+							Query = &quot;insert into customer (id,Nid,name,phoneNo,email,checkIn,roomNo,bed,roomType,pricePerDAY) values (&quot;+id+&quot;,&quot;+Nid+&quot;,'&quot;+name+&quot;', '&quot;+phoneNo+&quot;','&quot;+email+&quot;', '&quot;+checkIN+&quot;', '&quot;+roomNo+&quot;', '&quot;+bed+&quot;', '&quot;+roomType+&quot;',&quot;+price+&quot;)&quot;;&#xD;
+							InsertDeleteUpdate.setData(Query, &quot;Customer Check In Successful&quot;);&#xD;
+							setVisible(false);&#xD;
+							new CheckIn().setVisible(true);&#xD;
+						}&#xD;
+					}&#xD;
+					&#xD;
+				} catch (Exception e2) {&#xD;
+					JOptionPane.showMessageDialog(null, e2);&#xD;
+				}&#xD;
+				&#xD;
+				&#xD;
+				}&#xD;
+		});&#xD;
+		btnNewButton_1.setFont(new Font(&quot;Tahoma&quot;, Font.BOLD, 18));&#xD;
+		btnNewButton_1.setBounds(870, 566, 138, 49);&#xD;
+		contentPane.add(btnNewButton_1);&#xD;
+		&#xD;
+		textField_4.setEditable(false);&#xD;
+		textField_5.setEditable(false);&#xD;
+		SimpleDateFormat myFormat = new SimpleDateFormat(&quot;dd/MM/yyyy&quot;);&#xD;
+		Calendar cal = Calendar.getInstance();&#xD;
+		textField_4.setText(myFormat.format(cal.getTime()));&#xD;
+		&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_SIDkcMzgEey7pNfjuVEwZw" name="roomDetails" specification="_R87SgMzgEey7pNfjuVEwZw">
+        <language>java</language>
+        <body>//roomNumber&#xD;
+		comboBox_2.removeAllItems();&#xD;
+		//price&#xD;
+		textField_5.setText(&quot;&quot;);&#xD;
+		&#xD;
+		bed = (String)comboBox.getSelectedItem();&#xD;
+		roomType = (String)comboBox_1.getSelectedItem();&#xD;
+		&#xD;
+		try {&#xD;
+			&#xD;
+			ResultSet rs = Select.getData(&quot;select * from room where bed = '&quot;+bed+&quot;' and roomType = '&quot;+roomType+&quot;' and status='Not Booked'&quot;) ;&#xD;
+			&#xD;
+			while(rs.next())&#xD;
+			{&#xD;
+				comboBox_2.addItem(rs.getString(1));&#xD;
+			}&#xD;
+			&#xD;
+		} catch (Exception e1) {&#xD;
+			&#xD;
+			JOptionPane.showMessageDialog(null, e1);&#xD;
+		}&#xD;
+		&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_R83BEMzgEey7pNfjuVEwZw" name="main" isStatic="true" method="_SH9d0MzgEey7pNfjuVEwZw">
+        <ownedComment xmi:id="_QDbykMzmEey7pNfjuVEwZw">
+          <body>Launch the application.</body>
+        </ownedComment>
+        <ownedParameter xmi:id="_R83oIMzgEey7pNfjuVEwZw" name="args">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_R85dUMzgEey7pNfjuVEwZw" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_R86EYMzgEey7pNfjuVEwZw" name="CheckIn" method="_SIC9YMzgEey7pNfjuVEwZw">
+        <eAnnotations xmi:id="_R86EYczgEey7pNfjuVEwZw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_R86rcMzgEey7pNfjuVEwZw" key="create"/>
+        </eAnnotations>
+        <ownedComment xmi:id="_QDcZoMzmEey7pNfjuVEwZw">
+          <body>Create the frame.</body>
+        </ownedComment>
+        <ownedParameter xmi:id="_R86rcczgEey7pNfjuVEwZw" type="_R8vFQMzgEey7pNfjuVEwZw" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_R87SgMzgEey7pNfjuVEwZw" name="roomDetails" method="_SIDkcMzgEey7pNfjuVEwZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_R9CAMMzgEey7pNfjuVEwZw" name="CheckOut">
+      <generalization xmi:id="_SHF7IMzgEey7pNfjuVEwZw" general="_SF198MzgEey7pNfjuVEwZw"/>
+      <ownedAttribute xmi:id="_SHdHgMzgEey7pNfjuVEwZw" name="contentPane" visibility="private" type="_SF2lAczgEey7pNfjuVEwZw" association="_SIdNEczgEey7pNfjuVEwZw"/>
+      <ownedAttribute xmi:id="_SHdukMzgEey7pNfjuVEwZw" name="table" visibility="private" type="_SGQNoMzgEey7pNfjuVEwZw" association="_SId0IczgEey7pNfjuVEwZw"/>
+      <ownedAttribute xmi:id="_SHeVoczgEey7pNfjuVEwZw" name="lblNewLabel" visibility="private" type="_SF5BQczgEey7pNfjuVEwZw" association="_SIebMczgEey7pNfjuVEwZw"/>
+      <ownedAttribute xmi:id="_SHe8sMzgEey7pNfjuVEwZw" name="btnNewButton" visibility="private" type="_SF8EkczgEey7pNfjuVEwZw" association="_SIfCQczgEey7pNfjuVEwZw"/>
+      <ownedAttribute xmi:id="_SHe8sszgEey7pNfjuVEwZw" name="btnNewButton_1" visibility="private" type="_SF8EkczgEey7pNfjuVEwZw" association="_SIfpUczgEey7pNfjuVEwZw"/>
+      <ownedAttribute xmi:id="_SHfjwMzgEey7pNfjuVEwZw" name="lblNewLabel_1" visibility="private" type="_SF5BQczgEey7pNfjuVEwZw" association="_SIgQYczgEey7pNfjuVEwZw"/>
+      <ownedAttribute xmi:id="_SHfjwszgEey7pNfjuVEwZw" name="textField" visibility="private" type="_SGDZUMzgEey7pNfjuVEwZw" association="_SIg3cczgEey7pNfjuVEwZw"/>
+      <ownedAttribute xmi:id="_SHgK0czgEey7pNfjuVEwZw" name="lblNewLabel_2" visibility="private" type="_SF5BQczgEey7pNfjuVEwZw" association="_SIhegczgEey7pNfjuVEwZw"/>
+      <ownedAttribute xmi:id="_SHgx4czgEey7pNfjuVEwZw" name="textField_1" visibility="private" type="_SGDZUMzgEey7pNfjuVEwZw" association="_SIiFkczgEey7pNfjuVEwZw"/>
+      <ownedAttribute xmi:id="_SHhY8MzgEey7pNfjuVEwZw" name="lblNewLabel_3" visibility="private" type="_SF5BQczgEey7pNfjuVEwZw" association="_SIjTsMzgEey7pNfjuVEwZw"/>
+      <ownedAttribute xmi:id="_SHiAAczgEey7pNfjuVEwZw" name="textField_2" visibility="private" type="_SGDZUMzgEey7pNfjuVEwZw" association="_SIj6wczgEey7pNfjuVEwZw"/>
+      <ownedAttribute xmi:id="_SHiAA8zgEey7pNfjuVEwZw" name="lblNewLabel_4" visibility="private" type="_SF5BQczgEey7pNfjuVEwZw" association="_SIlI4czgEey7pNfjuVEwZw"/>
+      <ownedAttribute xmi:id="_SHinEczgEey7pNfjuVEwZw" name="textField_3" visibility="private" type="_SGDZUMzgEey7pNfjuVEwZw" association="_SIlI5MzgEey7pNfjuVEwZw"/>
+      <ownedAttribute xmi:id="_SHjOIczgEey7pNfjuVEwZw" name="lblNewLabel_5" visibility="private" type="_SF5BQczgEey7pNfjuVEwZw" association="_SIlv8czgEey7pNfjuVEwZw"/>
+      <ownedAttribute xmi:id="_SHj1MczgEey7pNfjuVEwZw" name="textField_4" visibility="private" type="_SGDZUMzgEey7pNfjuVEwZw" association="_SImXAczgEey7pNfjuVEwZw"/>
+      <ownedAttribute xmi:id="_SHj1M8zgEey7pNfjuVEwZw" name="lblNewLabel_6" visibility="private" type="_SF5BQczgEey7pNfjuVEwZw" association="_SIm-EczgEey7pNfjuVEwZw"/>
+      <ownedAttribute xmi:id="_SHkcQczgEey7pNfjuVEwZw" name="textField_5" visibility="private" type="_SGDZUMzgEey7pNfjuVEwZw" association="_SIoMMMzgEey7pNfjuVEwZw"/>
+      <ownedAttribute xmi:id="_SHlDUczgEey7pNfjuVEwZw" name="lblNewLabel_7" visibility="private" type="_SF5BQczgEey7pNfjuVEwZw" association="_SIozQMzgEey7pNfjuVEwZw"/>
+      <ownedAttribute xmi:id="_SHlqYMzgEey7pNfjuVEwZw" name="textField_6" visibility="private" type="_SGDZUMzgEey7pNfjuVEwZw" association="_SIozQ8zgEey7pNfjuVEwZw"/>
+      <ownedAttribute xmi:id="_SHlqYszgEey7pNfjuVEwZw" name="lblNewLabel_8" visibility="private" type="_SF5BQczgEey7pNfjuVEwZw" association="_SIpaUczgEey7pNfjuVEwZw"/>
+      <ownedAttribute xmi:id="_SHmRcczgEey7pNfjuVEwZw" name="textField_7" visibility="private" type="_SGDZUMzgEey7pNfjuVEwZw" association="_SIqBYczgEey7pNfjuVEwZw"/>
+      <ownedAttribute xmi:id="_SHmRc8zgEey7pNfjuVEwZw" name="lblNewLabel_9" visibility="private" type="_SF5BQczgEey7pNfjuVEwZw" association="_SIqocczgEey7pNfjuVEwZw"/>
+      <ownedAttribute xmi:id="_SHm4gMzgEey7pNfjuVEwZw" name="textField_8" visibility="private" type="_SGDZUMzgEey7pNfjuVEwZw" association="_SIrPgczgEey7pNfjuVEwZw"/>
+      <ownedAttribute xmi:id="_SHm4gszgEey7pNfjuVEwZw" name="scrollPane" visibility="private" type="_SGUfEMzgEey7pNfjuVEwZw" association="_SIr2kczgEey7pNfjuVEwZw"/>
+      <ownedAttribute xmi:id="_SHnfkMzgEey7pNfjuVEwZw" name="id" visibility="package">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_SHnfkczgEey7pNfjuVEwZw" value="0"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_SHoGoczgEey7pNfjuVEwZw" name="Query" visibility="package">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_SHotsMzgEey7pNfjuVEwZw" name="roomType" visibility="package">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_SHotsszgEey7pNfjuVEwZw" name="bed" visibility="package">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_SHpUwczgEey7pNfjuVEwZw" name="roomNo" visibility="package">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_SHpUw8zgEey7pNfjuVEwZw" name="btnNewButton_3" visibility="private" type="_SF8EkczgEey7pNfjuVEwZw" association="_SIsdoczgEey7pNfjuVEwZw"/>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_SIELgMzgEey7pNfjuVEwZw" name="main" specification="_R9G4sMzgEey7pNfjuVEwZw">
+        <ownedParameter xmi:id="_SIELgczgEey7pNfjuVEwZw" name="args">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SIELgszgEey7pNfjuVEwZw" value="*"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>EventQueue.invokeLater(new Runnable() {&#xD;
+			public void run() {&#xD;
+				try {&#xD;
+					CheckOut frame = new CheckOut();&#xD;
+					frame.setVisible(true);&#xD;
+				} catch (Exception e) {&#xD;
+					e.printStackTrace();&#xD;
+				}&#xD;
+			}&#xD;
+		});&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_SIELg8zgEey7pNfjuVEwZw" name="CheckOut" specification="_R9IG0czgEey7pNfjuVEwZw">
+        <ownedParameter xmi:id="_SIELhMzgEey7pNfjuVEwZw" type="_R9CAMMzgEey7pNfjuVEwZw" direction="return"/>
+        <language>java</language>
+        <body>addComponentListener(new ComponentAdapter() {&#xD;
+			@Override&#xD;
+			public void componentShown(ComponentEvent e) {&#xD;
+				ResultSet rs = Select.getData(&quot;select * from customer where checkOut is NULL&quot;);&#xD;
+				DefaultTableModel model = (DefaultTableModel)table.getModel();&#xD;
+				try {&#xD;
+					&#xD;
+					while (rs.next())&#xD;
+					{&#xD;
+						model.addRow(new Object[] {rs.getString(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5), rs.getString(6), rs.getString(7), rs.getString(8), rs.getString(9), rs.getString(10)});&#xD;
+					}&#xD;
+					rs.close();&#xD;
+					&#xD;
+				} catch (Exception e2) {&#xD;
+					JOptionPane.showMessageDialog(null, e2);&#xD;
+				}&#xD;
+			}&#xD;
+		});&#xD;
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);&#xD;
+		setBounds(100, 100, 1145, 753);&#xD;
+		contentPane = new JPanel();&#xD;
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));&#xD;
+		setContentPane(contentPane);&#xD;
+		contentPane.setLayout(null);&#xD;
+		&#xD;
+		scrollPane = new JScrollPane();&#xD;
+		scrollPane.setBounds(39, 468, 1046, 238);&#xD;
+		contentPane.add(scrollPane);&#xD;
+		&#xD;
+		table = new JTable();&#xD;
+		scrollPane.setViewportView(table);&#xD;
+		table.setModel(new DefaultTableModel(&#xD;
+			new Object[][] {&#xD;
+			},&#xD;
+			new String[] {&#xD;
+				&quot;ID&quot;, &quot;National ID&quot;, &quot;Name&quot;, &quot;Phone Number&quot;, &quot;Email&quot;, &quot;Check IN Date&quot;, &quot;Room Number&quot;, &quot;Bed&quot;, &quot;RoomType&quot;, &quot;Price per Day&quot;&#xD;
+			}&#xD;
+		));&#xD;
+		table.getColumnModel().getColumn(3).setPreferredWidth(79);&#xD;
+		table.getColumnModel().getColumn(6).setPreferredWidth(79);&#xD;
+		table.setBorder(new LineBorder(Color.BLACK));&#xD;
+		&#xD;
+		lblNewLabel = new JLabel(&quot;Customer Check OUT&quot;);&#xD;
+		lblNewLabel.setFont(new Font(&quot;Tahoma&quot;, Font.BOLD, 24));&#xD;
+		lblNewLabel.setBounds(39, 31, 284, 51);&#xD;
+		contentPane.add(lblNewLabel);&#xD;
+		&#xD;
+		btnNewButton = new JButton(&quot;back&quot;);&#xD;
+		btnNewButton.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+				setVisible(false);&#xD;
+				new Home() .setVisible(true);&#xD;
+			}&#xD;
+		});&#xD;
+		btnNewButton.setBounds(1018, 25, 85, 21);&#xD;
+		contentPane.add(btnNewButton);&#xD;
+		&#xD;
+		btnNewButton_1 = new JButton(&quot;Search\r\n&quot;);&#xD;
+		btnNewButton_1.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+				&#xD;
+				String roomNo = textField.getText();&#xD;
+				try {&#xD;
+					&#xD;
+					ResultSet rs = Select.getData(&quot;select * from customer where roomNo = '&quot;+roomNo+&quot;' and checkOut is NULL&quot;);&#xD;
+					&#xD;
+					if (rs.next())&#xD;
+					{&#xD;
+						textField.setEditable(false);&#xD;
+						id = rs.getInt(1);&#xD;
+						textField_1.setText(rs.getString(3));&#xD;
+						textField_4.setText(rs.getString(5));&#xD;
+						textField_5.setText(rs.getString(4));&#xD;
+						textField_2.setText(rs.getString(6));&#xD;
+						textField_7.setText(rs.getString(10));&#xD;
+						&#xD;
+						SimpleDateFormat myFormat = new SimpleDateFormat(&quot;dd/MM/yyyy&quot;);&#xD;
+						Calendar cal = Calendar.getInstance();&#xD;
+						textField_3.setText(myFormat.format(cal.getTime()));&#xD;
+						String  dateBeforeString = rs.getString(6);&#xD;
+						Date dateBefore = myFormat.parse(dateBeforeString);&#xD;
+						&#xD;
+						String dateAfterString = myFormat.format(cal.getTime());&#xD;
+						java.util.Date dateAfter = myFormat.parse(dateAfterString);&#xD;
+						&#xD;
+						long difference =  dateAfter.getTime() - dateBefore.getTime();&#xD;
+						&#xD;
+						int dayStay = (int) (difference/(1000*60*60*24));&#xD;
+						&#xD;
+						if(dayStay == 0)&#xD;
+							dayStay = 1;&#xD;
+						&#xD;
+						 textField_6.setText(String.valueOf(dayStay));&#xD;
+						 &#xD;
+						 float price = Float.parseFloat(textField_7.getText());&#xD;
+						 &#xD;
+						 &#xD;
+						 textField_8.setText(String.valueOf(dayStay * price));&#xD;
+						 &#xD;
+						 textField_4.setText(rs.getString(5));&#xD;
+						 &#xD;
+						 roomType = rs.getString(9);&#xD;
+						 bed = rs.getString(8);	&#xD;
+						&#xD;
+					}&#xD;
+					&#xD;
+					else {&#xD;
+						JOptionPane.showMessageDialog(null, &quot;Room number does not exist or booked&quot;);&#xD;
+					}&#xD;
+					&#xD;
+				} catch (Exception e2) {&#xD;
+					JOptionPane.showMessageDialog(null, e2);&#xD;
+				}&#xD;
+			}&#xD;
+		});&#xD;
+		btnNewButton_1.setFont(new Font(&quot;Tahoma&quot;, Font.PLAIN, 18));&#xD;
+		btnNewButton_1.setBounds(642, 126, 112, 31);&#xD;
+		contentPane.add(btnNewButton_1);&#xD;
+		&#xD;
+		lblNewLabel_1 = new JLabel(&quot;Room Number\r\n&quot;);&#xD;
+		lblNewLabel_1.setFont(new Font(&quot;Tahoma&quot;, Font.PLAIN, 19));&#xD;
+		lblNewLabel_1.setBounds(299, 126, 144, 23);&#xD;
+		contentPane.add(lblNewLabel_1);&#xD;
+		&#xD;
+		textField = new JTextField();&#xD;
+		textField.setBounds(466, 126, 112, 32);&#xD;
+		contentPane.add(textField);&#xD;
+		textField.setColumns(10);&#xD;
+		&#xD;
+		lblNewLabel_2 = new JLabel(&quot;Customer Name\r\n&quot;);&#xD;
+		lblNewLabel_2.setFont(new Font(&quot;Tahoma&quot;, Font.PLAIN, 17));&#xD;
+		lblNewLabel_2.setBounds(32, 195, 120, 31);&#xD;
+		contentPane.add(lblNewLabel_2);&#xD;
+		&#xD;
+		textField_1 = new JTextField();&#xD;
+		textField_1.setBounds(162, 197, 186, 34);&#xD;
+		contentPane.add(textField_1);&#xD;
+		textField_1.setColumns(10);&#xD;
+		&#xD;
+		lblNewLabel_3 = new JLabel(&quot;Check In Date\r\n&quot;);&#xD;
+		lblNewLabel_3.setFont(new Font(&quot;Tahoma&quot;, Font.PLAIN, 17));&#xD;
+		lblNewLabel_3.setBounds(32, 268, 120, 31);&#xD;
+		contentPane.add(lblNewLabel_3);&#xD;
+		&#xD;
+		textField_2 = new JTextField();&#xD;
+		textField_2.setColumns(10);&#xD;
+		textField_2.setBounds(162, 270, 186, 34);&#xD;
+		contentPane.add(textField_2);&#xD;
+		&#xD;
+		lblNewLabel_4 = new JLabel(&quot;Check Out Date&quot;);&#xD;
+		lblNewLabel_4.setFont(new Font(&quot;Tahoma&quot;, Font.PLAIN, 17));&#xD;
+		lblNewLabel_4.setBounds(380, 268, 120, 31);&#xD;
+		contentPane.add(lblNewLabel_4);&#xD;
+		&#xD;
+		textField_3 = new JTextField();&#xD;
+		textField_3.setColumns(10);&#xD;
+		textField_3.setBounds(520, 270, 186, 34);&#xD;
+		contentPane.add(textField_3);&#xD;
+		&#xD;
+		lblNewLabel_5 = new JLabel(&quot;Customer Email&quot;);&#xD;
+		lblNewLabel_5.setFont(new Font(&quot;Tahoma&quot;, Font.PLAIN, 17));&#xD;
+		lblNewLabel_5.setBounds(380, 195, 120, 31);&#xD;
+		contentPane.add(lblNewLabel_5);&#xD;
+		&#xD;
+		textField_4 = new JTextField();&#xD;
+		textField_4.setColumns(10);&#xD;
+		textField_4.setBounds(520, 197, 186, 34);&#xD;
+		contentPane.add(textField_4);&#xD;
+		&#xD;
+		lblNewLabel_6 = new JLabel(&quot;Customer Phone Number&quot;);&#xD;
+		lblNewLabel_6.setFont(new Font(&quot;Tahoma&quot;, Font.PLAIN, 17));&#xD;
+		lblNewLabel_6.setBounds(728, 195, 215, 31);&#xD;
+		contentPane.add(lblNewLabel_6);&#xD;
+		&#xD;
+		textField_5 = new JTextField();&#xD;
+		textField_5.setColumns(10);&#xD;
+		textField_5.setBounds(935, 197, 186, 34);&#xD;
+		contentPane.add(textField_5);&#xD;
+		&#xD;
+		lblNewLabel_7 = new JLabel(&quot;Number of Days Stay&quot;);&#xD;
+		lblNewLabel_7.setFont(new Font(&quot;Tahoma&quot;, Font.PLAIN, 17));&#xD;
+		lblNewLabel_7.setBounds(726, 268, 158, 31);&#xD;
+		contentPane.add(lblNewLabel_7);&#xD;
+		&#xD;
+		textField_6 = new JTextField();&#xD;
+		textField_6.setColumns(10);&#xD;
+		textField_6.setBounds(935, 270, 186, 34);&#xD;
+		contentPane.add(textField_6);&#xD;
+		&#xD;
+		lblNewLabel_8 = new JLabel(&quot;Price Per Day&quot;);&#xD;
+		lblNewLabel_8.setFont(new Font(&quot;Tahoma&quot;, Font.PLAIN, 17));&#xD;
+		lblNewLabel_8.setBounds(32, 342, 120, 31);&#xD;
+		contentPane.add(lblNewLabel_8);&#xD;
+		&#xD;
+		textField_7 = new JTextField();&#xD;
+		textField_7.setColumns(10);&#xD;
+		textField_7.setBounds(162, 339, 186, 34);&#xD;
+		contentPane.add(textField_7);&#xD;
+		&#xD;
+		lblNewLabel_9 = new JLabel(&quot;Total Amount&quot;);&#xD;
+		lblNewLabel_9.setFont(new Font(&quot;Tahoma&quot;, Font.PLAIN, 17));&#xD;
+		lblNewLabel_9.setBounds(380, 342, 120, 31);&#xD;
+		contentPane.add(lblNewLabel_9);&#xD;
+		&#xD;
+		textField_8 = new JTextField();&#xD;
+		textField_8.setColumns(10);&#xD;
+		textField_8.setBounds(520, 339, 186, 34);&#xD;
+		contentPane.add(textField_8);&#xD;
+		&#xD;
+		&#xD;
+		textField_1.setEditable(false);&#xD;
+		textField_2.setEditable(false);&#xD;
+		textField_3.setEditable(false);&#xD;
+		textField_4.setEditable(false);&#xD;
+		textField_5.setEditable(false);&#xD;
+		textField_6.setEditable(false);&#xD;
+		textField_7.setEditable(false);&#xD;
+		textField_8.setEditable(false);&#xD;
+		&#xD;
+		btnNewButton_3 = new JButton(&quot;Check Out&quot;);&#xD;
+		btnNewButton_3.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+				&#xD;
+				String name = textField_1.getText();&#xD;
+				String phone = textField_5.getText();&#xD;
+				String email = textField_4.getText();&#xD;
+				String checkOut = textField_3.getText();&#xD;
+				String stayDay = textField_6.getText();&#xD;
+				String amount = textField_8.getText();&#xD;
+				roomNo = textField.getText();&#xD;
+				&#xD;
+				Query = &quot;update customer set numberOfDayStay ='&quot;+stayDay+&quot;' , totalAmount = '&quot;+amount+&quot;' , checkOut = '&quot;+checkOut+&quot;' where id='&quot;+id+&quot;'&quot;;&#xD;
+				&#xD;
+				InsertDeleteUpdate.setData(Query, &quot;&quot;);&#xD;
+				&#xD;
+				Query = &quot;update room set status = 'Not Booked' where roomNo = '&quot;+roomNo+&quot;' &quot;;&#xD;
+				&#xD;
+				InsertDeleteUpdate.setData(Query, &quot;&quot;);&#xD;
+				&#xD;
+				//here&#xD;
+				String path = &quot;C:/Users/leena/Desktop&quot;;&#xD;
+				com.itextpdf.text.Document doc = new com.itextpdf.text.Document();&#xD;
+				&#xD;
+				try {&#xD;
+					&#xD;
+					PdfWriter.getInstance(doc, new FileOutputStream(path+&quot;&quot;+id+&quot;.pdf&quot;));&#xD;
+				&#xD;
+					doc.open ();&#xD;
+					&#xD;
+					Paragraph paragraph1 = new Paragraph(&quot;                                                                       Effat Hotel\n&quot;);&#xD;
+					doc.add(paragraph1);&#xD;
+					&#xD;
+					Paragraph paragraph2 = new Paragraph(&quot;****************************************************************************************************************&quot;);&#xD;
+					doc.add(paragraph2);&#xD;
+					&#xD;
+					Paragraph paragraph3 = new Paragraph(&quot;\tBill ID:  &quot;+id+&quot; \nCustomer Details:\nName: &quot;+name+&quot; \nPhone Number: &quot;+phone+&quot; \nEmail: &quot;+email+&quot; \n&quot;);&#xD;
+					doc.add(paragraph3);&#xD;
+					&#xD;
+					doc.add(paragraph2);&#xD;
+					&#xD;
+					Paragraph paragraph4 = new Paragraph(&quot;\tRoom Details:  \nNumber: &quot;+textField.getText()+&quot; \nType: &quot;+roomType+&quot; \nBed: &quot;+bed+&quot; \nPrice Per Day: &quot; +textField_7.getText()+&quot;&quot;);&#xD;
+					doc.add(paragraph4);&#xD;
+					&#xD;
+					doc.add(paragraph2);&#xD;
+					&#xD;
+					PdfPTable table = new PdfPTable(4);&#xD;
+					table.addCell(&quot;Check IN Date&quot; + textField_2.getText());&#xD;
+					table.addCell(&quot;Check OUT Date&quot; + checkOut);&#xD;
+					table.addCell(&quot;Number of Days Stayed &quot; + stayDay);&#xD;
+					table.addCell(&quot;Total Amount&quot; + amount);&#xD;
+					&#xD;
+					doc.add(table);&#xD;
+					&#xD;
+					doc.add(paragraph2);&#xD;
+					&#xD;
+					Paragraph paragraph5 = new Paragraph(&quot;                                                                       THANK YOU FOR CHOOSING EFFAT HOTEL&quot;);&#xD;
+					doc.add(paragraph5);&#xD;
+	&#xD;
+					&#xD;
+				} catch (Exception e2) {&#xD;
+					JOptionPane.showMessageDialog(null, e2);&#xD;
+				}&#xD;
+				&#xD;
+				doc.close();&#xD;
+				&#xD;
+				int a = JOptionPane.showConfirmDialog(null, &quot;Do you want to print the bill?&quot; , &quot;Select&quot;, JOptionPane.YES_NO_OPTION);&#xD;
+				&#xD;
+				if(a==0)&#xD;
+				{&#xD;
+					try {&#xD;
+						Desktop.getDesktop().open(new File(path+&quot;&quot;+id+&quot;.pdf&quot;));&#xD;
+						 setVisible(false);&#xD;
+							new CheckOut() . setVisible(true);&#xD;
+						&#xD;
+						&#xD;
+					} catch (Exception e2) {&#xD;
+						JOptionPane.showMessageDialog(null, e2);&#xD;
+				}&#xD;
+					&#xD;
+					&#xD;
+					 if (a==1) {&#xD;
+						 setVisible(false);&#xD;
+							new CheckOut() . setVisible(true);&#xD;
+						&#xD;
+					} {&#xD;
+						&#xD;
+						&#xD;
+					}&#xD;
+				&#xD;
+				&#xD;
+			}&#xD;
+		}});&#xD;
+		btnNewButton_3.setFont(new Font(&quot;Tahoma&quot;, Font.PLAIN, 19));&#xD;
+		btnNewButton_3.setBounds(466, 411, 131, 31);&#xD;
+		contentPane.add(btnNewButton_3);&#xD;
+		&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_R9G4sMzgEey7pNfjuVEwZw" name="main" isStatic="true" method="_SIELgMzgEey7pNfjuVEwZw">
+        <ownedComment xmi:id="_SIK5MMzgEey7pNfjuVEwZw">
+          <body>Launch the application.</body>
+        </ownedComment>
+        <ownedParameter xmi:id="_R9G4sczgEey7pNfjuVEwZw" name="args">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_R9HfwMzgEey7pNfjuVEwZw" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_R9IG0czgEey7pNfjuVEwZw" name="CheckOut" method="_SIELg8zgEey7pNfjuVEwZw">
+        <eAnnotations xmi:id="_R9It4MzgEey7pNfjuVEwZw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_R9It4czgEey7pNfjuVEwZw" key="create"/>
+        </eAnnotations>
+        <ownedComment xmi:id="_SIK5MczgEey7pNfjuVEwZw">
+          <body>Create the frame.</body>
+        </ownedComment>
+        <ownedParameter xmi:id="_R9It4szgEey7pNfjuVEwZw" type="_R9CAMMzgEey7pNfjuVEwZw" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_R9X-cMzgEey7pNfjuVEwZw" name="CustomerBill">
+      <generalization xmi:id="_SHKMkMzgEey7pNfjuVEwZw" general="_SF198MzgEey7pNfjuVEwZw"/>
+      <ownedAttribute xmi:id="_SHqi4MzgEey7pNfjuVEwZw" name="contentPane" visibility="private" type="_SF2lAczgEey7pNfjuVEwZw" association="_SItEsMzgEey7pNfjuVEwZw"/>
+      <ownedAttribute xmi:id="_SHrJ8MzgEey7pNfjuVEwZw" name="textField" visibility="private" type="_SGDZUMzgEey7pNfjuVEwZw" association="_SItEs8zgEey7pNfjuVEwZw"/>
+      <ownedAttribute xmi:id="_SHrJ8szgEey7pNfjuVEwZw" name="table" visibility="private" type="_SGQNoMzgEey7pNfjuVEwZw" association="_SItrwczgEey7pNfjuVEwZw"/>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_SIFZoMzgEey7pNfjuVEwZw" name="main" specification="_R9ZMkMzgEey7pNfjuVEwZw">
+        <ownedParameter xmi:id="_SIFZoczgEey7pNfjuVEwZw" name="args">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SIFZoszgEey7pNfjuVEwZw" value="*"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>EventQueue.invokeLater(new Runnable() {&#xD;
+			public void run() {&#xD;
+				try {&#xD;
+					CustomerBill frame = new CustomerBill();&#xD;
+					frame.setVisible(true);&#xD;
+				} catch (Exception e) {&#xD;
+					e.printStackTrace();&#xD;
+				}&#xD;
+			}&#xD;
+		});&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_SIFZo8zgEey7pNfjuVEwZw" name="CustomerBill" specification="_R9ZzoczgEey7pNfjuVEwZw">
+        <ownedParameter xmi:id="_SIFZpMzgEey7pNfjuVEwZw" type="_R9X-cMzgEey7pNfjuVEwZw" direction="return"/>
+        <language>java</language>
+        <body>addComponentListener(new ComponentAdapter() {&#xD;
+			@Override&#xD;
+			public void componentShown(ComponentEvent e) {&#xD;
+				ResultSet rs = Select.getData(&quot;select * from customer where checkOut is not NULL&quot;);&#xD;
+				DefaultTableModel model = (DefaultTableModel)table.getModel();&#xD;
+				&#xD;
+				try {&#xD;
+					&#xD;
+					while (rs.next())&#xD;
+					{&#xD;
+						model.addRow(new Object[] {rs.getString(1),rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5), rs.getString(6), rs.getString(7), rs.getString(8), rs.getString(9), rs.getString(10), rs.getString(11), rs.getString(12), rs.getString(13), });&#xD;
+					}&#xD;
+					&#xD;
+					rs.close();&#xD;
+					&#xD;
+					&#xD;
+				} catch (Exception e2) {&#xD;
+					JOptionPane.showMessageDialog(null, e2);&#xD;
+				}&#xD;
+			}&#xD;
+		});&#xD;
+		&#xD;
+		setLocation(new Point(50, 118));&#xD;
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);&#xD;
+		setBounds(100, 100, 1145, 753);&#xD;
+		contentPane = new JPanel();&#xD;
+		contentPane.setToolTipText(&quot;&quot;);&#xD;
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));&#xD;
+		setContentPane(contentPane);&#xD;
+		contentPane.setLayout(null);&#xD;
+		&#xD;
+		JLabel lblNewLabel = new JLabel(&quot;Customer Details Bill&quot;);&#xD;
+		lblNewLabel.setFont(new Font(&quot;Tahoma&quot;, Font.BOLD, 24));&#xD;
+		lblNewLabel.setBounds(32, 28, 291, 25);&#xD;
+		contentPane.add(lblNewLabel);&#xD;
+		&#xD;
+		JButton btnNewButton = new JButton(&quot;Back&quot;);&#xD;
+		btnNewButton.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+				setVisible(false);&#xD;
+				new Home() .setVisible(true);&#xD;
+			}&#xD;
+		});&#xD;
+		btnNewButton.setBounds(1012, 14, 105, 25);&#xD;
+		contentPane.add(btnNewButton);&#xD;
+		&#xD;
+		JLabel lblNewLabel_1 = new JLabel(&quot;Search by check out date&quot;);&#xD;
+		lblNewLabel_1.setFont(new Font(&quot;Tahoma&quot;, Font.PLAIN, 19));&#xD;
+		lblNewLabel_1.setBounds(294, 87, 227, 17);&#xD;
+		contentPane.add(lblNewLabel_1);&#xD;
+		&#xD;
+		textField = new JTextField();&#xD;
+		textField.setBounds(520, 88, 126, 23);&#xD;
+		contentPane.add(textField);&#xD;
+		textField.setColumns(10);&#xD;
+		&#xD;
+		JButton btnNewButton_1 = new JButton(&quot;Search&quot;);&#xD;
+		btnNewButton_1.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+				&#xD;
+				String checkOutDate = textField.getText();&#xD;
+				&#xD;
+				ResultSet rs = Select.getData(&quot;select * from customer where checkOut = '&quot;+checkOutDate+&quot;'&quot;);&#xD;
+				DefaultTableModel model = (DefaultTableModel)table.getModel();&#xD;
+				model.setRowCount(0);&#xD;
+				&#xD;
+				try {&#xD;
+					&#xD;
+					while (rs.next())&#xD;
+					{&#xD;
+						model.addRow(new Object[] {rs.getString(1),rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5), rs.getString(6), rs.getString(7), rs.getString(8), rs.getString(9), rs.getString(10), rs.getString(11), rs.getString(12), rs.getString(13), });&#xD;
+					}&#xD;
+					&#xD;
+					rs.close();&#xD;
+					&#xD;
+					&#xD;
+				} catch (Exception e2) {&#xD;
+					JOptionPane.showMessageDialog(null, e2);&#xD;
+				}&#xD;
+				&#xD;
+				&#xD;
+			}&#xD;
+			&#xD;
+		});&#xD;
+		btnNewButton_1.setBounds(677, 87, 105, 25);&#xD;
+		contentPane.add(btnNewButton_1);&#xD;
+		&#xD;
+		JLabel lblNewLabel_2 = new JLabel(&quot; * Click on table row to open bill&quot;);&#xD;
+		lblNewLabel_2.setFont(new Font(&quot;Tahoma&quot;, Font.BOLD, 17));&#xD;
+		lblNewLabel_2.setBounds(452, 649, 283, 25);&#xD;
+		contentPane.add(lblNewLabel_2);&#xD;
+		&#xD;
+		JScrollPane scrollPane = new JScrollPane();&#xD;
+		scrollPane.addMouseListener(new MouseAdapter() {&#xD;
+			&#xD;
+		});&#xD;
+		scrollPane.setBounds(110, 200, 926, 341);&#xD;
+		contentPane.add(scrollPane);&#xD;
+		&#xD;
+		table = new JTable();&#xD;
+		scrollPane.setViewportView(table);&#xD;
+		table.setModel(new DefaultTableModel(&#xD;
+			new Object[][] {&#xD;
+			},&#xD;
+			new String[] {&#xD;
+				&quot;ID&quot;, &quot;National ID&quot;, &quot;Name&quot;, &quot;Phone Number&quot;, &quot;Email&quot;, &quot;Check In&quot;, &quot;Room Number&quot;, &quot;Bed&quot;, &quot;Room Type&quot;, &quot;Price Per Day&quot;, &quot;Number of Days Stayed&quot;, &quot;Total Amount&quot;, &quot;Check Out&quot;&#xD;
+			}&#xD;
+		));&#xD;
+		table.getColumnModel().getColumn(0).setPreferredWidth(69);&#xD;
+		table.getColumnModel().getColumn(3).setPreferredWidth(80);&#xD;
+		table.getColumnModel().getColumn(6).setPreferredWidth(81);&#xD;
+		table.getColumnModel().getColumn(10).setPreferredWidth(128);&#xD;
+		&#xD;
+		&#xD;
+		SimpleDateFormat myDate =  new SimpleDateFormat(&quot;dd/MM/yyyy&quot;);&#xD;
+		Calendar cal = Calendar.getInstance();&#xD;
+		textField.setText(myDate.format(cal.getTime()));&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_R9ZMkMzgEey7pNfjuVEwZw" name="main" isStatic="true" method="_SIFZoMzgEey7pNfjuVEwZw">
+        <ownedComment xmi:id="_SIK5MszgEey7pNfjuVEwZw">
+          <body>Launch the application.</body>
+        </ownedComment>
+        <ownedParameter xmi:id="_R9ZMkczgEey7pNfjuVEwZw" name="args">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_R9ZzoMzgEey7pNfjuVEwZw" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_R9ZzoczgEey7pNfjuVEwZw" name="CustomerBill" method="_SIFZo8zgEey7pNfjuVEwZw">
+        <eAnnotations xmi:id="_R9aasMzgEey7pNfjuVEwZw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_R9aasczgEey7pNfjuVEwZw" key="create"/>
+        </eAnnotations>
+        <ownedComment xmi:id="_SIK5M8zgEey7pNfjuVEwZw">
+          <body>Create the frame.</body>
+        </ownedComment>
+        <ownedParameter xmi:id="_R9aasszgEey7pNfjuVEwZw" type="_R9X-cMzgEey7pNfjuVEwZw" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_R9cP4MzgEey7pNfjuVEwZw" name="Home">
+      <generalization xmi:id="_SHLasMzgEey7pNfjuVEwZw" general="_SF198MzgEey7pNfjuVEwZw"/>
+      <ownedAttribute xmi:id="_SHsYEMzgEey7pNfjuVEwZw" name="contentPane" visibility="private" type="_SF2lAczgEey7pNfjuVEwZw" association="_SIuS0czgEey7pNfjuVEwZw"/>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_SIGAsMzgEey7pNfjuVEwZw" name="main" specification="_R9eFEMzgEey7pNfjuVEwZw">
+        <ownedParameter xmi:id="_SIGAsczgEey7pNfjuVEwZw" name="args">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SIGAsszgEey7pNfjuVEwZw" value="*"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>EventQueue.invokeLater(new Runnable() {&#xD;
+			public void run() {&#xD;
+				try {&#xD;
+					Home frame = new Home();&#xD;
+					frame.setVisible(true);&#xD;
+				} catch (Exception e) {&#xD;
+					e.printStackTrace();&#xD;
+				}&#xD;
+			}&#xD;
+		});&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_SIGnwMzgEey7pNfjuVEwZw" name="Home" specification="_R9esIMzgEey7pNfjuVEwZw">
+        <ownedParameter xmi:id="_SIGnwczgEey7pNfjuVEwZw" type="_R9cP4MzgEey7pNfjuVEwZw" direction="return"/>
+        <language>java</language>
+        <body>setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);&#xD;
+		setBounds(100, 100, 1145, 753);&#xD;
+		contentPane = new JPanel();&#xD;
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));&#xD;
+		setContentPane(contentPane);&#xD;
+		contentPane.setLayout(null);&#xD;
+		&#xD;
+		JButton btnNewButton = new JButton(&quot;Manage Rooms&quot;);&#xD;
+		btnNewButton.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+				setVisible(false);&#xD;
+				new ManageRoom() .setVisible(true);&#xD;
+			}&#xD;
+		});&#xD;
+		btnNewButton.setFont(new Font(&quot;Tahoma&quot;, Font.PLAIN, 24));&#xD;
+		btnNewButton.setBounds(457, 342, 250, 37);&#xD;
+		contentPane.add(btnNewButton);&#xD;
+		&#xD;
+		JButton btnNewButton_1 = new JButton(&quot;Customer Checkin&quot;);&#xD;
+		btnNewButton_1.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+				setVisible(false);&#xD;
+				new CheckIn() .setVisible(true);&#xD;
+			}&#xD;
+		});&#xD;
+		btnNewButton_1.setFont(new Font(&quot;Tahoma&quot;, Font.PLAIN, 24));&#xD;
+		btnNewButton_1.setBounds(457, 401, 250, 37);&#xD;
+		contentPane.add(btnNewButton_1);&#xD;
+		&#xD;
+		JButton btnNewButton_1_1 = new JButton(&quot;Customer Checkout&quot;);&#xD;
+		btnNewButton_1_1.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+				new CheckOut().setVisible(true);&#xD;
+			}&#xD;
+		});&#xD;
+		btnNewButton_1_1.setFont(new Font(&quot;Tahoma&quot;, Font.PLAIN, 24));&#xD;
+		btnNewButton_1_1.setBounds(457, 461, 250, 37);&#xD;
+		contentPane.add(btnNewButton_1_1);&#xD;
+		&#xD;
+		JButton btnNewButton_1_1_1 = new JButton(&quot;Customer Detail Bill&quot;);&#xD;
+		btnNewButton_1_1_1.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+				new CustomerBill().setVisible(true);&#xD;
+			}&#xD;
+		});&#xD;
+		btnNewButton_1_1_1.setFont(new Font(&quot;Tahoma&quot;, Font.PLAIN, 24));&#xD;
+		btnNewButton_1_1_1.setBounds(457, 523, 250, 37);&#xD;
+		contentPane.add(btnNewButton_1_1_1);&#xD;
+		&#xD;
+		JButton btnNewButton_1_1_1_1 = new JButton(&quot;Logout&quot;);&#xD;
+		btnNewButton_1_1_1_1.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+				&#xD;
+&#xD;
+				int a = JOptionPane.showConfirmDialog(null, &quot;Are you sure you want to Logout?&quot; , &quot;Select&quot; , JOptionPane.YES_NO_OPTION);&#xD;
+				if (a==0)&#xD;
+				{&#xD;
+					setVisible(false);&#xD;
+					new Login().setVisible(true);&#xD;
+				}&#xD;
+			}&#xD;
+		});&#xD;
+		btnNewButton_1_1_1_1.setFont(new Font(&quot;Tahoma&quot;, Font.PLAIN, 24));&#xD;
+		btnNewButton_1_1_1_1.setBounds(519, 585, 130, 37);&#xD;
+		contentPane.add(btnNewButton_1_1_1_1);&#xD;
+		&#xD;
+		JLabel lblNewLabel = new JLabel(&quot;Effat Hotel&quot;);&#xD;
+		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);&#xD;
+		lblNewLabel.setFont(new Font(&quot;Tahoma&quot;, Font.PLAIN, 96));&#xD;
+		lblNewLabel.setBounds(184, 86, 806, 133);&#xD;
+		contentPane.add(lblNewLabel);&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_R9eFEMzgEey7pNfjuVEwZw" name="main" isStatic="true" method="_SIGAsMzgEey7pNfjuVEwZw">
+        <ownedComment xmi:id="_SIK5NMzgEey7pNfjuVEwZw">
+          <body>Launch the application.</body>
+        </ownedComment>
+        <ownedParameter xmi:id="_R9eFEczgEey7pNfjuVEwZw" name="args">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_R9eFEszgEey7pNfjuVEwZw" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_R9esIMzgEey7pNfjuVEwZw" name="Home" method="_SIGnwMzgEey7pNfjuVEwZw">
+        <eAnnotations xmi:id="_R9esIczgEey7pNfjuVEwZw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_R9esIszgEey7pNfjuVEwZw" key="create"/>
+        </eAnnotations>
+        <ownedComment xmi:id="_SIK5NczgEey7pNfjuVEwZw">
+          <body>Create the frame.</body>
+        </ownedComment>
+        <ownedParameter xmi:id="_R9esI8zgEey7pNfjuVEwZw" type="_R9cP4MzgEey7pNfjuVEwZw" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_R9ghUMzgEey7pNfjuVEwZw" name="InsertDeleteUpdate">
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_SIGnwszgEey7pNfjuVEwZw" name="setData" specification="_R9hIYMzgEey7pNfjuVEwZw">
+        <ownedParameter xmi:id="_SIGnw8zgEey7pNfjuVEwZw" name="Query">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_SIGnxMzgEey7pNfjuVEwZw" name="msg">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>Connection con = null;&#xD;
+		Statement st = null;&#xD;
+		&#xD;
+		try {&#xD;
+			&#xD;
+			con = connection.getCon();&#xD;
+			st = con.createStatement();&#xD;
+			st.executeUpdate(Query);&#xD;
+			if (!msg.equals(&quot;&quot;))&#xD;
+				JOptionPane.showMessageDialog(null, msg);&#xD;
+				&#xD;
+			&#xD;
+					&#xD;
+			&#xD;
+		} catch (Exception e) {&#xD;
+			&#xD;
+			JOptionPane.showMessageDialog(null, e);&#xD;
+			&#xD;
+		}&#xD;
+		finally {&#xD;
+			try {&#xD;
+				&#xD;
+			} catch (Exception e2) {&#xD;
+				// TODO: handle exception&#xD;
+			}&#xD;
+		}&#xD;
+		&#xD;
+		&#xD;
+		&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_R9hIYMzgEey7pNfjuVEwZw" name="setData" isStatic="true" method="_SIGnwszgEey7pNfjuVEwZw">
+        <ownedParameter xmi:id="_R9hIYczgEey7pNfjuVEwZw" name="Query">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_R9hvcMzgEey7pNfjuVEwZw" name="msg">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_R9iWgMzgEey7pNfjuVEwZw" name="Login">
+      <generalization xmi:id="_SHMBwMzgEey7pNfjuVEwZw" general="_SF198MzgEey7pNfjuVEwZw"/>
+      <ownedAttribute xmi:id="_SHs_IMzgEey7pNfjuVEwZw" name="contentPane" visibility="private" type="_SF2lAczgEey7pNfjuVEwZw" association="_SIu54MzgEey7pNfjuVEwZw"/>
+      <ownedAttribute xmi:id="_SHs_IszgEey7pNfjuVEwZw" name="textField_1" visibility="private" type="_SGDZUMzgEey7pNfjuVEwZw" association="_SIu548zgEey7pNfjuVEwZw"/>
+      <ownedAttribute xmi:id="_SHtmMczgEey7pNfjuVEwZw" name="lblNewLabel" visibility="private" type="_SF5BQczgEey7pNfjuVEwZw" association="_SIvg8czgEey7pNfjuVEwZw"/>
+      <ownedAttribute xmi:id="_SHtmM8zgEey7pNfjuVEwZw" name="passwordField" visibility="private" type="_SGrrcMzgEey7pNfjuVEwZw" association="_SIwIAczgEey7pNfjuVEwZw"/>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_SIHO0MzgEey7pNfjuVEwZw" name="main" specification="_R9jkoMzgEey7pNfjuVEwZw">
+        <ownedParameter xmi:id="_SIHO0czgEey7pNfjuVEwZw" name="args">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SIHO0szgEey7pNfjuVEwZw" value="*"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>EventQueue.invokeLater(new Runnable() {&#xD;
+			public void run() {&#xD;
+				try {&#xD;
+					Login frame = new Login();&#xD;
+					frame.setVisible(true);&#xD;
+				} catch (Exception e) {&#xD;
+					e.printStackTrace();&#xD;
+				}&#xD;
+			}&#xD;
+		});&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_SIHO08zgEey7pNfjuVEwZw" name="Login" specification="_R9kywMzgEey7pNfjuVEwZw">
+        <ownedParameter xmi:id="_SIHO1MzgEey7pNfjuVEwZw" type="_R9iWgMzgEey7pNfjuVEwZw" direction="return"/>
+        <language>java</language>
+        <body>setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);&#xD;
+		setBounds(100, 100, 1145, 753);&#xD;
+		contentPane = new JPanel();&#xD;
+		contentPane.setForeground(new Color(0, 0, 0));&#xD;
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));&#xD;
+		contentPane.setLayout(null);&#xD;
+		setContentPane(contentPane);&#xD;
+		&#xD;
+		textField_1 = new JTextField();&#xD;
+		textField_1.setForeground(new Color(0, 0, 0));&#xD;
+		textField_1.setBounds(438, 210, 291, 40);&#xD;
+		contentPane.add(textField_1);&#xD;
+		textField_1.setColumns(10);&#xD;
+		&#xD;
+		JLabel user = new JLabel(&quot;User ID&quot;);&#xD;
+		user.setForeground(new Color(0, 0, 0));&#xD;
+		user.setFont(new Font(&quot;Tahoma&quot;, Font.PLAIN, 17));&#xD;
+		user.setBounds(284, 220, 94, 13);&#xD;
+		contentPane.add(user);&#xD;
+		&#xD;
+		JLabel pass = new JLabel(&quot;Password&quot;);&#xD;
+		pass.setForeground(new Color(0, 0, 0));&#xD;
+		pass.setFont(new Font(&quot;Tahoma&quot;, Font.PLAIN, 17));&#xD;
+		pass.setBounds(284, 290, 94, 13);&#xD;
+		contentPane.add(pass);&#xD;
+		&#xD;
+		JButton btnNewButton = new JButton(&quot;Login&quot;);&#xD;
+		btnNewButton.setForeground(new Color(0, 0, 0));&#xD;
+		btnNewButton.addActionListener(new ActionListener() {	&#xD;
+			public void actionPerformed(ActionEvent e) {	&#xD;
+				&#xD;
+				String userID = textField_1.getText();&#xD;
+				String password = passwordField.getText();&#xD;
+				&#xD;
+				&#xD;
+				try {&#xD;
+					Class.forName(&quot;com.mysql.jdbc.Driver&quot;);&#xD;
+					Connection conn = DriverManager.getConnection(&quot;jdbc:mysql://localhost:3306/hotelmanagement&quot;,&quot;root&quot;,&quot;&quot;);&#xD;
+					Statement stmt = conn.createStatement();&#xD;
+					String sql = &quot;Select * from login where userID = '&quot;+userID+&quot;' and  Password = '&quot;+password+&quot;' &quot;;&#xD;
+					ResultSet result = stmt.executeQuery(sql) ;&#xD;
+					&#xD;
+					if (userID.equals(&quot;&quot;) || password.equals(&quot;&quot;)) &#xD;
+					{&#xD;
+						JOptionPane.showMessageDialog(null, &quot;User Id and Password are required&quot;);&#xD;
+					}&#xD;
+					&#xD;
+					else if(result.next())&#xD;
+					{&#xD;
+						setVisible(false);&#xD;
+						new Home().setVisible(true);&#xD;
+					}&#xD;
+					else&#xD;
+						JOptionPane.showMessageDialog(null, &quot;Incorrect user ID or password&quot;);&#xD;
+					conn.close();&#xD;
+				} catch(Exception e1) {&#xD;
+					System.out.println(e1);&#xD;
+				}&#xD;
+			}&#xD;
+		});&#xD;
+		btnNewButton.setFont(new Font(&quot;Tahoma&quot;, Font.BOLD, 17));&#xD;
+		btnNewButton.setBounds(499, 399, 161, 40);&#xD;
+		contentPane.add(btnNewButton);&#xD;
+		&#xD;
+		lblNewLabel = new JLabel(&quot;Login&quot;);&#xD;
+		lblNewLabel.setForeground(new Color(0, 0, 0));&#xD;
+		lblNewLabel.setFont(new Font(&quot;Tahoma&quot;, Font.PLAIN, 21));&#xD;
+		lblNewLabel.setBounds(550, 101, 203, 29);&#xD;
+		contentPane.add(lblNewLabel);&#xD;
+		&#xD;
+		passwordField = new JPasswordField();&#xD;
+		passwordField.setForeground(new Color(0, 0, 0));&#xD;
+		passwordField.setBounds(438, 292, 291, 40);&#xD;
+		contentPane.add(passwordField);&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_R9jkoMzgEey7pNfjuVEwZw" name="main" isStatic="true" method="_SIHO0MzgEey7pNfjuVEwZw">
+        <ownedComment xmi:id="_SILgQMzgEey7pNfjuVEwZw">
+          <body></body>
+        </ownedComment>
+        <ownedParameter xmi:id="_R9jkoczgEey7pNfjuVEwZw" name="args">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_R9jkoszgEey7pNfjuVEwZw" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_R9kywMzgEey7pNfjuVEwZw" name="Login" method="_SIHO08zgEey7pNfjuVEwZw">
+        <eAnnotations xmi:id="_R9kywczgEey7pNfjuVEwZw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_R9kywszgEey7pNfjuVEwZw" key="create"/>
+        </eAnnotations>
+        <ownedComment xmi:id="_SILgQczgEey7pNfjuVEwZw">
+          <body>Create the frame.</body>
+        </ownedComment>
+        <ownedParameter xmi:id="_R9kyw8zgEey7pNfjuVEwZw" type="_R9iWgMzgEey7pNfjuVEwZw" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_R9nPAMzgEey7pNfjuVEwZw" name="ManageRoom">
+      <generalization xmi:id="_SHNP4MzgEey7pNfjuVEwZw" general="_SF198MzgEey7pNfjuVEwZw"/>
+      <ownedAttribute xmi:id="_SHu0UMzgEey7pNfjuVEwZw" name="contentPane" visibility="private" type="_SF2lAczgEey7pNfjuVEwZw" association="_SIwvEMzgEey7pNfjuVEwZw"/>
+      <ownedAttribute xmi:id="_SHu0UszgEey7pNfjuVEwZw" name="lblNewLabel_1" visibility="private" type="_SF5BQczgEey7pNfjuVEwZw" association="_SIwvE8zgEey7pNfjuVEwZw"/>
+      <ownedAttribute xmi:id="_SHvbYczgEey7pNfjuVEwZw" name="textField" visibility="private" type="_SGDZUMzgEey7pNfjuVEwZw" association="_SIxWIczgEey7pNfjuVEwZw"/>
+      <ownedAttribute xmi:id="_SHwCcMzgEey7pNfjuVEwZw" name="textField_1" visibility="private" type="_SGDZUMzgEey7pNfjuVEwZw" association="_SIx9MczgEey7pNfjuVEwZw"/>
+      <ownedAttribute xmi:id="_SHwCcszgEey7pNfjuVEwZw" name="table" visibility="private" type="_SGQNoMzgEey7pNfjuVEwZw" association="_SIykQMzgEey7pNfjuVEwZw"/>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_SIH14MzgEey7pNfjuVEwZw" name="main" specification="_R9pEMMzgEey7pNfjuVEwZw">
+        <ownedParameter xmi:id="_SIH14czgEey7pNfjuVEwZw" name="args">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SIH14szgEey7pNfjuVEwZw" value="*"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>EventQueue.invokeLater(new Runnable() {&#xD;
+			public void run() {&#xD;
+				try {&#xD;
+					ManageRoom frame = new ManageRoom();&#xD;
+					frame.setVisible(true);&#xD;
+				} catch (Exception e) {&#xD;
+					e.printStackTrace();&#xD;
+				}&#xD;
+			}&#xD;
+		});&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_SIH148zgEey7pNfjuVEwZw" name="ManageRoom" specification="_R9prQczgEey7pNfjuVEwZw">
+        <ownedParameter xmi:id="_SIH15MzgEey7pNfjuVEwZw" type="_R9nPAMzgEey7pNfjuVEwZw" direction="return">
+          <name xsi:nil="true"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>addComponentListener(new ComponentAdapter() {&#xD;
+			@Override&#xD;
+			public void componentShown(ComponentEvent e) {&#xD;
+				&#xD;
+				ResultSet rs = Select.getData(&quot;select * from room&quot;);&#xD;
+				DefaultTableModel model = (DefaultTableModel)table.getModel();&#xD;
+				try {&#xD;
+					&#xD;
+					while(rs.next()) {&#xD;
+						model.addRow(new Object[] {rs.getString(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5)});&#xD;
+					}&#xD;
+					&#xD;
+					rs.close();&#xD;
+					&#xD;
+				} catch (Exception e2) {&#xD;
+					JOptionPane.showMessageDialog(null, e2);&#xD;
+				}&#xD;
+				&#xD;
+			}&#xD;
+		});&#xD;
+		setLocation(new Point(50, 118));&#xD;
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);&#xD;
+		setBounds(100, 100, 1145, 753);&#xD;
+		contentPane = new JPanel();&#xD;
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));&#xD;
+		setContentPane(contentPane);&#xD;
+		contentPane.setLayout(null);&#xD;
+		&#xD;
+		JScrollPane scrollPane = new JScrollPane();&#xD;
+		scrollPane.setFont(new Font(&quot;Tahoma&quot;, Font.PLAIN, 10));&#xD;
+		scrollPane.setBounds(45, 51, 505, 594);&#xD;
+		contentPane.add(scrollPane);&#xD;
+		&#xD;
+		table = new JTable();&#xD;
+		scrollPane.setViewportView(table);&#xD;
+		table.setToolTipText(&quot;&quot;);&#xD;
+		table.setForeground(Color.BLACK);&#xD;
+		table.setFont(new Font(&quot;Tahoma&quot;, Font.PLAIN, 14));&#xD;
+		table.setBorder(new LineBorder(new Color(0, 0, 0)));&#xD;
+		table.setBackground(Color.LIGHT_GRAY);&#xD;
+		table.setModel(new DefaultTableModel(&#xD;
+			new Object[][] {&#xD;
+			},&#xD;
+			new String[] {&#xD;
+				&quot;Room Number&quot;, &quot;Room Type&quot;, &quot;Bed&quot;, &quot;Room Price&quot;, &quot;Status&quot;&#xD;
+			}&#xD;
+		));&#xD;
+		table.getColumnModel().getColumn(0).setPreferredWidth(82);&#xD;
+		&#xD;
+		JLabel lblNewLabel = new JLabel(&quot;Manage Rooms&quot;);&#xD;
+		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);&#xD;
+		lblNewLabel.setBounds(692, 27, 318, 86);&#xD;
+		lblNewLabel.setFont(new Font(&quot;Tahoma&quot;, Font.BOLD, 24));&#xD;
+		contentPane.add(lblNewLabel);&#xD;
+		&#xD;
+		lblNewLabel_1 = new JLabel(&quot;Room Number&quot;);&#xD;
+		lblNewLabel_1.setFont(new Font(&quot;Tahoma&quot;, Font.PLAIN, 22));&#xD;
+		lblNewLabel_1.setBounds(619, 144, 174, 37);&#xD;
+		contentPane.add(lblNewLabel_1);&#xD;
+		&#xD;
+		textField = new JTextField();&#xD;
+		textField.setBounds(843, 144, 167, 33);&#xD;
+		contentPane.add(textField);&#xD;
+		textField.setColumns(10);&#xD;
+		&#xD;
+		JLabel lblNewLabel_1_1 = new JLabel(&quot;Room Type&quot;);&#xD;
+		lblNewLabel_1_1.setFont(new Font(&quot;Tahoma&quot;, Font.PLAIN, 22));&#xD;
+		lblNewLabel_1_1.setBounds(619, 238, 174, 37);&#xD;
+		contentPane.add(lblNewLabel_1_1);&#xD;
+		&#xD;
+		JComboBox comboBox = new JComboBox();&#xD;
+		comboBox.setFont(new Font(&quot;Tahoma&quot;, Font.PLAIN, 20));&#xD;
+		comboBox.setModel(new DefaultComboBoxModel(new String[] {&quot;Select&quot;, &quot;Standard&quot;, &quot;Luxury&quot;, &quot;Presidential Suite&quot;}));&#xD;
+		comboBox.setBounds(846, 251, 164, 33);&#xD;
+		contentPane.add(comboBox);&#xD;
+		&#xD;
+		JLabel lblNewLabel_1_1_1 = new JLabel(&quot;Bed&quot;);&#xD;
+		lblNewLabel_1_1_1.setFont(new Font(&quot;Tahoma&quot;, Font.PLAIN, 22));&#xD;
+		lblNewLabel_1_1_1.setBounds(619, 343, 174, 37);&#xD;
+		contentPane.add(lblNewLabel_1_1_1);&#xD;
+		&#xD;
+		JLabel lblNewLabel_1_1_1_1 = new JLabel(&quot;Price&quot;);&#xD;
+		lblNewLabel_1_1_1_1.setFont(new Font(&quot;Tahoma&quot;, Font.PLAIN, 22));&#xD;
+		lblNewLabel_1_1_1_1.setBounds(619, 430, 174, 37);&#xD;
+		contentPane.add(lblNewLabel_1_1_1_1);&#xD;
+		&#xD;
+		textField_1 = new JTextField();&#xD;
+		textField_1.setColumns(10);&#xD;
+		textField_1.setBounds(843, 430, 167, 33);&#xD;
+		contentPane.add(textField_1);&#xD;
+		&#xD;
+		JComboBox comboBox_2 = new JComboBox();&#xD;
+		comboBox_2.setFont(new Font(&quot;Tahoma&quot;, Font.PLAIN, 20));&#xD;
+		comboBox_2.setModel(new DefaultComboBoxModel(new String[] {&quot;Select&quot;, &quot;Single&quot;, &quot;Double &quot;, &quot;Triple&quot;}));&#xD;
+		comboBox_2.setBounds(843, 350, 164, 33);&#xD;
+		contentPane.add(comboBox_2);&#xD;
+		&#xD;
+		JButton btnNewButton = new JButton(&quot;Add Room&quot;);&#xD;
+		btnNewButton.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+				String roomNo = textField.getText();&#xD;
+				String roomType = (String)comboBox.getSelectedItem();&#xD;
+				String bed = (String)comboBox_2.getSelectedItem();&#xD;
+				String price = textField_1.getText();&#xD;
+				String Query = &quot;insert into room values('&quot;+roomNo+&quot;', '&quot;+roomType+&quot;', '&quot;+bed+&quot;' , '&quot;+price+&quot;','Not Booked')&quot;;&#xD;
+				InsertDeleteUpdate.setData(Query, &quot;Successfully Updated!&quot;);&#xD;
+				setVisible(false);&#xD;
+				new ManageRoom().setVisible(true);&#xD;
+				&#xD;
+				&#xD;
+				&#xD;
+		}});&#xD;
+		btnNewButton.setFont(new Font(&quot;Tahoma&quot;, Font.PLAIN, 21));&#xD;
+		btnNewButton.setBounds(763, 542, 134, 37);&#xD;
+		contentPane.add(btnNewButton);&#xD;
+		&#xD;
+		JButton btnNewButton_1 = new JButton(&quot;Back&quot;);&#xD;
+		btnNewButton_1.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+				setVisible(false);&#xD;
+				new Home() .setVisible(true);&#xD;
+			}&#xD;
+		});&#xD;
+		btnNewButton_1.setBounds(1036, 10, 85, 21);&#xD;
+		contentPane.add(btnNewButton_1);&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_R9pEMMzgEey7pNfjuVEwZw" name="main" isStatic="true" method="_SIH14MzgEey7pNfjuVEwZw">
+        <ownedComment xmi:id="_fi5KMMzmEey7pNfjuVEwZw">
+          <body>Launch the application.</body>
+        </ownedComment>
+        <ownedParameter xmi:id="_R9pEMczgEey7pNfjuVEwZw" name="args">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_R9pEMszgEey7pNfjuVEwZw" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_R9prQczgEey7pNfjuVEwZw" name="ManageRoom" method="_SIH148zgEey7pNfjuVEwZw">
+        <eAnnotations xmi:id="_R9prQszgEey7pNfjuVEwZw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_R9prQ8zgEey7pNfjuVEwZw" key="create"/>
+        </eAnnotations>
+        <ownedComment xmi:id="_fi5KMczmEey7pNfjuVEwZw">
+          <body>Create the frame.</body>
+        </ownedComment>
+        <ownedParameter xmi:id="_R9prRMzgEey7pNfjuVEwZw" type="_R9nPAMzgEey7pNfjuVEwZw" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_R9sukMzgEey7pNfjuVEwZw" name="Select">
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_SIIc8MzgEey7pNfjuVEwZw" name="getData" specification="_R9t8sMzgEey7pNfjuVEwZw">
+        <ownedParameter xmi:id="_SIIc8czgEey7pNfjuVEwZw" name="query">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_SIIc8szgEey7pNfjuVEwZw" type="_SGyZIczgEey7pNfjuVEwZw" direction="return"/>
+        <language>java</language>
+        <body>Connection conn = null;&#xD;
+		Statement st  = null;&#xD;
+		ResultSet rs =  null;&#xD;
+		&#xD;
+		try {&#xD;
+			&#xD;
+			conn = connection.getCon();&#xD;
+			st = conn.createStatement();&#xD;
+			rs=st.executeQuery(query);&#xD;
+			return rs;&#xD;
+			&#xD;
+			&#xD;
+		} catch (Exception e) {&#xD;
+			&#xD;
+			JOptionPane.showMessageDialog(null, e);&#xD;
+			return null;&#xD;
+		}&#xD;
+		&#xD;
+		&#xD;
+		&#xD;
+		&#xD;
+		&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_R9t8sMzgEey7pNfjuVEwZw" name="getData" isStatic="true" method="_SIIc8MzgEey7pNfjuVEwZw">
+        <ownedParameter xmi:id="_R9t8sczgEey7pNfjuVEwZw" name="query">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_SHOeAMzgEey7pNfjuVEwZw" type="_SGyZIczgEey7pNfjuVEwZw" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_R9vK0MzgEey7pNfjuVEwZw" name="connection">
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_SIIc88zgEey7pNfjuVEwZw" name="getCon" specification="_R9wY8MzgEey7pNfjuVEwZw">
+        <ownedParameter xmi:id="_SIIc9MzgEey7pNfjuVEwZw" type="_SGxLAczgEey7pNfjuVEwZw" direction="return"/>
+        <language>java</language>
+        <body>try {&#xD;
+			&#xD;
+			Class.forName(&quot;com.mysql.jdbc.Driver&quot;);&#xD;
+			Connection conn = DriverManager.getConnection(&quot;jdbc:mysql://localhost:3306/hotelmanagement&quot;,&quot;root&quot;,&quot;&quot;);&#xD;
+			return conn;&#xD;
+			&#xD;
+		} catch (Exception e) {&#xD;
+			&#xD;
+			return null;&#xD;
+		}&#xD;
+		&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_R9wY8MzgEey7pNfjuVEwZw" name="getCon" isStatic="true" method="_SIIc88zgEey7pNfjuVEwZw">
+        <ownedParameter xmi:id="_SHOeAczgEey7pNfjuVEwZw" type="_SGxLAczgEey7pNfjuVEwZw" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SIWfYMzgEey7pNfjuVEwZw" name="" memberEnd="_SIWfYczgEey7pNfjuVEwZw _SHSIYMzgEey7pNfjuVEwZw">
+      <ownedEnd xmi:id="_SIWfYczgEey7pNfjuVEwZw" name="" type="_R8vFQMzgEey7pNfjuVEwZw" association="_SIWfYMzgEey7pNfjuVEwZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SIXtgMzgEey7pNfjuVEwZw" name="" memberEnd="_SIXtgczgEey7pNfjuVEwZw _SHTWgMzgEey7pNfjuVEwZw">
+      <ownedEnd xmi:id="_SIXtgczgEey7pNfjuVEwZw" name="" type="_R8vFQMzgEey7pNfjuVEwZw" association="_SIXtgMzgEey7pNfjuVEwZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SIYUkczgEey7pNfjuVEwZw" name="" memberEnd="_SIYUkszgEey7pNfjuVEwZw _SHVywczgEey7pNfjuVEwZw">
+      <ownedEnd xmi:id="_SIYUkszgEey7pNfjuVEwZw" name="" type="_R8vFQMzgEey7pNfjuVEwZw" association="_SIYUkczgEey7pNfjuVEwZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SIY7oczgEey7pNfjuVEwZw" name="" memberEnd="_SIY7oszgEey7pNfjuVEwZw _SHWZ0czgEey7pNfjuVEwZw">
+      <ownedEnd xmi:id="_SIY7oszgEey7pNfjuVEwZw" name="" type="_R8vFQMzgEey7pNfjuVEwZw" association="_SIY7oczgEey7pNfjuVEwZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SIZisczgEey7pNfjuVEwZw" name="" memberEnd="_SIZisszgEey7pNfjuVEwZw _SHXA4czgEey7pNfjuVEwZw">
+      <ownedEnd xmi:id="_SIZisszgEey7pNfjuVEwZw" name="" type="_R8vFQMzgEey7pNfjuVEwZw" association="_SIZisczgEey7pNfjuVEwZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SIaJwczgEey7pNfjuVEwZw" name="" memberEnd="_SIaJwszgEey7pNfjuVEwZw _SHXn8MzgEey7pNfjuVEwZw">
+      <ownedEnd xmi:id="_SIaJwszgEey7pNfjuVEwZw" name="" type="_R8vFQMzgEey7pNfjuVEwZw" association="_SIaJwczgEey7pNfjuVEwZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SIaw0czgEey7pNfjuVEwZw" name="" memberEnd="_SIaw0szgEey7pNfjuVEwZw _SHYPAMzgEey7pNfjuVEwZw">
+      <ownedEnd xmi:id="_SIaw0szgEey7pNfjuVEwZw" name="" type="_R8vFQMzgEey7pNfjuVEwZw" association="_SIaw0czgEey7pNfjuVEwZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SIbX4czgEey7pNfjuVEwZw" name="" memberEnd="_SIbX4szgEey7pNfjuVEwZw _SHYPAszgEey7pNfjuVEwZw">
+      <ownedEnd xmi:id="_SIbX4szgEey7pNfjuVEwZw" name="" type="_R8vFQMzgEey7pNfjuVEwZw" association="_SIbX4czgEey7pNfjuVEwZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SIb-8czgEey7pNfjuVEwZw" name="" memberEnd="_SIb-8szgEey7pNfjuVEwZw _SHY2EczgEey7pNfjuVEwZw">
+      <ownedEnd xmi:id="_SIb-8szgEey7pNfjuVEwZw" name="" type="_R8vFQMzgEey7pNfjuVEwZw" association="_SIb-8czgEey7pNfjuVEwZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SIcmAczgEey7pNfjuVEwZw" name="" memberEnd="_SIcmAszgEey7pNfjuVEwZw _SHZdIczgEey7pNfjuVEwZw">
+      <ownedEnd xmi:id="_SIcmAszgEey7pNfjuVEwZw" name="" type="_R8vFQMzgEey7pNfjuVEwZw" association="_SIcmAczgEey7pNfjuVEwZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SIdNEczgEey7pNfjuVEwZw" name="" memberEnd="_SIdNEszgEey7pNfjuVEwZw _SHdHgMzgEey7pNfjuVEwZw">
+      <ownedEnd xmi:id="_SIdNEszgEey7pNfjuVEwZw" name="" type="_R9CAMMzgEey7pNfjuVEwZw" association="_SIdNEczgEey7pNfjuVEwZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SId0IczgEey7pNfjuVEwZw" name="" memberEnd="_SId0IszgEey7pNfjuVEwZw _SHdukMzgEey7pNfjuVEwZw">
+      <ownedEnd xmi:id="_SId0IszgEey7pNfjuVEwZw" name="" type="_R9CAMMzgEey7pNfjuVEwZw" association="_SId0IczgEey7pNfjuVEwZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SIebMczgEey7pNfjuVEwZw" name="" memberEnd="_SIebMszgEey7pNfjuVEwZw _SHeVoczgEey7pNfjuVEwZw">
+      <ownedEnd xmi:id="_SIebMszgEey7pNfjuVEwZw" name="" type="_R9CAMMzgEey7pNfjuVEwZw" association="_SIebMczgEey7pNfjuVEwZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SIfCQczgEey7pNfjuVEwZw" name="" memberEnd="_SIfCQszgEey7pNfjuVEwZw _SHe8sMzgEey7pNfjuVEwZw">
+      <ownedEnd xmi:id="_SIfCQszgEey7pNfjuVEwZw" name="" type="_R9CAMMzgEey7pNfjuVEwZw" association="_SIfCQczgEey7pNfjuVEwZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SIfpUczgEey7pNfjuVEwZw" name="" memberEnd="_SIfpUszgEey7pNfjuVEwZw _SHe8sszgEey7pNfjuVEwZw">
+      <ownedEnd xmi:id="_SIfpUszgEey7pNfjuVEwZw" name="" type="_R9CAMMzgEey7pNfjuVEwZw" association="_SIfpUczgEey7pNfjuVEwZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SIgQYczgEey7pNfjuVEwZw" name="" memberEnd="_SIgQYszgEey7pNfjuVEwZw _SHfjwMzgEey7pNfjuVEwZw">
+      <ownedEnd xmi:id="_SIgQYszgEey7pNfjuVEwZw" name="" type="_R9CAMMzgEey7pNfjuVEwZw" association="_SIgQYczgEey7pNfjuVEwZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SIg3cczgEey7pNfjuVEwZw" name="" memberEnd="_SIg3cszgEey7pNfjuVEwZw _SHfjwszgEey7pNfjuVEwZw">
+      <ownedEnd xmi:id="_SIg3cszgEey7pNfjuVEwZw" name="" type="_R9CAMMzgEey7pNfjuVEwZw" association="_SIg3cczgEey7pNfjuVEwZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SIhegczgEey7pNfjuVEwZw" name="" memberEnd="_SIhegszgEey7pNfjuVEwZw _SHgK0czgEey7pNfjuVEwZw">
+      <ownedEnd xmi:id="_SIhegszgEey7pNfjuVEwZw" name="" type="_R9CAMMzgEey7pNfjuVEwZw" association="_SIhegczgEey7pNfjuVEwZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SIiFkczgEey7pNfjuVEwZw" name="" memberEnd="_SIiFkszgEey7pNfjuVEwZw _SHgx4czgEey7pNfjuVEwZw">
+      <ownedEnd xmi:id="_SIiFkszgEey7pNfjuVEwZw" name="" type="_R9CAMMzgEey7pNfjuVEwZw" association="_SIiFkczgEey7pNfjuVEwZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SIjTsMzgEey7pNfjuVEwZw" name="" memberEnd="_SIjTsczgEey7pNfjuVEwZw _SHhY8MzgEey7pNfjuVEwZw">
+      <ownedEnd xmi:id="_SIjTsczgEey7pNfjuVEwZw" name="" type="_R9CAMMzgEey7pNfjuVEwZw" association="_SIjTsMzgEey7pNfjuVEwZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SIj6wczgEey7pNfjuVEwZw" name="" memberEnd="_SIj6wszgEey7pNfjuVEwZw _SHiAAczgEey7pNfjuVEwZw">
+      <ownedEnd xmi:id="_SIj6wszgEey7pNfjuVEwZw" name="" type="_R9CAMMzgEey7pNfjuVEwZw" association="_SIj6wczgEey7pNfjuVEwZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SIlI4czgEey7pNfjuVEwZw" name="" memberEnd="_SIlI4szgEey7pNfjuVEwZw _SHiAA8zgEey7pNfjuVEwZw">
+      <ownedEnd xmi:id="_SIlI4szgEey7pNfjuVEwZw" name="" type="_R9CAMMzgEey7pNfjuVEwZw" association="_SIlI4czgEey7pNfjuVEwZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SIlI5MzgEey7pNfjuVEwZw" name="" memberEnd="_SIlI5czgEey7pNfjuVEwZw _SHinEczgEey7pNfjuVEwZw">
+      <ownedEnd xmi:id="_SIlI5czgEey7pNfjuVEwZw" name="" type="_R9CAMMzgEey7pNfjuVEwZw" association="_SIlI5MzgEey7pNfjuVEwZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SIlv8czgEey7pNfjuVEwZw" name="" memberEnd="_SIlv8szgEey7pNfjuVEwZw _SHjOIczgEey7pNfjuVEwZw">
+      <ownedEnd xmi:id="_SIlv8szgEey7pNfjuVEwZw" name="" type="_R9CAMMzgEey7pNfjuVEwZw" association="_SIlv8czgEey7pNfjuVEwZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SImXAczgEey7pNfjuVEwZw" name="" memberEnd="_SImXAszgEey7pNfjuVEwZw _SHj1MczgEey7pNfjuVEwZw">
+      <ownedEnd xmi:id="_SImXAszgEey7pNfjuVEwZw" name="" type="_R9CAMMzgEey7pNfjuVEwZw" association="_SImXAczgEey7pNfjuVEwZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SIm-EczgEey7pNfjuVEwZw" name="" memberEnd="_SIm-EszgEey7pNfjuVEwZw _SHj1M8zgEey7pNfjuVEwZw">
+      <ownedEnd xmi:id="_SIm-EszgEey7pNfjuVEwZw" name="" type="_R9CAMMzgEey7pNfjuVEwZw" association="_SIm-EczgEey7pNfjuVEwZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SIoMMMzgEey7pNfjuVEwZw" name="" memberEnd="_SIoMMczgEey7pNfjuVEwZw _SHkcQczgEey7pNfjuVEwZw">
+      <ownedEnd xmi:id="_SIoMMczgEey7pNfjuVEwZw" name="" type="_R9CAMMzgEey7pNfjuVEwZw" association="_SIoMMMzgEey7pNfjuVEwZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SIozQMzgEey7pNfjuVEwZw" name="" memberEnd="_SIozQczgEey7pNfjuVEwZw _SHlDUczgEey7pNfjuVEwZw">
+      <ownedEnd xmi:id="_SIozQczgEey7pNfjuVEwZw" name="" type="_R9CAMMzgEey7pNfjuVEwZw" association="_SIozQMzgEey7pNfjuVEwZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SIozQ8zgEey7pNfjuVEwZw" name="" memberEnd="_SIozRMzgEey7pNfjuVEwZw _SHlqYMzgEey7pNfjuVEwZw">
+      <ownedEnd xmi:id="_SIozRMzgEey7pNfjuVEwZw" name="" type="_R9CAMMzgEey7pNfjuVEwZw" association="_SIozQ8zgEey7pNfjuVEwZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SIpaUczgEey7pNfjuVEwZw" name="" memberEnd="_SIpaUszgEey7pNfjuVEwZw _SHlqYszgEey7pNfjuVEwZw">
+      <ownedEnd xmi:id="_SIpaUszgEey7pNfjuVEwZw" name="" type="_R9CAMMzgEey7pNfjuVEwZw" association="_SIpaUczgEey7pNfjuVEwZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SIqBYczgEey7pNfjuVEwZw" name="" memberEnd="_SIqBYszgEey7pNfjuVEwZw _SHmRcczgEey7pNfjuVEwZw">
+      <ownedEnd xmi:id="_SIqBYszgEey7pNfjuVEwZw" name="" type="_R9CAMMzgEey7pNfjuVEwZw" association="_SIqBYczgEey7pNfjuVEwZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SIqocczgEey7pNfjuVEwZw" name="" memberEnd="_SIqocszgEey7pNfjuVEwZw _SHmRc8zgEey7pNfjuVEwZw">
+      <ownedEnd xmi:id="_SIqocszgEey7pNfjuVEwZw" name="" type="_R9CAMMzgEey7pNfjuVEwZw" association="_SIqocczgEey7pNfjuVEwZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SIrPgczgEey7pNfjuVEwZw" name="" memberEnd="_SIrPgszgEey7pNfjuVEwZw _SHm4gMzgEey7pNfjuVEwZw">
+      <ownedEnd xmi:id="_SIrPgszgEey7pNfjuVEwZw" name="" type="_R9CAMMzgEey7pNfjuVEwZw" association="_SIrPgczgEey7pNfjuVEwZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SIr2kczgEey7pNfjuVEwZw" name="" memberEnd="_SIr2kszgEey7pNfjuVEwZw _SHm4gszgEey7pNfjuVEwZw">
+      <ownedEnd xmi:id="_SIr2kszgEey7pNfjuVEwZw" name="" type="_R9CAMMzgEey7pNfjuVEwZw" association="_SIr2kczgEey7pNfjuVEwZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SIsdoczgEey7pNfjuVEwZw" name="" memberEnd="_SIsdoszgEey7pNfjuVEwZw _SHpUw8zgEey7pNfjuVEwZw">
+      <ownedEnd xmi:id="_SIsdoszgEey7pNfjuVEwZw" name="" type="_R9CAMMzgEey7pNfjuVEwZw" association="_SIsdoczgEey7pNfjuVEwZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SItEsMzgEey7pNfjuVEwZw" name="" memberEnd="_SItEsczgEey7pNfjuVEwZw _SHqi4MzgEey7pNfjuVEwZw">
+      <ownedEnd xmi:id="_SItEsczgEey7pNfjuVEwZw" name="" type="_R9X-cMzgEey7pNfjuVEwZw" association="_SItEsMzgEey7pNfjuVEwZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SItEs8zgEey7pNfjuVEwZw" name="" memberEnd="_SItEtMzgEey7pNfjuVEwZw _SHrJ8MzgEey7pNfjuVEwZw">
+      <ownedEnd xmi:id="_SItEtMzgEey7pNfjuVEwZw" name="" type="_R9X-cMzgEey7pNfjuVEwZw" association="_SItEs8zgEey7pNfjuVEwZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SItrwczgEey7pNfjuVEwZw" name="" memberEnd="_SItrwszgEey7pNfjuVEwZw _SHrJ8szgEey7pNfjuVEwZw">
+      <ownedEnd xmi:id="_SItrwszgEey7pNfjuVEwZw" name="" type="_R9X-cMzgEey7pNfjuVEwZw" association="_SItrwczgEey7pNfjuVEwZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SIuS0czgEey7pNfjuVEwZw" name="" memberEnd="_SIuS0szgEey7pNfjuVEwZw _SHsYEMzgEey7pNfjuVEwZw">
+      <ownedEnd xmi:id="_SIuS0szgEey7pNfjuVEwZw" name="" type="_R9cP4MzgEey7pNfjuVEwZw" association="_SIuS0czgEey7pNfjuVEwZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SIu54MzgEey7pNfjuVEwZw" name="" memberEnd="_SIu54czgEey7pNfjuVEwZw _SHs_IMzgEey7pNfjuVEwZw">
+      <ownedEnd xmi:id="_SIu54czgEey7pNfjuVEwZw" name="" type="_R9iWgMzgEey7pNfjuVEwZw" association="_SIu54MzgEey7pNfjuVEwZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SIu548zgEey7pNfjuVEwZw" name="" memberEnd="_SIu55MzgEey7pNfjuVEwZw _SHs_IszgEey7pNfjuVEwZw">
+      <ownedEnd xmi:id="_SIu55MzgEey7pNfjuVEwZw" name="" type="_R9iWgMzgEey7pNfjuVEwZw" association="_SIu548zgEey7pNfjuVEwZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SIvg8czgEey7pNfjuVEwZw" name="" memberEnd="_SIvg8szgEey7pNfjuVEwZw _SHtmMczgEey7pNfjuVEwZw">
+      <ownedEnd xmi:id="_SIvg8szgEey7pNfjuVEwZw" name="" type="_R9iWgMzgEey7pNfjuVEwZw" association="_SIvg8czgEey7pNfjuVEwZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SIwIAczgEey7pNfjuVEwZw" name="" memberEnd="_SIwIAszgEey7pNfjuVEwZw _SHtmM8zgEey7pNfjuVEwZw">
+      <ownedEnd xmi:id="_SIwIAszgEey7pNfjuVEwZw" name="" type="_R9iWgMzgEey7pNfjuVEwZw" association="_SIwIAczgEey7pNfjuVEwZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SIwvEMzgEey7pNfjuVEwZw" name="" memberEnd="_SIwvEczgEey7pNfjuVEwZw _SHu0UMzgEey7pNfjuVEwZw">
+      <ownedEnd xmi:id="_SIwvEczgEey7pNfjuVEwZw" name="" type="_R9nPAMzgEey7pNfjuVEwZw" association="_SIwvEMzgEey7pNfjuVEwZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SIwvE8zgEey7pNfjuVEwZw" name="" memberEnd="_SIwvFMzgEey7pNfjuVEwZw _SHu0UszgEey7pNfjuVEwZw">
+      <ownedEnd xmi:id="_SIwvFMzgEey7pNfjuVEwZw" name="" type="_R9nPAMzgEey7pNfjuVEwZw" association="_SIwvE8zgEey7pNfjuVEwZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SIxWIczgEey7pNfjuVEwZw" name="" memberEnd="_SIxWIszgEey7pNfjuVEwZw _SHvbYczgEey7pNfjuVEwZw">
+      <ownedEnd xmi:id="_SIxWIszgEey7pNfjuVEwZw" name="" type="_R9nPAMzgEey7pNfjuVEwZw" association="_SIxWIczgEey7pNfjuVEwZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SIx9MczgEey7pNfjuVEwZw" name="" memberEnd="_SIx9MszgEey7pNfjuVEwZw _SHwCcMzgEey7pNfjuVEwZw">
+      <ownedEnd xmi:id="_SIx9MszgEey7pNfjuVEwZw" name="" type="_R9nPAMzgEey7pNfjuVEwZw" association="_SIx9MczgEey7pNfjuVEwZw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SIykQMzgEey7pNfjuVEwZw" name="" memberEnd="_SIykQczgEey7pNfjuVEwZw _SHwCcszgEey7pNfjuVEwZw">
+      <ownedEnd xmi:id="_SIykQczgEey7pNfjuVEwZw" name="" type="_R9nPAMzgEey7pNfjuVEwZw" association="_SIykQMzgEey7pNfjuVEwZw"/>
+    </packagedElement>
+    <profileApplication xmi:id="_RfHVIMzgEey7pNfjuVEwZw">
+      <eAnnotations xmi:id="_RfOC0MzgEey7pNfjuVEwZw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_RfV-oMzgEey7pNfjuVEwZw" base_Package="_RR7NsMzgEey7pNfjuVEwZw">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:Array xmi:id="_R85dUczgEey7pNfjuVEwZw" base_Element="_R83oIMzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Array xmi:id="_R9IG0MzgEey7pNfjuVEwZw" base_Element="_R9G4sczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Array xmi:id="_R9kLsMzgEey7pNfjuVEwZw" dimensions="1" base_Element="_R9jkoczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Array xmi:id="_R9prQMzgEey7pNfjuVEwZw" base_Element="_R9pEMczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SF0IwMzgEey7pNfjuVEwZw" base_Element="_SFy6oMzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SF1W4MzgEey7pNfjuVEwZw" base_Element="_SF0v0MzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SF2lAMzgEey7pNfjuVEwZw" base_Element="_SF198MzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SF3zIMzgEey7pNfjuVEwZw" base_Element="_SF2lAczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SF5BQMzgEey7pNfjuVEwZw" base_Element="_SF3zIczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SF5oUMzgEey7pNfjuVEwZw" base_Element="_SF5BQczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SF6PYMzgEey7pNfjuVEwZw" base_Element="_SF5oUczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SF62cMzgEey7pNfjuVEwZw" base_Element="_SF6PYczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SF8EkMzgEey7pNfjuVEwZw" base_Element="_SF7dgMzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SF8roMzgEey7pNfjuVEwZw" base_Element="_SF8EkczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SF-g0MzgEey7pNfjuVEwZw" base_Element="_SF9SsMzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SF_u8MzgEey7pNfjuVEwZw" base_Element="_SF-g0czgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SGA9EMzgEey7pNfjuVEwZw" base_Element="_SF_u8czgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SGCyQMzgEey7pNfjuVEwZw" base_Element="_SGCLMMzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SGEAYMzgEey7pNfjuVEwZw" base_Element="_SGDZUMzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SGFOgMzgEey7pNfjuVEwZw" base_Element="_SGEAYczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SGF1kMzgEey7pNfjuVEwZw" base_Element="_SGFOgczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SGNxYMzgEey7pNfjuVEwZw" base_Element="_SGMjQMzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SGOYcMzgEey7pNfjuVEwZw" base_Element="_SGNxYczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SGO_gMzgEey7pNfjuVEwZw" base_Element="_SGOYcczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SGPmkMzgEey7pNfjuVEwZw" base_Element="_SGO_gczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SGQ0sMzgEey7pNfjuVEwZw" base_Element="_SGQNoMzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SGRbwMzgEey7pNfjuVEwZw" base_Element="_SGQ0sczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SGSp4MzgEey7pNfjuVEwZw" base_Element="_SGSC0MzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SGTQ8MzgEey7pNfjuVEwZw" base_Element="_SGSp4czgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SGT4AMzgEey7pNfjuVEwZw" base_Element="_SGTQ8czgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SGVGIMzgEey7pNfjuVEwZw" base_Element="_SGUfEMzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SGVtMMzgEey7pNfjuVEwZw" base_Element="_SGVGIczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SGWUQMzgEey7pNfjuVEwZw" base_Element="_SGVtMczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SGW7UMzgEey7pNfjuVEwZw" base_Element="_SGWUQczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SGYJcMzgEey7pNfjuVEwZw" base_Element="_SGW7UczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SGh6cMzgEey7pNfjuVEwZw" base_Element="_SGhTYMzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SGjvoMzgEey7pNfjuVEwZw" base_Element="_SGjIkMzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SGkWsMzgEey7pNfjuVEwZw" base_Element="_SGjvoczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SGk9wMzgEey7pNfjuVEwZw" base_Element="_SGkWsczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SGmL4MzgEey7pNfjuVEwZw" base_Element="_SGlk0MzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SGmy8MzgEey7pNfjuVEwZw" base_Element="_SGmL4czgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SGoBEMzgEey7pNfjuVEwZw" base_Element="_SGnaAMzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SGsSgMzgEey7pNfjuVEwZw" base_Element="_SGrrcMzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SGvV0MzgEey7pNfjuVEwZw" base_Element="_SGuuwMzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SGwj8MzgEey7pNfjuVEwZw" base_Element="_SGv84MzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SGxLAMzgEey7pNfjuVEwZw" base_Element="_SGwj8czgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SGxyEMzgEey7pNfjuVEwZw" base_Element="_SGxLAczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SGyZIMzgEey7pNfjuVEwZw" base_Element="_SGxyEczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SGzAMMzgEey7pNfjuVEwZw" base_Element="_SGyZIczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SGznQMzgEey7pNfjuVEwZw" base_Element="_SGzAMczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SG01YMzgEey7pNfjuVEwZw" base_Element="_SG0OUMzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHSvcMzgEey7pNfjuVEwZw" base_Element="_SHSIYMzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHVywMzgEey7pNfjuVEwZw" base_Element="_SHTWgMzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHWZ0MzgEey7pNfjuVEwZw" base_Element="_SHVywczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHXA4MzgEey7pNfjuVEwZw" base_Element="_SHWZ0czgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHXA4szgEey7pNfjuVEwZw" base_Element="_SHXA4czgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHXn8czgEey7pNfjuVEwZw" base_Element="_SHXn8MzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHYPAczgEey7pNfjuVEwZw" base_Element="_SHYPAMzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHY2EMzgEey7pNfjuVEwZw" base_Element="_SHYPAszgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHZdIMzgEey7pNfjuVEwZw" base_Element="_SHY2EczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHZdIszgEey7pNfjuVEwZw" base_Element="_SHZdIczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHaEMczgEey7pNfjuVEwZw" base_Element="_SHaEMMzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHarQczgEey7pNfjuVEwZw" base_Element="_SHarQMzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHbSUczgEey7pNfjuVEwZw" base_Element="_SHbSUMzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHb5YMzgEey7pNfjuVEwZw" base_Element="_SHbSUszgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHdHgczgEey7pNfjuVEwZw" base_Element="_SHdHgMzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHeVoMzgEey7pNfjuVEwZw" base_Element="_SHdukMzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHeVoszgEey7pNfjuVEwZw" base_Element="_SHeVoczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHe8sczgEey7pNfjuVEwZw" base_Element="_SHe8sMzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHe8s8zgEey7pNfjuVEwZw" base_Element="_SHe8sszgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHfjwczgEey7pNfjuVEwZw" base_Element="_SHfjwMzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHgK0MzgEey7pNfjuVEwZw" base_Element="_SHfjwszgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHgx4MzgEey7pNfjuVEwZw" base_Element="_SHgK0czgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHgx4szgEey7pNfjuVEwZw" base_Element="_SHgx4czgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHiAAMzgEey7pNfjuVEwZw" base_Element="_SHhY8MzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHiAAszgEey7pNfjuVEwZw" base_Element="_SHiAAczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHinEMzgEey7pNfjuVEwZw" base_Element="_SHiAA8zgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHjOIMzgEey7pNfjuVEwZw" base_Element="_SHinEczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHj1MMzgEey7pNfjuVEwZw" base_Element="_SHjOIczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHj1MszgEey7pNfjuVEwZw" base_Element="_SHj1MczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHkcQMzgEey7pNfjuVEwZw" base_Element="_SHj1M8zgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHlDUMzgEey7pNfjuVEwZw" base_Element="_SHkcQczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHlDUszgEey7pNfjuVEwZw" base_Element="_SHlDUczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHlqYczgEey7pNfjuVEwZw" base_Element="_SHlqYMzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHmRcMzgEey7pNfjuVEwZw" base_Element="_SHlqYszgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHmRcszgEey7pNfjuVEwZw" base_Element="_SHmRcczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHmRdMzgEey7pNfjuVEwZw" base_Element="_SHmRc8zgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHm4gczgEey7pNfjuVEwZw" base_Element="_SHm4gMzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHm4g8zgEey7pNfjuVEwZw" base_Element="_SHm4gszgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHoGoMzgEey7pNfjuVEwZw" base_Element="_SHnfkMzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHoGoszgEey7pNfjuVEwZw" base_Element="_SHoGoczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHotsczgEey7pNfjuVEwZw" base_Element="_SHotsMzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHpUwMzgEey7pNfjuVEwZw" base_Element="_SHotsszgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHpUwszgEey7pNfjuVEwZw" base_Element="_SHpUwczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHp70MzgEey7pNfjuVEwZw" base_Element="_SHpUw8zgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHqi4czgEey7pNfjuVEwZw" base_Element="_SHqi4MzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHrJ8czgEey7pNfjuVEwZw" base_Element="_SHrJ8MzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHrxAMzgEey7pNfjuVEwZw" base_Element="_SHrJ8szgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHsYEczgEey7pNfjuVEwZw" base_Element="_SHsYEMzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHs_IczgEey7pNfjuVEwZw" base_Element="_SHs_IMzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHtmMMzgEey7pNfjuVEwZw" base_Element="_SHs_IszgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHtmMszgEey7pNfjuVEwZw" base_Element="_SHtmMczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHuNQMzgEey7pNfjuVEwZw" base_Element="_SHtmM8zgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHu0UczgEey7pNfjuVEwZw" base_Element="_SHu0UMzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHvbYMzgEey7pNfjuVEwZw" base_Element="_SHu0UszgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHvbYszgEey7pNfjuVEwZw" base_Element="_SHvbYczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHwCcczgEey7pNfjuVEwZw" base_Element="_SHwCcMzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_SHwpgMzgEey7pNfjuVEwZw" base_Element="_SHwCcszgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SIXGcMzgEey7pNfjuVEwZw" base_Element="_SIWfYMzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SIYUkMzgEey7pNfjuVEwZw" base_Element="_SIXtgMzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SIY7oMzgEey7pNfjuVEwZw" base_Element="_SIYUkczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SIZisMzgEey7pNfjuVEwZw" base_Element="_SIY7oczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SIaJwMzgEey7pNfjuVEwZw" base_Element="_SIZisczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SIaw0MzgEey7pNfjuVEwZw" base_Element="_SIaJwczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SIbX4MzgEey7pNfjuVEwZw" base_Element="_SIaw0czgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SIb-8MzgEey7pNfjuVEwZw" base_Element="_SIbX4czgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SIcmAMzgEey7pNfjuVEwZw" base_Element="_SIb-8czgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SIdNEMzgEey7pNfjuVEwZw" base_Element="_SIcmAczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SId0IMzgEey7pNfjuVEwZw" base_Element="_SIdNEczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SIebMMzgEey7pNfjuVEwZw" base_Element="_SId0IczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SIfCQMzgEey7pNfjuVEwZw" base_Element="_SIebMczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SIfpUMzgEey7pNfjuVEwZw" base_Element="_SIfCQczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SIgQYMzgEey7pNfjuVEwZw" base_Element="_SIfpUczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SIg3cMzgEey7pNfjuVEwZw" base_Element="_SIgQYczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SIhegMzgEey7pNfjuVEwZw" base_Element="_SIg3cczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SIiFkMzgEey7pNfjuVEwZw" base_Element="_SIhegczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SIisoMzgEey7pNfjuVEwZw" base_Element="_SIiFkczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SIj6wMzgEey7pNfjuVEwZw" base_Element="_SIjTsMzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SIlI4MzgEey7pNfjuVEwZw" base_Element="_SIj6wczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SIlI48zgEey7pNfjuVEwZw" base_Element="_SIlI4czgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SIlv8MzgEey7pNfjuVEwZw" base_Element="_SIlI5MzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SImXAMzgEey7pNfjuVEwZw" base_Element="_SIlv8czgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SIm-EMzgEey7pNfjuVEwZw" base_Element="_SImXAczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SInlIMzgEey7pNfjuVEwZw" base_Element="_SIm-EczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SIoMMszgEey7pNfjuVEwZw" base_Element="_SIoMMMzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SIozQszgEey7pNfjuVEwZw" base_Element="_SIozQMzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SIpaUMzgEey7pNfjuVEwZw" base_Element="_SIozQ8zgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SIqBYMzgEey7pNfjuVEwZw" base_Element="_SIpaUczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SIqocMzgEey7pNfjuVEwZw" base_Element="_SIqBYczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SIrPgMzgEey7pNfjuVEwZw" base_Element="_SIqocczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SIr2kMzgEey7pNfjuVEwZw" base_Element="_SIrPgczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SIsdoMzgEey7pNfjuVEwZw" base_Element="_SIr2kczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SIsdo8zgEey7pNfjuVEwZw" base_Element="_SIsdoczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SItEsszgEey7pNfjuVEwZw" base_Element="_SItEsMzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SItrwMzgEey7pNfjuVEwZw" base_Element="_SItEs8zgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SIuS0MzgEey7pNfjuVEwZw" base_Element="_SItrwczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SIuS08zgEey7pNfjuVEwZw" base_Element="_SIuS0czgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SIu54szgEey7pNfjuVEwZw" base_Element="_SIu54MzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SIvg8MzgEey7pNfjuVEwZw" base_Element="_SIu548zgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SIwIAMzgEey7pNfjuVEwZw" base_Element="_SIvg8czgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SIwIA8zgEey7pNfjuVEwZw" base_Element="_SIwIAczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SIwvEszgEey7pNfjuVEwZw" base_Element="_SIwvEMzgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SIxWIMzgEey7pNfjuVEwZw" base_Element="_SIwvE8zgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SIx9MMzgEey7pNfjuVEwZw" base_Element="_SIxWIczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SIx9M8zgEey7pNfjuVEwZw" base_Element="_SIx9MczgEey7pNfjuVEwZw"/>
+  <UMLLabProfile:Reference xmi:id="_SIykQszgEey7pNfjuVEwZw" base_Element="_SIykQMzgEey7pNfjuVEwZw"/>
+</xmi:XMI>
