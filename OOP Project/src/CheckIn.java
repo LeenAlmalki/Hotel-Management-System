@@ -248,7 +248,7 @@ public class CheckIn extends JFrame {
 				}
 		});
 		btnNewButton_1.setFont(new Font("Tahoma", Font.BOLD, 18));
-		btnNewButton_1.setBounds(870, 566, 138, 49);
+		btnNewButton_1.setBounds(828, 566, 180, 49);
 		contentPane.add(btnNewButton_1);
 		
 		textField_4.setEditable(false);

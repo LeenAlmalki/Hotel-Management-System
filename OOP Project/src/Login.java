@@ -22,7 +22,7 @@ public class Login extends JFrame {
 	private JPasswordField passwordField;
 
 	/**
-	 
+	 * Launch the application.
 	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {

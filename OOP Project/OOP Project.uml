@@ -4,7 +4,7 @@
     <eAnnotations xmi:id="_RfER0MzgEey7pNfjuVEwZw" source="http://ns.yatta.de/umllab">
       <contents xmi:type="ecore:EAnnotation" xmi:id="_RfER0czgEey7pNfjuVEwZw" source="codegen">
         <details xmi:id="_RfE44MzgEey7pNfjuVEwZw" key="codegenDirectory" value="/OOP Project/src"/>
-        <details xmi:id="_SQnqkMzgEey7pNfjuVEwZw" key="AssociatedSourceCode" value="/OOP Project/src/CheckIn.java;1165655065/1;/OOP Project/src/CheckOut.java;650788870/1;/OOP Project/src/CustomerBill.java;62545200/1;/OOP Project/src/Home.java;4176949414/1;/OOP Project/src/InsertDeleteUpdate.java;3418934881/1;/OOP Project/src/Login.java;2062679246/1;/OOP Project/src/ManageRoom.java;1735946233/1;/OOP Project/src/Select.java;1294274568/1;/OOP Project/src/connection.java;196210301/1;"/>
+        <details xmi:id="_SQnqkMzgEey7pNfjuVEwZw" key="AssociatedSourceCode" value="/OOP Project/src/CheckIn.java;1192949659/1;/OOP Project/src/CheckOut.java;650788870/1;/OOP Project/src/CustomerBill.java;62545200/1;/OOP Project/src/Home.java;4176949414/1;/OOP Project/src/InsertDeleteUpdate.java;3418934881/1;/OOP Project/src/Login.java;3861413958/1;/OOP Project/src/ManageRoom.java;3430356112/1;/OOP Project/src/Select.java;1294274568/1;/OOP Project/src/connection.java;196210301/1;"/>
       </contents>
     </eAnnotations>
     <elementImport xmi:id="_R80k0MzgEey7pNfjuVEwZw">
@@ -349,7 +349,7 @@
 				}&#xD;
 		});&#xD;
 		btnNewButton_1.setFont(new Font(&quot;Tahoma&quot;, Font.BOLD, 18));&#xD;
-		btnNewButton_1.setBounds(870, 566, 138, 49);&#xD;
+		btnNewButton_1.setBounds(828, 566, 180, 49);&#xD;
 		contentPane.add(btnNewButton_1);&#xD;
 		&#xD;
 		textField_4.setEditable(false);&#xD;
@@ -387,7 +387,7 @@
 	</body>
       </ownedBehavior>
       <ownedOperation xmi:id="_R83BEMzgEey7pNfjuVEwZw" name="main" isStatic="true" method="_SH9d0MzgEey7pNfjuVEwZw">
-        <ownedComment xmi:id="_QDbykMzmEey7pNfjuVEwZw">
+        <ownedComment xmi:id="_PSvysM15Eey7pNfjuVEwZw">
           <body>Launch the application.</body>
         </ownedComment>
         <ownedParameter xmi:id="_R83oIMzgEey7pNfjuVEwZw" name="args">
@@ -399,7 +399,7 @@
         <eAnnotations xmi:id="_R86EYczgEey7pNfjuVEwZw" source="http://www.eclipse.org/uml2/2.0.0/UML">
           <details xmi:id="_R86rcMzgEey7pNfjuVEwZw" key="create"/>
         </eAnnotations>
-        <ownedComment xmi:id="_QDcZoMzmEey7pNfjuVEwZw">
+        <ownedComment xmi:id="_PSvysc15Eey7pNfjuVEwZw">
           <body>Create the frame.</body>
         </ownedComment>
         <ownedParameter xmi:id="_R86rcczgEey7pNfjuVEwZw" type="_R8vFQMzgEey7pNfjuVEwZw" direction="return"/>
@@ -1241,7 +1241,7 @@
       </ownedBehavior>
       <ownedOperation xmi:id="_R9jkoMzgEey7pNfjuVEwZw" name="main" isStatic="true" method="_SIHO0MzgEey7pNfjuVEwZw">
         <ownedComment xmi:id="_SILgQMzgEey7pNfjuVEwZw">
-          <body></body>
+          <body>Launch the application.</body>
         </ownedComment>
         <ownedParameter xmi:id="_R9jkoczgEey7pNfjuVEwZw" name="args">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -1284,9 +1284,7 @@
 	</body>
       </ownedBehavior>
       <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_SIH148zgEey7pNfjuVEwZw" name="ManageRoom" specification="_R9prQczgEey7pNfjuVEwZw">
-        <ownedParameter xmi:id="_SIH15MzgEey7pNfjuVEwZw" type="_R9nPAMzgEey7pNfjuVEwZw" direction="return">
-          <name xsi:nil="true"/>
-        </ownedParameter>
+        <ownedParameter xmi:id="_SIH15MzgEey7pNfjuVEwZw" type="_R9nPAMzgEey7pNfjuVEwZw" direction="return"/>
         <language>java</language>
         <body>addComponentListener(new ComponentAdapter() {&#xD;
 			@Override&#xD;
@@ -1360,7 +1358,7 @@
 		&#xD;
 		JComboBox comboBox = new JComboBox();&#xD;
 		comboBox.setFont(new Font(&quot;Tahoma&quot;, Font.PLAIN, 20));&#xD;
-		comboBox.setModel(new DefaultComboBoxModel(new String[] {&quot;Select&quot;, &quot;Standard&quot;, &quot;Luxury&quot;, &quot;Presidential Suite&quot;}));&#xD;
+		comboBox.setModel(new DefaultComboBoxModel(new String[] {&quot;Select&quot;, &quot;Standard&quot;, &quot;Luxury&quot;, &quot;Suite&quot;, &quot;Presidential Suit&quot;}));&#xD;
 		comboBox.setBounds(846, 251, 164, 33);&#xD;
 		contentPane.add(comboBox);&#xD;
 		&#xD;
@@ -1416,7 +1414,7 @@
 	</body>
       </ownedBehavior>
       <ownedOperation xmi:id="_R9pEMMzgEey7pNfjuVEwZw" name="main" isStatic="true" method="_SIH14MzgEey7pNfjuVEwZw">
-        <ownedComment xmi:id="_fi5KMMzmEey7pNfjuVEwZw">
+        <ownedComment xmi:id="_SILgQszgEey7pNfjuVEwZw">
           <body>Launch the application.</body>
         </ownedComment>
         <ownedParameter xmi:id="_R9pEMczgEey7pNfjuVEwZw" name="args">
@@ -1428,7 +1426,7 @@
         <eAnnotations xmi:id="_R9prQszgEey7pNfjuVEwZw" source="http://www.eclipse.org/uml2/2.0.0/UML">
           <details xmi:id="_R9prQ8zgEey7pNfjuVEwZw" key="create"/>
         </eAnnotations>
-        <ownedComment xmi:id="_fi5KMczmEey7pNfjuVEwZw">
+        <ownedComment xmi:id="_SILgQ8zgEey7pNfjuVEwZw">
           <body>Create the frame.</body>
         </ownedComment>
         <ownedParameter xmi:id="_R9prRMzgEey7pNfjuVEwZw" type="_R9nPAMzgEey7pNfjuVEwZw" direction="return"/>
