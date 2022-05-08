@@ -45,8 +45,13 @@ public class ManageRoom extends JFrame {
 	//textFields 
 	private JTextField roomNum;
 	private JTextField price_;
+	//combobox
 	private JComboBox bed_;
 	private JComboBox roomType_;
+	//buttons
+	private JButton addRoom;
+	private JButton back;
+	///table
 	private JTable table;
 
 	/**
@@ -169,8 +174,10 @@ public class ManageRoom extends JFrame {
    		bed_.setBounds(843, 350, 164, 33);
    		contentPane.add(bed_);
    		
-   		JButton btnNewButton = new JButton("Add Room");
-   		btnNewButton.addActionListener(new ActionListener() {
+   		
+   		// this button adds the room into the database
+   		addRoom = new JButton("Add Room");
+   		addRoom.addActionListener(new ActionListener() {
    			public void actionPerformed(ActionEvent e) {
    				String roomNo = roomNum.getText();
    				String roomType = (String)roomType_.getSelectedItem();
@@ -180,22 +187,24 @@ public class ManageRoom extends JFrame {
    				InsertDeleteUpdate.setData(Query, "Successfully Updated!");
    				setVisible(false);
    				new ManageRoom().setVisible(true);
-   				
-   				
-   				
+   	
    		}});
-   		btnNewButton.setFont(new Font("Tahoma", Font.PLAIN, 21));
-   		btnNewButton.setBounds(763, 542, 134, 37);
-   		contentPane.add(btnNewButton);
+   		addRoom.setFont(new Font("Tahoma", Font.PLAIN, 21));
+   		addRoom.setBounds(763, 542, 134, 37);
+   		contentPane.add(addRoom);
    		
-   		JButton btnNewButton_1 = new JButton("Back");
-   		btnNewButton_1.addActionListener(new ActionListener() {
+   		back = new JButton("Back");
+   		back.addActionListener(new ActionListener() {
    			public void actionPerformed(ActionEvent e) {
    				setVisible(false);
    				new Home() .setVisible(true);
    			}
    		});
-   		btnNewButton_1.setBounds(1036, 10, 85, 21);
-   		contentPane.add(btnNewButton_1);
+   		
+   		back.setBounds(1036, 10, 85, 21);
+   		contentPane.add(back);
    	}
+	
+	
+	
 }
