@@ -17,6 +17,13 @@ import javax.swing.JLabel;
 public class Home extends JFrame {
 
 	private JPanel contentPane;
+	private JButton manageRoom;
+	private JButton checkIn;
+	private JButton checkOut;
+	private JButton bill;
+	private JButton logout;
+	private JLabel label;
+	 
 
 	/**
 	 * Launch the application.
@@ -45,50 +52,50 @@ public class Home extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JButton btnNewButton = new JButton("Manage Rooms");
-		btnNewButton.addActionListener(new ActionListener() {
+		 manageRoom = new JButton("Manage Rooms");
+		 manageRoom.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				setVisible(false);
 				new ManageRoom() .setVisible(true);
 			}
 		});
-		btnNewButton.setFont(new Font("Tahoma", Font.PLAIN, 24));
-		btnNewButton.setBounds(457, 342, 250, 37);
-		contentPane.add(btnNewButton);
+		 manageRoom.setFont(new Font("Tahoma", Font.PLAIN, 24));
+		 manageRoom.setBounds(457, 342, 250, 37);
+		contentPane.add(manageRoom);
 		
-		JButton btnNewButton_1 = new JButton("Customer Checkin");
-		btnNewButton_1.addActionListener(new ActionListener() {
+		checkIn = new JButton("Customer Checkin");
+		checkIn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				setVisible(false);
 				new CheckIn() .setVisible(true);
 			}
 		});
-		btnNewButton_1.setFont(new Font("Tahoma", Font.PLAIN, 24));
-		btnNewButton_1.setBounds(457, 401, 250, 37);
-		contentPane.add(btnNewButton_1);
+		checkIn.setFont(new Font("Tahoma", Font.PLAIN, 24));
+		checkIn.setBounds(457, 401, 250, 37);
+		contentPane.add(checkIn);
 		
-		JButton btnNewButton_1_1 = new JButton("Customer Checkout");
-		btnNewButton_1_1.addActionListener(new ActionListener() {
+		 checkOut = new JButton("Customer Checkout");
+		 checkOut.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				new CheckOut().setVisible(true);
 			}
 		});
-		btnNewButton_1_1.setFont(new Font("Tahoma", Font.PLAIN, 24));
-		btnNewButton_1_1.setBounds(457, 461, 250, 37);
-		contentPane.add(btnNewButton_1_1);
+		 checkOut.setFont(new Font("Tahoma", Font.PLAIN, 24));
+		 checkOut.setBounds(457, 461, 250, 37);
+		contentPane.add(checkOut);
 		
-		JButton btnNewButton_1_1_1 = new JButton("Customer Detail Bill");
-		btnNewButton_1_1_1.addActionListener(new ActionListener() {
+		 bill = new JButton("Customer Detail Bill");
+		 bill.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				new CustomerBill().setVisible(true);
 			}
 		});
-		btnNewButton_1_1_1.setFont(new Font("Tahoma", Font.PLAIN, 24));
-		btnNewButton_1_1_1.setBounds(457, 523, 250, 37);
-		contentPane.add(btnNewButton_1_1_1);
+		 bill.setFont(new Font("Tahoma", Font.PLAIN, 24));
+		 bill.setBounds(457, 523, 250, 37);
+		contentPane.add(bill);
 		
-		JButton btnNewButton_1_1_1_1 = new JButton("Logout");
-		btnNewButton_1_1_1_1.addActionListener(new ActionListener() {
+		 logout = new JButton("Logout");
+		 logout.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
 
@@ -100,14 +107,14 @@ public class Home extends JFrame {
 				}
 			}
 		});
-		btnNewButton_1_1_1_1.setFont(new Font("Tahoma", Font.PLAIN, 24));
-		btnNewButton_1_1_1_1.setBounds(519, 585, 130, 37);
-		contentPane.add(btnNewButton_1_1_1_1);
+		 logout.setFont(new Font("Tahoma", Font.PLAIN, 24));
+		 logout.setBounds(519, 585, 130, 37);
+		contentPane.add(logout);
 		
-		JLabel lblNewLabel = new JLabel("Effat Hotel");
-		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 96));
-		lblNewLabel.setBounds(184, 86, 806, 133);
-		contentPane.add(lblNewLabel);
+		 label = new JLabel("Effat Hotel");
+		 label.setHorizontalAlignment(SwingConstants.CENTER);
+		 label.setFont(new Font("Tahoma", Font.PLAIN, 96));
+		 label.setBounds(184, 86, 806, 133);
+		contentPane.add(label);
 	}
 }

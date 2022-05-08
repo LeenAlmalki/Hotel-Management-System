@@ -36,9 +36,17 @@ import java.awt.event.ComponentEvent;
 public class ManageRoom extends JFrame {
 
 	private JPanel contentPane;
-	private JLabel lblNewLabel_1;
-	private JTextField textField;
-	private JTextField textField_1;
+	//labels
+	private JLabel roomNumberLabel;
+	private JLabel manageRoomsLabel;
+	private JLabel roomTypeLabel;
+	private JLabel bedLabel;
+	private JLabel priceLabel;
+	//textFields 
+	private JTextField roomNum;
+	private JTextField price_;
+	private JComboBox bed_;
+	private JComboBox roomType_;
 	private JTable table;
 
 	/**
@@ -112,61 +120,62 @@ public class ManageRoom extends JFrame {
    		));
    		table.getColumnModel().getColumn(0).setPreferredWidth(82);
    		
-   		JLabel lblNewLabel = new JLabel("Manage Rooms");
-   		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
-   		lblNewLabel.setBounds(692, 27, 318, 86);
-   		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 24));
-   		contentPane.add(lblNewLabel);
+   		manageRoomsLabel = new JLabel("Manage Rooms");
+   		manageRoomsLabel.setHorizontalAlignment(SwingConstants.CENTER);
+   		manageRoomsLabel.setBounds(692, 27, 318, 86);
+   		manageRoomsLabel.setFont(new Font("Tahoma", Font.BOLD, 24));
+   		contentPane.add(manageRoomsLabel);
    		
-   		lblNewLabel_1 = new JLabel("Room Number");
-   		lblNewLabel_1.setFont(new Font("Tahoma", Font.PLAIN, 22));
-   		lblNewLabel_1.setBounds(619, 144, 174, 37);
-   		contentPane.add(lblNewLabel_1);
+   		roomNumberLabel = new JLabel("Room Number");
+   		roomNumberLabel.setFont(new Font("Tahoma", Font.PLAIN, 22));
+   		roomNumberLabel.setBounds(619, 144, 174, 37);
+   		contentPane.add(roomNumberLabel);
    		
-   		textField = new JTextField();
-   		textField.setBounds(843, 144, 167, 33);
-   		contentPane.add(textField);
-   		textField.setColumns(10);
+   		roomTypeLabel = new JLabel("Room Type");
+   		roomTypeLabel.setFont(new Font("Tahoma", Font.PLAIN, 22));
+   		roomTypeLabel.setBounds(619, 238, 174, 37);
+   		contentPane.add(roomTypeLabel);
    		
-   		JLabel lblNewLabel_1_1 = new JLabel("Room Type");
-   		lblNewLabel_1_1.setFont(new Font("Tahoma", Font.PLAIN, 22));
-   		lblNewLabel_1_1.setBounds(619, 238, 174, 37);
-   		contentPane.add(lblNewLabel_1_1);
+   		bedLabel = new JLabel("Bed");
+   		bedLabel.setFont(new Font("Tahoma", Font.PLAIN, 22));
+   		bedLabel.setBounds(619, 343, 174, 37);
+   		contentPane.add(bedLabel);
    		
-   		JComboBox comboBox = new JComboBox();
-   		comboBox.setFont(new Font("Tahoma", Font.PLAIN, 20));
-   		comboBox.setModel(new DefaultComboBoxModel(new String[] {"Select", "Standard", "Luxury", "Suite", "Presidential Suit"}));
-   		comboBox.setBounds(846, 251, 164, 33);
-   		contentPane.add(comboBox);
+   		priceLabel = new JLabel("Price");
+   		priceLabel.setFont(new Font("Tahoma", Font.PLAIN, 22));
+   		priceLabel.setBounds(619, 430, 174, 37);
+   		contentPane.add(priceLabel);
    		
-   		JLabel lblNewLabel_1_1_1 = new JLabel("Bed");
-   		lblNewLabel_1_1_1.setFont(new Font("Tahoma", Font.PLAIN, 22));
-   		lblNewLabel_1_1_1.setBounds(619, 343, 174, 37);
-   		contentPane.add(lblNewLabel_1_1_1);
+   		roomNum = new JTextField();
+   		roomNum.setBounds(843, 144, 167, 33);
+   		contentPane.add(roomNum);
+   		roomNum.setColumns(10);
    		
-   		JLabel lblNewLabel_1_1_1_1 = new JLabel("Price");
-   		lblNewLabel_1_1_1_1.setFont(new Font("Tahoma", Font.PLAIN, 22));
-   		lblNewLabel_1_1_1_1.setBounds(619, 430, 174, 37);
-   		contentPane.add(lblNewLabel_1_1_1_1);
+   	
+   		roomType_ = new JComboBox();
+   		roomType_.setFont(new Font("Tahoma", Font.PLAIN, 20));
+   		roomType_.setModel(new DefaultComboBoxModel(new String[] {"Select", "Standard", "Luxury", "Suite", "Presidential Suit"}));
+   		roomType_.setBounds(846, 251, 164, 33);
+   		contentPane.add(roomType_);
    		
-   		textField_1 = new JTextField();
-   		textField_1.setColumns(10);
-   		textField_1.setBounds(843, 430, 167, 33);
-   		contentPane.add(textField_1);
+   		price_ = new JTextField();
+   		price_.setColumns(10);
+   		price_.setBounds(843, 430, 167, 33);
+   		contentPane.add(price_);
    		
-   		JComboBox comboBox_2 = new JComboBox();
-   		comboBox_2.setFont(new Font("Tahoma", Font.PLAIN, 20));
-   		comboBox_2.setModel(new DefaultComboBoxModel(new String[] {"Select", "Single", "Double ", "Triple"}));
-   		comboBox_2.setBounds(843, 350, 164, 33);
-   		contentPane.add(comboBox_2);
+   		bed_ = new JComboBox();
+   		bed_.setFont(new Font("Tahoma", Font.PLAIN, 20));
+   		bed_.setModel(new DefaultComboBoxModel(new String[] {"Select", "Single", "Double ", "Triple"}));
+   		bed_.setBounds(843, 350, 164, 33);
+   		contentPane.add(bed_);
    		
    		JButton btnNewButton = new JButton("Add Room");
    		btnNewButton.addActionListener(new ActionListener() {
    			public void actionPerformed(ActionEvent e) {
-   				String roomNo = textField.getText();
-   				String roomType = (String)comboBox.getSelectedItem();
-   				String bed = (String)comboBox_2.getSelectedItem();
-   				String price = textField_1.getText();
+   				String roomNo = roomNum.getText();
+   				String roomType = (String)roomType_.getSelectedItem();
+   				String bed = (String)bed_.getSelectedItem();
+   				String price = price_.getText();
    				String Query = "insert into room values('"+roomNo+"', '"+roomType+"', '"+bed+"' , '"+price+"','Not Booked')";
    				InsertDeleteUpdate.setData(Query, "Successfully Updated!");
    				setVisible(false);
