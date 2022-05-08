@@ -321,7 +321,7 @@ public class CheckOut extends JFrame {
 				InsertDeleteUpdate.setData(Query, "");
 				
 				//here
-				String path = "C:/Users/leena/Desktop";
+				String path = "C:/Users/leena/Downloads";
 				com.itextpdf.text.Document doc = new com.itextpdf.text.Document();
 				
 				try {
@@ -347,10 +347,10 @@ public class CheckOut extends JFrame {
 					doc.add(paragraph2);
 					
 					PdfPTable table = new PdfPTable(4);
-					table.addCell("Check IN Date" + textField_2.getText());
-					table.addCell("Check OUT Date" + checkOut);
-					table.addCell("Number of Days Stayed " + stayDay);
-					table.addCell("Total Amount" + amount);
+					table.addCell("Check IN Date: " + textField_2.getText());
+					table.addCell("Check OUT Date: " + checkOut);
+					table.addCell("Number of Days Stayed:  " + stayDay);
+					table.addCell("Total Amount: " + amount + " SAR");
 					
 					doc.add(table);
 					

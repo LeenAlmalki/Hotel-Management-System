@@ -17,9 +17,14 @@ import java.awt.Color;
 public class Login extends JFrame {
 
 	private JPanel contentPane;
-	private JTextField textField_1;
-	private JLabel lblNewLabel;
+	private JTextField userTextField;
 	private JPasswordField passwordField;
+	private JLabel loginLabel;
+	private JLabel user;
+	private JLabel pass;
+	private JButton loginButton;
+	
+	
 
 	/**
 	 * Launch the application.
@@ -49,11 +54,11 @@ public class Login extends JFrame {
 		contentPane.setLayout(null);
 		setContentPane(contentPane);
 		
-		textField_1 = new JTextField();
-		textField_1.setForeground(new Color(0, 0, 0));
-		textField_1.setBounds(438, 210, 291, 40);
-		contentPane.add(textField_1);
-		textField_1.setColumns(10);
+		userTextField = new JTextField();
+		userTextField.setForeground(new Color(0, 0, 0));
+		userTextField.setBounds(438, 210, 291, 40);
+		contentPane.add(userTextField);
+		userTextField.setColumns(10);
 		
 		JLabel user = new JLabel("User ID");
 		user.setForeground(new Color(0, 0, 0));
@@ -67,12 +72,12 @@ public class Login extends JFrame {
 		pass.setBounds(284, 290, 94, 13);
 		contentPane.add(pass);
 		
-		JButton btnNewButton = new JButton("Login");
-		btnNewButton.setForeground(new Color(0, 0, 0));
-		btnNewButton.addActionListener(new ActionListener() {	
+		JButton loginButton = new JButton("Login");
+		loginButton.setForeground(new Color(0, 0, 0));
+		loginButton.addActionListener(new ActionListener() {	
 			public void actionPerformed(ActionEvent e) {	
 				
-				String userID = textField_1.getText();
+				String userID = userTextField.getText();
 				String password = passwordField.getText();
 				
 				
@@ -101,15 +106,15 @@ public class Login extends JFrame {
 				}
 			}
 		});
-		btnNewButton.setFont(new Font("Tahoma", Font.BOLD, 17));
-		btnNewButton.setBounds(499, 399, 161, 40);
-		contentPane.add(btnNewButton);
+		loginButton.setFont(new Font("Tahoma", Font.BOLD, 17));
+		loginButton.setBounds(499, 399, 161, 40);
+		contentPane.add(loginButton);
 		
-		lblNewLabel = new JLabel("Login");
-		lblNewLabel.setForeground(new Color(0, 0, 0));
-		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 21));
-		lblNewLabel.setBounds(550, 101, 203, 29);
-		contentPane.add(lblNewLabel);
+		loginLabel = new JLabel("Login");
+		loginLabel.setForeground(new Color(0, 0, 0));
+		loginLabel.setFont(new Font("Tahoma", Font.PLAIN, 21));
+		loginLabel.setBounds(550, 101, 203, 29);
+		contentPane.add(loginLabel);
 		
 		passwordField = new JPasswordField();
 		passwordField.setForeground(new Color(0, 0, 0));
