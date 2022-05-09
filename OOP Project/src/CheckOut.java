@@ -38,27 +38,34 @@ public class CheckOut extends JFrame {
 
 	private JPanel contentPane;
 	private JTable table;
-	private JLabel lblNewLabel;
-	private JButton btnNewButton;
-	private JButton btnNewButton_1;
-	private JLabel lblNewLabel_1;
-	private JTextField textField;
-	private JLabel lblNewLabel_2;
-	private JTextField textField_1;
-	private JLabel lblNewLabel_3;
-	private JTextField textField_2;
-	private JLabel lblNewLabel_4;
-	private JTextField textField_3;
-	private JLabel lblNewLabel_5;
-	private JTextField textField_4;
-	private JLabel lblNewLabel_6;
-	private JTextField textField_5;
-	private JLabel lblNewLabel_7;
-	private JTextField textField_6;
-	private JLabel lblNewLabel_8;
-	private JTextField textField_7;
-	private JLabel lblNewLabel_9;
-	private JTextField textField_8;
+	
+	//labels
+	private JLabel label;
+	private JLabel searchRoomLabel;
+	private JLabel NameLabel;
+	private JLabel checkInLabel;
+	private JLabel checkOutLabel;
+	private JLabel emailLabel;
+	private JLabel phoneNumLabel;
+	private JLabel stayDayLabel;
+	private JLabel pricePerDayLabel;
+	private JLabel totalAmountLabel;
+	
+	//buttons
+	private JButton back;
+	private JButton searchRoomButton;
+	
+	//text fields
+	private JTextField searchRoomTextField;
+	private JTextField nameTextField;
+	private JTextField checkInTextField;
+	private JTextField checkOutTextField;
+	private JTextField emailTextField;
+	private JTextField phoneNumTextField;
+	private JTextField dayStayTextField;
+	private JTextField pricePerDayTextField;
+	private JTextField totalAmountTextField;
+	
 	private JScrollPane scrollPane;
 
 	/**
@@ -123,43 +130,43 @@ public class CheckOut extends JFrame {
 		table.getColumnModel().getColumn(6).setPreferredWidth(79);
 		table.setBorder(new LineBorder(Color.BLACK));
 		
-		lblNewLabel = new JLabel("Customer Check OUT");
-		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 24));
-		lblNewLabel.setBounds(39, 31, 284, 51);
-		contentPane.add(lblNewLabel);
+		label = new JLabel("Customer Check OUT");
+		label.setFont(new Font("Tahoma", Font.BOLD, 24));
+		label.setBounds(39, 31, 284, 51);
+		contentPane.add(label);
 		
-		btnNewButton = new JButton("back");
-		btnNewButton.addActionListener(new ActionListener() {
+		back = new JButton("back");
+		back.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				setVisible(false);
 				new Home() .setVisible(true);
 			}
 		});
-		btnNewButton.setBounds(1018, 25, 85, 21);
-		contentPane.add(btnNewButton);
+		back.setBounds(1018, 25, 85, 21);
+		contentPane.add(back);
 		
-		btnNewButton_1 = new JButton("Search\r\n");
-		btnNewButton_1.addActionListener(new ActionListener() {
+		searchRoomButton = new JButton("Search\r\n");
+		searchRoomButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-				String roomNo = textField.getText();
+				String roomNo = searchRoomTextField.getText();
 				try {
 					
 					ResultSet rs = Select.getData("select * from customer where roomNo = '"+roomNo+"' and checkOut is NULL");
 					
 					if (rs.next())
 					{
-						textField.setEditable(false);
+						searchRoomTextField.setEditable(false);
 						id = rs.getInt(1);
-						textField_1.setText(rs.getString(3));
-						textField_4.setText(rs.getString(5));
-						textField_5.setText(rs.getString(4));
-						textField_2.setText(rs.getString(6));
-						textField_7.setText(rs.getString(10));
+						nameTextField.setText(rs.getString(3));
+						emailTextField.setText(rs.getString(5));
+						phoneNumTextField.setText(rs.getString(4));
+						checkInTextField.setText(rs.getString(6));
+						pricePerDayTextField.setText(rs.getString(10));
 						
 						SimpleDateFormat myFormat = new SimpleDateFormat("dd/MM/yyyy");
 						Calendar cal = Calendar.getInstance();
-						textField_3.setText(myFormat.format(cal.getTime()));
+						checkOutTextField.setText(myFormat.format(cal.getTime()));
 						String  dateBeforeString = rs.getString(6);
 						Date dateBefore = myFormat.parse(dateBeforeString);
 						
@@ -173,14 +180,14 @@ public class CheckOut extends JFrame {
 						if(dayStay == 0)
 							dayStay = 1;
 						
-						 textField_6.setText(String.valueOf(dayStay));
+						 dayStayTextField.setText(String.valueOf(dayStay));
 						 
-						 float price = Float.parseFloat(textField_7.getText());
+						 float price = Float.parseFloat(pricePerDayTextField.getText());
 						 
 						 
-						 textField_8.setText(String.valueOf(dayStay * price));
+						 totalAmountTextField.setText(String.valueOf(dayStay * price));
 						 
-						 textField_4.setText(rs.getString(5));
+						 emailTextField.setText(rs.getString(5));
 						 
 						 roomType = rs.getString(9);
 						 bed = rs.getString(8);	
@@ -196,121 +203,121 @@ public class CheckOut extends JFrame {
 				}
 			}
 		});
-		btnNewButton_1.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		btnNewButton_1.setBounds(642, 126, 112, 31);
-		contentPane.add(btnNewButton_1);
+		searchRoomButton.setFont(new Font("Tahoma", Font.PLAIN, 18));
+		searchRoomButton.setBounds(642, 126, 112, 31);
+		contentPane.add(searchRoomButton);
 		
-		lblNewLabel_1 = new JLabel("Room Number\r\n");
-		lblNewLabel_1.setFont(new Font("Tahoma", Font.PLAIN, 19));
-		lblNewLabel_1.setBounds(299, 126, 144, 23);
-		contentPane.add(lblNewLabel_1);
+		searchRoomLabel = new JLabel("Room Number\r\n");
+		searchRoomLabel.setFont(new Font("Tahoma", Font.PLAIN, 19));
+		searchRoomLabel.setBounds(299, 126, 144, 23);
+		contentPane.add(searchRoomLabel);
 		
-		textField = new JTextField();
-		textField.setBounds(466, 126, 112, 32);
-		contentPane.add(textField);
-		textField.setColumns(10);
+		searchRoomTextField = new JTextField();
+		searchRoomTextField.setBounds(466, 126, 112, 32);
+		contentPane.add(searchRoomTextField);
+		searchRoomTextField.setColumns(10);
 		
-		lblNewLabel_2 = new JLabel("Customer Name\r\n");
-		lblNewLabel_2.setFont(new Font("Tahoma", Font.PLAIN, 17));
-		lblNewLabel_2.setBounds(32, 195, 120, 31);
-		contentPane.add(lblNewLabel_2);
+		NameLabel = new JLabel("Customer Name\r\n");
+		NameLabel.setFont(new Font("Tahoma", Font.PLAIN, 17));
+		NameLabel.setBounds(32, 195, 120, 31);
+		contentPane.add(NameLabel);
 		
-		textField_1 = new JTextField();
-		textField_1.setBounds(162, 197, 186, 34);
-		contentPane.add(textField_1);
-		textField_1.setColumns(10);
+		nameTextField = new JTextField();
+		nameTextField.setBounds(162, 197, 186, 34);
+		contentPane.add(nameTextField);
+		nameTextField.setColumns(10);
 		
-		lblNewLabel_3 = new JLabel("Check In Date\r\n");
-		lblNewLabel_3.setFont(new Font("Tahoma", Font.PLAIN, 17));
-		lblNewLabel_3.setBounds(32, 268, 120, 31);
-		contentPane.add(lblNewLabel_3);
+		checkInLabel = new JLabel("Check In Date\r\n");
+		checkInLabel.setFont(new Font("Tahoma", Font.PLAIN, 17));
+		checkInLabel.setBounds(32, 268, 120, 31);
+		contentPane.add(checkInLabel);
 		
-		textField_2 = new JTextField();
-		textField_2.setColumns(10);
-		textField_2.setBounds(162, 270, 186, 34);
-		contentPane.add(textField_2);
+		checkInTextField = new JTextField();
+		checkInTextField.setColumns(10);
+		checkInTextField.setBounds(162, 270, 186, 34);
+		contentPane.add(checkInTextField);
 		
-		lblNewLabel_4 = new JLabel("Check Out Date");
-		lblNewLabel_4.setFont(new Font("Tahoma", Font.PLAIN, 17));
-		lblNewLabel_4.setBounds(380, 268, 120, 31);
-		contentPane.add(lblNewLabel_4);
+		checkOutLabel = new JLabel("Check Out Date");
+		checkOutLabel.setFont(new Font("Tahoma", Font.PLAIN, 17));
+		checkOutLabel.setBounds(380, 268, 120, 31);
+		contentPane.add(checkOutLabel);
 		
-		textField_3 = new JTextField();
-		textField_3.setColumns(10);
-		textField_3.setBounds(520, 270, 186, 34);
-		contentPane.add(textField_3);
+		checkOutTextField = new JTextField();
+		checkOutTextField.setColumns(10);
+		checkOutTextField.setBounds(520, 270, 186, 34);
+		contentPane.add(checkOutTextField);
 		
-		lblNewLabel_5 = new JLabel("Customer Email");
-		lblNewLabel_5.setFont(new Font("Tahoma", Font.PLAIN, 17));
-		lblNewLabel_5.setBounds(380, 195, 120, 31);
-		contentPane.add(lblNewLabel_5);
+		emailLabel = new JLabel("Customer Email");
+		emailLabel.setFont(new Font("Tahoma", Font.PLAIN, 17));
+		emailLabel.setBounds(380, 195, 120, 31);
+		contentPane.add(emailLabel);
 		
-		textField_4 = new JTextField();
-		textField_4.setColumns(10);
-		textField_4.setBounds(520, 197, 186, 34);
-		contentPane.add(textField_4);
+		emailTextField = new JTextField();
+		emailTextField.setColumns(10);
+		emailTextField.setBounds(520, 197, 186, 34);
+		contentPane.add(emailTextField);
 		
-		lblNewLabel_6 = new JLabel("Customer Phone Number");
-		lblNewLabel_6.setFont(new Font("Tahoma", Font.PLAIN, 17));
-		lblNewLabel_6.setBounds(728, 195, 215, 31);
-		contentPane.add(lblNewLabel_6);
+		phoneNumLabel = new JLabel("Customer Phone Number");
+		phoneNumLabel.setFont(new Font("Tahoma", Font.PLAIN, 17));
+		phoneNumLabel.setBounds(728, 195, 215, 31);
+		contentPane.add(phoneNumLabel);
 		
-		textField_5 = new JTextField();
-		textField_5.setColumns(10);
-		textField_5.setBounds(935, 197, 186, 34);
-		contentPane.add(textField_5);
+		phoneNumTextField = new JTextField();
+		phoneNumTextField.setColumns(10);
+		phoneNumTextField.setBounds(935, 197, 186, 34);
+		contentPane.add(phoneNumTextField);
 		
-		lblNewLabel_7 = new JLabel("Number of Days Stay");
-		lblNewLabel_7.setFont(new Font("Tahoma", Font.PLAIN, 17));
-		lblNewLabel_7.setBounds(726, 268, 158, 31);
-		contentPane.add(lblNewLabel_7);
+		stayDayLabel = new JLabel("Number of Days Stay");
+		stayDayLabel.setFont(new Font("Tahoma", Font.PLAIN, 17));
+		stayDayLabel.setBounds(726, 268, 158, 31);
+		contentPane.add(stayDayLabel);
 		
-		textField_6 = new JTextField();
-		textField_6.setColumns(10);
-		textField_6.setBounds(935, 270, 186, 34);
-		contentPane.add(textField_6);
+		dayStayTextField = new JTextField();
+		dayStayTextField.setColumns(10);
+		dayStayTextField.setBounds(935, 270, 186, 34);
+		contentPane.add(dayStayTextField);
 		
-		lblNewLabel_8 = new JLabel("Price Per Day");
-		lblNewLabel_8.setFont(new Font("Tahoma", Font.PLAIN, 17));
-		lblNewLabel_8.setBounds(32, 342, 120, 31);
-		contentPane.add(lblNewLabel_8);
+		pricePerDayLabel = new JLabel("Price Per Day");
+		pricePerDayLabel.setFont(new Font("Tahoma", Font.PLAIN, 17));
+		pricePerDayLabel.setBounds(32, 342, 120, 31);
+		contentPane.add(pricePerDayLabel);
 		
-		textField_7 = new JTextField();
-		textField_7.setColumns(10);
-		textField_7.setBounds(162, 339, 186, 34);
-		contentPane.add(textField_7);
+		pricePerDayTextField = new JTextField();
+		pricePerDayTextField.setColumns(10);
+		pricePerDayTextField.setBounds(162, 339, 186, 34);
+		contentPane.add(pricePerDayTextField);
 		
-		lblNewLabel_9 = new JLabel("Total Amount");
-		lblNewLabel_9.setFont(new Font("Tahoma", Font.PLAIN, 17));
-		lblNewLabel_9.setBounds(380, 342, 120, 31);
-		contentPane.add(lblNewLabel_9);
+		totalAmountLabel = new JLabel("Total Amount");
+		totalAmountLabel.setFont(new Font("Tahoma", Font.PLAIN, 17));
+		totalAmountLabel.setBounds(380, 342, 120, 31);
+		contentPane.add(totalAmountLabel);
 		
-		textField_8 = new JTextField();
-		textField_8.setColumns(10);
-		textField_8.setBounds(520, 339, 186, 34);
-		contentPane.add(textField_8);
+		totalAmountTextField = new JTextField();
+		totalAmountTextField.setColumns(10);
+		totalAmountTextField.setBounds(520, 339, 186, 34);
+		contentPane.add(totalAmountTextField);
 		
 		
-		textField_1.setEditable(false);
-		textField_2.setEditable(false);
-		textField_3.setEditable(false);
-		textField_4.setEditable(false);
-		textField_5.setEditable(false);
-		textField_6.setEditable(false);
-		textField_7.setEditable(false);
-		textField_8.setEditable(false);
+		nameTextField.setEditable(false);
+		checkInTextField.setEditable(false);
+		checkOutTextField.setEditable(false);
+		emailTextField.setEditable(false);
+		phoneNumTextField.setEditable(false);
+		dayStayTextField.setEditable(false);
+		pricePerDayTextField.setEditable(false);
+		totalAmountTextField.setEditable(false);
 		
-		btnNewButton_3 = new JButton("Check Out");
-		btnNewButton_3.addActionListener(new ActionListener() {
+		checkOutButton = new JButton("Check Out");
+		checkOutButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-				String name = textField_1.getText();
-				String phone = textField_5.getText();
-				String email = textField_4.getText();
-				String checkOut = textField_3.getText();
-				String stayDay = textField_6.getText();
-				String amount = textField_8.getText();
-				roomNo = textField.getText();
+				String name = nameTextField.getText();
+				String phone = phoneNumTextField.getText();
+				String email = emailTextField.getText();
+				String checkOut = checkOutTextField.getText();
+				String stayDay = dayStayTextField.getText();
+				String amount = totalAmountTextField.getText();
+				roomNo = searchRoomTextField.getText();
 				
 				Query = "update customer set numberOfDayStay ='"+stayDay+"' , totalAmount = '"+amount+"' , checkOut = '"+checkOut+"' where id='"+id+"'";
 				
@@ -341,13 +348,13 @@ public class CheckOut extends JFrame {
 					
 					doc.add(paragraph2);
 					
-					Paragraph paragraph4 = new Paragraph("\tRoom Details:  \nNumber: "+textField.getText()+" \nType: "+roomType+" \nBed: "+bed+" \nPrice Per Day: " +textField_7.getText()+"");
+					Paragraph paragraph4 = new Paragraph("\tRoom Details:  \nNumber: "+searchRoomTextField.getText()+" \nType: "+roomType+" \nBed: "+bed+" \nPrice Per Day: " +pricePerDayTextField.getText()+"");
 					doc.add(paragraph4);
 					
 					doc.add(paragraph2);
 					
 					PdfPTable table = new PdfPTable(4);
-					table.addCell("Check IN Date: " + textField_2.getText());
+					table.addCell("Check IN Date: " + checkInTextField.getText());
 					table.addCell("Check OUT Date: " + checkOut);
 					table.addCell("Number of Days Stayed:  " + stayDay);
 					table.addCell("Total Amount: " + amount + " SAR");
@@ -393,9 +400,9 @@ public class CheckOut extends JFrame {
 				
 			}
 		}});
-		btnNewButton_3.setFont(new Font("Tahoma", Font.PLAIN, 19));
-		btnNewButton_3.setBounds(466, 411, 131, 31);
-		contentPane.add(btnNewButton_3);
+		checkOutButton.setFont(new Font("Tahoma", Font.PLAIN, 19));
+		checkOutButton.setBounds(466, 411, 131, 31);
+		contentPane.add(checkOutButton);
 		
 	}
 	
@@ -404,5 +411,5 @@ public class CheckOut extends JFrame {
 	String roomType;
 	String bed;
 	String roomNo;
-	private JButton btnNewButton_3;
+	private JButton checkOutButton;
 }

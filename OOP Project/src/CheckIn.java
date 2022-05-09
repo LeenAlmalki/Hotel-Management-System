@@ -22,15 +22,35 @@ import javax.swing.DefaultComboBoxModel;
 public class CheckIn extends JFrame {
 
 	private JPanel contentPane;
-	private JTextField textField;
-	private JTextField textField_1;
-	private JTextField textField_2;
-	private JTextField textField_3;
-	private JTextField textField_4;
-	private JTextField textField_5;
-	JComboBox comboBox ;
-	JComboBox comboBox_1 ;
-	JComboBox comboBox_2 ; 
+	
+	// Text Fields 
+	private JTextField nameTextField;
+	private JTextField phoneTextField;
+	private JTextField NIDTextField;
+	private JTextField emailTextField;
+	private JTextField checkInTextField;
+	private JTextField priceTextField;
+	
+	//labels
+	private JLabel label;
+	private JLabel nameLabel;
+	private JLabel phoneNumLabel;
+	private JLabel NIDLabel;
+	private JLabel emailLabel;
+	private JLabel checkinLabel ;
+	private JLabel bedLabel;
+	private JLabel roomTypeLabel;
+	private JLabel roomNumLabel;
+	private JLabel priceLabel;
+	
+	//ComboBox
+	JComboBox bedComboBox ;
+	JComboBox roomTypeCombobox ;
+	JComboBox roomNumCombobox ; 
+	
+	// Button
+	JButton bookRoomButton;
+
 	
 	
 	/**
@@ -56,7 +76,6 @@ public class CheckIn extends JFrame {
 
 	public CheckIn() {
 	
-		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 1145, 753);
 		contentPane = new JPanel();
@@ -64,84 +83,84 @@ public class CheckIn extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblNewLabel = new JLabel("Customer Check IN");
-		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 24));
-		lblNewLabel.setBounds(45, 35, 270, 49);
-		contentPane.add(lblNewLabel);
+		label = new JLabel("Customer Check IN");
+		label.setHorizontalAlignment(SwingConstants.CENTER);
+		label.setFont(new Font("Tahoma", Font.BOLD, 24));
+		label.setBounds(45, 35, 270, 49);
+		contentPane.add(label);
 		
-		JButton btnNewButton = new JButton("back");
-		btnNewButton.addActionListener(new ActionListener() {
+		JButton back = new JButton("back");
+		back.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				setVisible(false);
 				new Home() .setVisible(true);
 			}
 		});
-		btnNewButton.setBounds(1005, 24, 85, 21);
-		contentPane.add(btnNewButton);
+		back.setBounds(1005, 24, 85, 21);
+		contentPane.add(back);
 		
-		JLabel lblNewLabel_1 = new JLabel("Name");
-		lblNewLabel_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		lblNewLabel_1.setBounds(45, 166, 100, 35);
-		contentPane.add(lblNewLabel_1);
+		nameLabel = new JLabel("Name");
+		nameLabel.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		nameLabel.setBounds(45, 166, 100, 35);
+		contentPane.add(nameLabel);
 		
-		textField = new JTextField();
-		textField.setBounds(206, 163, 270, 49);
-		contentPane.add(textField);
-		textField.setColumns(10);
+		nameTextField = new JTextField();
+		nameTextField.setBounds(206, 163, 270, 49);
+		contentPane.add(nameTextField);
+		nameTextField.setColumns(10);
 		
-		JLabel lblNewLabel_1_1 = new JLabel("Phone Number ");
-		lblNewLabel_1_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		lblNewLabel_1_1.setBounds(45, 259, 138, 35);
-		contentPane.add(lblNewLabel_1_1);
+		phoneNumLabel = new JLabel("Phone Number ");
+		phoneNumLabel.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		phoneNumLabel.setBounds(45, 259, 138, 35);
+		contentPane.add(phoneNumLabel);
 		
-		textField_1 = new JTextField();
-		textField_1.setColumns(10);
-		textField_1.setBounds(206, 256, 270, 49);
-		contentPane.add(textField_1);
+		phoneTextField = new JTextField();
+		phoneTextField.setColumns(10);
+		phoneTextField.setBounds(206, 256, 270, 49);
+		contentPane.add(phoneTextField);
 		
-		JLabel lblNewLabel_1_1_1 = new JLabel("National ID");
-		lblNewLabel_1_1_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		lblNewLabel_1_1_1.setBounds(45, 359, 138, 35);
-		contentPane.add(lblNewLabel_1_1_1);
+		NIDLabel = new JLabel("National ID");
+		NIDLabel.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		NIDLabel.setBounds(45, 359, 138, 35);
+		contentPane.add(NIDLabel);
 		
-		textField_2 = new JTextField();
-		textField_2.setColumns(10);
-		textField_2.setBounds(206, 356, 270, 49);
-		contentPane.add(textField_2);
+		NIDTextField = new JTextField();
+		NIDTextField.setColumns(10);
+		NIDTextField.setBounds(206, 356, 270, 49);
+		contentPane.add(NIDTextField);
 		
-		JLabel lblNewLabel_1_1_1_1 = new JLabel("Email");
-		lblNewLabel_1_1_1_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		lblNewLabel_1_1_1_1.setBounds(45, 458, 138, 35);
-		contentPane.add(lblNewLabel_1_1_1_1);
+		emailLabel = new JLabel("Email");
+		emailLabel.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		emailLabel.setBounds(45, 458, 138, 35);
+		contentPane.add(emailLabel);
 		
-		textField_3 = new JTextField();
-		textField_3.setColumns(10);
-		textField_3.setBounds(206, 455, 270, 49);
-		contentPane.add(textField_3);
+		emailTextField = new JTextField();
+		emailTextField.setColumns(10);
+		emailTextField.setBounds(206, 455, 270, 49);
+		contentPane.add(emailTextField);
 		
-		JLabel lblNewLabel_1_1_1_1_1 = new JLabel("Check in Date\r\n");
-		lblNewLabel_1_1_1_1_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		lblNewLabel_1_1_1_1_1.setBounds(45, 555, 138, 35);
-		contentPane.add(lblNewLabel_1_1_1_1_1);
+		checkinLabel = new JLabel("Check in Date\r\n");
+		checkinLabel.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		checkinLabel.setBounds(45, 555, 138, 35);
+		contentPane.add(checkinLabel);
 		
-		textField_4 = new JTextField();
-		textField_4.setColumns(10);
-		textField_4.setBounds(206, 541, 270, 49);
-		contentPane.add(textField_4);
+		checkInTextField = new JTextField();
+		checkInTextField.setColumns(10);
+		checkInTextField.setBounds(206, 541, 270, 49);
+		contentPane.add(checkInTextField);
 		
-		JLabel lblNewLabel_1_2 = new JLabel("Bed");
-		lblNewLabel_1_2.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		lblNewLabel_1_2.setBounds(659, 166, 100, 35);
-		contentPane.add(lblNewLabel_1_2);
+		bedLabel = new JLabel("Bed");
+		bedLabel.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		bedLabel.setBounds(659, 166, 100, 35);
+		contentPane.add(bedLabel);
 		
-		JLabel lblNewLabel_1_2_1 = new JLabel("Room Type");
-		lblNewLabel_1_2_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		lblNewLabel_1_2_1.setBounds(659, 259, 134, 35);
-		contentPane.add(lblNewLabel_1_2_1);
+		roomTypeLabel = new JLabel("Room Type");
+		roomTypeLabel.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		roomTypeLabel.setBounds(659, 259, 134, 35);
+		contentPane.add(roomTypeLabel);
 		
-		comboBox = new JComboBox();
-		comboBox.addActionListener(new ActionListener() {
+		bedComboBox = new JComboBox();
+		bedComboBox.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
 				// type
@@ -151,18 +170,18 @@ public class CheckIn extends JFrame {
 				
 			}
 		});
-		comboBox.setFont(new Font("Tahoma", Font.PLAIN, 19));
-		comboBox.setModel(new DefaultComboBoxModel(new String[] {"Select", "Single", "Double", "Triple"}));
-		comboBox.setBounds(801, 166, 270, 35);
-		contentPane.add(comboBox);
+		bedComboBox.setFont(new Font("Tahoma", Font.PLAIN, 19));
+		bedComboBox.setModel(new DefaultComboBoxModel(new String[] {"Select", "Single", "Double", "Triple"}));
+		bedComboBox.setBounds(801, 166, 270, 35);
+		contentPane.add(bedComboBox);
 		
-		JLabel lblNewLabel_1_2_1_1 = new JLabel("Room Number");
-		lblNewLabel_1_2_1_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		lblNewLabel_1_2_1_1.setBounds(659, 359, 134, 35);
-		contentPane.add(lblNewLabel_1_2_1_1);
+		roomNumLabel = new JLabel("Room Number");
+		roomNumLabel.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		roomNumLabel.setBounds(659, 359, 134, 35);
+		contentPane.add(roomNumLabel);
 		
-		comboBox_1 = new JComboBox();
-		comboBox_1.addActionListener(new ActionListener() {
+		roomTypeCombobox = new JComboBox();
+		roomTypeCombobox.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
 				roomDetails();
@@ -170,23 +189,23 @@ public class CheckIn extends JFrame {
 				
 			}
 		});
-		comboBox_1.setFont(new Font("Tahoma", Font.PLAIN, 19));
-		comboBox_1.setModel(new DefaultComboBoxModel(new String[] {"Select", "Standard", "Luxury", "Presidential Suite"}));
-		comboBox_1.setBounds(801, 259, 270, 35);
-		contentPane.add(comboBox_1);
+		roomTypeCombobox.setFont(new Font("Tahoma", Font.PLAIN, 19));
+		roomTypeCombobox.setModel(new DefaultComboBoxModel(new String[] {"Select", "Standard", "Luxury", "Presidential Suite"}));
+		roomTypeCombobox.setBounds(801, 259, 270, 35);
+		contentPane.add(roomTypeCombobox);
 		
-		comboBox_2 = new JComboBox();
-		comboBox_2.addActionListener(new ActionListener() {
+		roomNumCombobox = new JComboBox();
+		roomNumCombobox.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-				String roomNo = (String) comboBox_2.getSelectedItem();
+				String roomNo = (String) roomNumCombobox.getSelectedItem();
 				try {
 					
 					ResultSet rs = Select.getData("select * from room where roomNo = '"+roomNo+"'");
 				
 					while(rs.next())
 					{
-						textField_5.setText(rs.getString(4));
+						priceTextField.setText(rs.getString(4));
 					}
 					
 				} catch (Exception e2) {
@@ -194,32 +213,32 @@ public class CheckIn extends JFrame {
 				}
 			}
 		});
-		comboBox_2.setBounds(801, 359, 270, 35);
-		contentPane.add(comboBox_2);
+		roomNumCombobox.setBounds(801, 359, 270, 35);
+		contentPane.add(roomNumCombobox);
 		
-		JLabel lblNewLabel_1_2_1_1_1 = new JLabel("Price\r\n");
-		lblNewLabel_1_2_1_1_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		lblNewLabel_1_2_1_1_1.setBounds(659, 455, 134, 35);
-		contentPane.add(lblNewLabel_1_2_1_1_1);
+		priceLabel = new JLabel("Price\r\n");
+		priceLabel.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		priceLabel.setBounds(659, 455, 134, 35);
+		contentPane.add(priceLabel);
 		
-		textField_5 = new JTextField();
-		textField_5.setColumns(10);
-		textField_5.setBounds(801, 444, 270, 49);
-		contentPane.add(textField_5);
+		priceTextField = new JTextField();
+		priceTextField.setColumns(10);
+		priceTextField.setBounds(801, 444, 270, 49);
+		contentPane.add(priceTextField);
 		
-		JButton btnNewButton_1 = new JButton("Book Room");
-		btnNewButton_1.addActionListener(new ActionListener() {
+		bookRoomButton = new JButton("Book Room");
+		bookRoomButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				int id = 1 ;
-				String name = textField.getText();
-				String phoneNo = textField_1.getText();
-				String Nid = textField_2.getText();
-				String email = textField_3.getText();
-				String checkIN = textField_4.getText()	;
-				String bed = (String)comboBox.getSelectedItem();
-				String roomType = (String)comboBox_1.getSelectedItem();
-				String roomNo = (String)comboBox_2.getSelectedItem();
-				String price = textField_5.getText()	;
+				String name = nameTextField.getText();
+				String phoneNo = phoneTextField.getText();
+				String Nid = NIDTextField.getText();
+				String email = emailTextField.getText();
+				String checkIN = checkInTextField.getText()	;
+				String bed = (String)bedComboBox.getSelectedItem();
+				String roomType = (String)roomTypeCombobox.getSelectedItem();
+				String roomNo = (String)roomNumCombobox.getSelectedItem();
+				String price = priceTextField.getText()	;
 				
 				String Query = "select max(id) from customer";
 				try {
@@ -247,35 +266,34 @@ public class CheckIn extends JFrame {
 				
 				}
 		});
-		btnNewButton_1.setFont(new Font("Tahoma", Font.BOLD, 18));
-		btnNewButton_1.setBounds(828, 566, 180, 49);
-		contentPane.add(btnNewButton_1);
+		bookRoomButton.setFont(new Font("Tahoma", Font.BOLD, 18));
+		bookRoomButton.setBounds(828, 566, 180, 49);
+		contentPane.add(bookRoomButton);
 		
-		textField_4.setEditable(false);
-		textField_5.setEditable(false);
+		checkInTextField.setEditable(false);
+		priceTextField.setEditable(false);
 		SimpleDateFormat myFormat = new SimpleDateFormat("dd/MM/yyyy");
 		Calendar cal = Calendar.getInstance();
-		textField_4.setText(myFormat.format(cal.getTime()));
+		checkInTextField.setText(myFormat.format(cal.getTime()));
 		
 	}
 	
-	String bed;
-	String roomType;
-	String roomNo;
-	String price;
 	
-	
-	
+
 	public void roomDetails() {
+		String bed;
+		String roomType;
+		String roomNo;
+		String price;
 		
 		
 		//roomNumber
-		comboBox_2.removeAllItems();
+		roomNumCombobox.removeAllItems();
 		//price
-		textField_5.setText("");
+		priceTextField.setText("");
 		
-		bed = (String)comboBox.getSelectedItem();
-		roomType = (String)comboBox_1.getSelectedItem();
+		bed = (String)bedComboBox.getSelectedItem();
+		roomType = (String)roomTypeCombobox.getSelectedItem();
 		
 		try {
 			
@@ -283,7 +301,7 @@ public class CheckIn extends JFrame {
 			
 			while(rs.next())
 			{
-				comboBox_2.addItem(rs.getString(1));
+				roomNumCombobox.addItem(rs.getString(1));
 			}
 			
 		} catch (Exception e1) {

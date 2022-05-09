@@ -34,8 +34,21 @@ public class CustomerBill extends JFrame {
 
 
 	private JPanel contentPane;
-	private JTextField textField;
 	private JTable table;
+	
+	// text field
+	private JTextField searchdateTextField;
+	
+	
+	// button
+	private JButton searchDateButton;
+	
+	//label
+	private JLabel label;
+	private JLabel label2;
+	private JLabel label3;
+	
+	
 
 	/**
 	 * Launch the application.
@@ -91,36 +104,36 @@ public class CustomerBill extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblNewLabel = new JLabel("Customer Details Bill");
-		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 24));
-		lblNewLabel.setBounds(32, 28, 291, 25);
-		contentPane.add(lblNewLabel);
+		label = new JLabel("Customer Details Bill");
+		label.setFont(new Font("Tahoma", Font.BOLD, 24));
+		label.setBounds(32, 28, 291, 25);
+		contentPane.add(label);
 		
-		JButton btnNewButton = new JButton("Back");
-		btnNewButton.addActionListener(new ActionListener() {
+		JButton back = new JButton("Back");
+		back.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				setVisible(false);
 				new Home() .setVisible(true);
 			}
 		});
-		btnNewButton.setBounds(1012, 14, 105, 25);
-		contentPane.add(btnNewButton);
+		back.setBounds(1012, 14, 105, 25);
+		contentPane.add(back);
 		
-		JLabel lblNewLabel_1 = new JLabel("Search by check out date");
-		lblNewLabel_1.setFont(new Font("Tahoma", Font.PLAIN, 19));
-		lblNewLabel_1.setBounds(294, 87, 227, 17);
-		contentPane.add(lblNewLabel_1);
+		label2 = new JLabel("Search by check out date");
+		label2.setFont(new Font("Tahoma", Font.PLAIN, 19));
+		label2.setBounds(294, 87, 227, 17);
+		contentPane.add(label2);
 		
-		textField = new JTextField();
-		textField.setBounds(520, 88, 126, 23);
-		contentPane.add(textField);
-		textField.setColumns(10);
+		searchdateTextField = new JTextField();
+		searchdateTextField.setBounds(520, 88, 126, 23);
+		contentPane.add(searchdateTextField);
+		searchdateTextField.setColumns(10);
 		
-		JButton btnNewButton_1 = new JButton("Search");
-		btnNewButton_1.addActionListener(new ActionListener() {
+		searchDateButton = new JButton("Search");
+		searchDateButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-				String checkOutDate = textField.getText();
+				String checkOutDate = searchdateTextField.getText();
 				
 				ResultSet rs = Select.getData("select * from customer where checkOut = '"+checkOutDate+"'");
 				DefaultTableModel model = (DefaultTableModel)table.getModel();
@@ -144,13 +157,13 @@ public class CustomerBill extends JFrame {
 			}
 			
 		});
-		btnNewButton_1.setBounds(677, 87, 105, 25);
-		contentPane.add(btnNewButton_1);
+		searchDateButton.setBounds(677, 87, 105, 25);
+		contentPane.add(searchDateButton);
 		
-		JLabel lblNewLabel_2 = new JLabel(" * Click on table row to open bill");
-		lblNewLabel_2.setFont(new Font("Tahoma", Font.BOLD, 17));
-		lblNewLabel_2.setBounds(452, 649, 283, 25);
-		contentPane.add(lblNewLabel_2);
+		label3 = new JLabel(" * Click on table row to open bill");
+		label3.setFont(new Font("Tahoma", Font.BOLD, 17));
+		label3.setBounds(452, 649, 283, 25);
+		contentPane.add(label3);
 		
 		JScrollPane scrollPane = new JScrollPane();
 		scrollPane.addMouseListener(new MouseAdapter() {
@@ -176,6 +189,6 @@ public class CustomerBill extends JFrame {
 		
 		SimpleDateFormat myDate =  new SimpleDateFormat("dd/MM/yyyy");
 		Calendar cal = Calendar.getInstance();
-		textField.setText(myDate.format(cal.getTime()));
+		searchdateTextField.setText(myDate.format(cal.getTime()));
 	}
 }
