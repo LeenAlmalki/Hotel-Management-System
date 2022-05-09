@@ -84,10 +84,10 @@ public class Home extends JFrame {
 		 checkOut.setBounds(457, 461, 250, 37);
 		contentPane.add(checkOut);
 		
-		 bill = new JButton("Customer Detail Bill");
+		 bill = new JButton("Data Log");
 		 bill.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				new CustomerBill().setVisible(true);
+				new DataLog().setVisible(true);
 			}
 		});
 		 bill.setFont(new Font("Tahoma", Font.PLAIN, 24));

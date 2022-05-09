@@ -28,8 +28,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="CustomerBill" project="OOP Project" file="/OOP Project/src/CustomerBill.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
+  <class id="4" language="java" name="DataLog" project="OOP Project" file="/OOP Project/src/DataLog.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="353" y="1240"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      

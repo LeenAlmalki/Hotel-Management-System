@@ -30,7 +30,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.File;
 
-public class CustomerBill extends JFrame {
+public class DataLog extends JFrame {
 
 
 	private JPanel contentPane;
@@ -44,9 +44,8 @@ public class CustomerBill extends JFrame {
 	private JButton searchDateButton;
 	
 	//label
-	private JLabel label;
+	private JLabel lblDataLog;
 	private JLabel label2;
-	private JLabel label3;
 	
 	
 
@@ -57,7 +56,7 @@ public class CustomerBill extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					CustomerBill frame = new CustomerBill();
+					DataLog frame = new DataLog();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -70,7 +69,7 @@ public class CustomerBill extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public CustomerBill() {
+	public DataLog() {
 		
 		
 		addComponentListener(new ComponentAdapter() {
@@ -104,10 +103,10 @@ public class CustomerBill extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		label = new JLabel("Customer Details Bill");
-		label.setFont(new Font("Tahoma", Font.BOLD, 24));
-		label.setBounds(32, 28, 291, 25);
-		contentPane.add(label);
+		lblDataLog = new JLabel("Data Log");
+		lblDataLog.setFont(new Font("Tahoma", Font.BOLD, 24));
+		lblDataLog.setBounds(32, 28, 291, 25);
+		contentPane.add(lblDataLog);
 		
 		JButton back = new JButton("Back");
 		back.addActionListener(new ActionListener() {
@@ -160,16 +159,11 @@ public class CustomerBill extends JFrame {
 		searchDateButton.setBounds(677, 87, 105, 25);
 		contentPane.add(searchDateButton);
 		
-		label3 = new JLabel(" * Click on table row to open bill");
-		label3.setFont(new Font("Tahoma", Font.BOLD, 17));
-		label3.setBounds(452, 649, 283, 25);
-		contentPane.add(label3);
-		
 		JScrollPane scrollPane = new JScrollPane();
 		scrollPane.addMouseListener(new MouseAdapter() {
 			
 		});
-		scrollPane.setBounds(110, 200, 926, 341);
+		scrollPane.setBounds(47, 202, 1039, 341);
 		contentPane.add(scrollPane);
 		
 		table = new JTable();
